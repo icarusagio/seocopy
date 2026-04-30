@@ -49,6 +49,11 @@ const useCasePages = [
     href: "/landing-page-copy-generator",
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
   },
+  {
+    title: "Meta Description Generator",
+    href: "/meta-description-generator",
+    body: "Click-worthy meta descriptions, SEO title ideas, and OG copy for pages that need more search traffic.",
+  },
 ];
 
 export default function Home() {
@@ -230,7 +235,7 @@ export default function Home() {
             Start with a focused workflow.
           </h2>
         </div>
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {useCasePages.map((page) => (
             <Link
               key={page.href}
