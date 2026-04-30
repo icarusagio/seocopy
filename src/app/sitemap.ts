@@ -1,0 +1,21 @@
+import type { MetadataRoute } from "next";
+
+const siteUrl = "https://seocopy.vercel.app";
+const lastModified = new Date("2026-04-30T00:00:00.000Z");
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: siteUrl,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${siteUrl}/generate`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+  ];
+}

@@ -13,9 +13,41 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600"],
 });
 
+const siteUrl = "https://seocopy.vercel.app";
+
 export const metadata: Metadata = {
-  title: "SEOCopy",
-  description: "AI-powered SEO metadata and landing page copy generation.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "SEOCopy — AI SEO Metadata & Landing Page Copy Generator",
+    template: "%s | SEOCopy",
+  },
+  description:
+    "Generate SEO titles, meta descriptions, OG tags, headlines, subheadlines, and CTA ideas from a URL or product description in seconds.",
+  alternates: {
+    canonical: siteUrl,
+  },
+  keywords: [
+    "AI SEO copy generator",
+    "SEO title generator",
+    "meta description generator",
+    "landing page copy generator",
+    "OG tag generator",
+    "Shopify SEO copy",
+  ],
+  openGraph: {
+    title: "SEOCopy — AI SEO Metadata & Landing Page Copy Generator",
+    description:
+      "Turn a URL or product description into SEO metadata and landing page copy variants you can publish immediately.",
+    url: siteUrl,
+    siteName: "SEOCopy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEOCopy — AI SEO Metadata & Landing Page Copy Generator",
+    description:
+      "Generate SEO titles, meta descriptions, OG tags, headlines, subheadlines, and CTA ideas in seconds.",
+  },
 };
 
 export default function RootLayout({

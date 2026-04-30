@@ -46,7 +46,7 @@ export async function GET(request: Request) {
     }
 
     const raw = await getUsageState();
-    let updatedRaw = { ...raw };
+    const updatedRaw = { ...raw };
 
     if (session.mode === "subscription") {
       updatedRaw.subscriptionActive = true;

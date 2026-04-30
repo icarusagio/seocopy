@@ -73,12 +73,12 @@ export default function Home() {
                 you can use immediately.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href="#generator-preview"
+                <Link
+                  href="/generate"
                   className="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200"
                 >
                   Generate Free
-                </a>
+                </Link>
                 <a
                   href="#pricing"
                   className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950 dark:border-white/15 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"

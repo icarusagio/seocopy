@@ -55,7 +55,7 @@ export async function POST(request: Request) {
     const { data, sourceSummary } = await generateSeoCopy(body);
 
     // Deduct usage
-    let updatedRaw = { ...raw };
+    const updatedRaw = { ...raw };
     if (raw.subscriptionActive) {
       // no deduction
     } else if (raw.paidCredits > 0) {
