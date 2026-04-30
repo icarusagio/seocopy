@@ -33,6 +33,19 @@ const pricing = [
   },
 ];
 
+const useCasePages = [
+  {
+    title: "Shopify SEO Copy Generator",
+    href: "/shopify-seo-copy-generator",
+    body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
+  },
+  {
+    title: "Landing Page Copy Generator",
+    href: "/landing-page-copy-generator",
+    body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
@@ -200,6 +213,36 @@ export default function Home() {
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="mb-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+            Popular generators
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+            Start with a focused workflow.
+          </h2>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2">
+          {useCasePages.map((page) => (
+            <Link
+              key={page.href}
+              href={page.href}
+              className="rounded-[1.75rem] border border-black/10 bg-white/80 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.08)] transition hover:-translate-y-0.5 hover:border-cyan-300 dark:border-white/10 dark:bg-white/5"
+            >
+              <h2 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                {page.title}
+              </h2>
+              <p className="mt-3 text-base leading-7 text-slate-600 dark:text-slate-300">
+                {page.body}
+              </p>
+              <span className="mt-5 inline-flex text-sm font-semibold text-cyan-700 dark:text-cyan-300">
+                Open generator page →
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 
