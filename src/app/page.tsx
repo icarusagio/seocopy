@@ -35,6 +35,11 @@ const pricing = [
 
 const useCasePages = [
   {
+    title: "Ecommerce SEO Copy Generator",
+    href: "/ecommerce-seo-copy-generator",
+    body: "SEO titles, meta descriptions, product-page angles, and campaign copy for ecommerce teams.",
+  },
+  {
     title: "Shopify SEO Copy Generator",
     href: "/shopify-seo-copy-generator",
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",

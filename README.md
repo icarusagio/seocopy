@@ -32,6 +32,7 @@ Use it when you need to:
 
 - `/` — main landing page
 - `/generate` — generator flow
+- `/ecommerce-seo-copy-generator` — ecommerce SEO copy use-case page
 - `/meta-description-generator` — meta description use-case page
 - `/seo-title-generator` — title tag use-case page
 - `/website-copy-generator` — website copy use-case page
