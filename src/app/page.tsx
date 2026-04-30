@@ -40,6 +40,11 @@ const useCasePages = [
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
   },
   {
+    title: "Product Description Generator",
+    href: "/product-description-generator",
+    body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
+  },
+  {
     title: "Landing Page Copy Generator",
     href: "/landing-page-copy-generator",
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
@@ -225,7 +230,7 @@ export default function Home() {
             Start with a focused workflow.
           </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-3">
           {useCasePages.map((page) => (
             <Link
               key={page.href}
