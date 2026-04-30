@@ -59,6 +59,11 @@ const useCasePages = [
     href: "/seo-title-generator",
     body: "Search-friendly title tags, snippet copy, and headline variants for pages competing for buyer intent.",
   },
+  {
+    title: "Website Copy Generator",
+    href: "/website-copy-generator",
+    body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
+  },
 ];
 
 export default function Home() {
@@ -240,7 +245,7 @@ export default function Home() {
             Start with a focused workflow.
           </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {useCasePages.map((page) => (
             <Link
               key={page.href}
