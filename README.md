@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SEOCopy
 
-## Getting Started
+SEOCopy turns a URL or rough product description into SEO metadata and launch-ready landing page copy in seconds.
 
-First, run the development server:
+Live product: https://seocopy.vercel.app
+
+## What it generates
+
+- SEO title and meta description tuned for search snippets
+- Open Graph title and description for social sharing
+- Three headline, subheadline, and CTA variants for landing pages
+- Product-page copy ideas for Shopify merchants and ecommerce teams
+
+## Who it is for
+
+SEOCopy is built for founders, Shopify merchants, and small teams that need publishable copy without starting from a blank page.
+
+Use it when you need to:
+
+- Refresh thin product pages before a campaign
+- Draft metadata for a new landing page
+- Rewrite a stale homepage hero section
+- Create quick SEO copy variants for testing
+
+## Pricing
+
+- 2 free generations
+- $5 one-off generation pack
+- $19/month subscription for ongoing usage
+
+## Product routes
+
+- `/` — main landing page
+- `/generate` — generator flow
+- `/meta-description-generator` — meta description use-case page
+- `/landing-page-copy-generator` — landing page copy use-case page
+- `/product-description-generator` — ecommerce product copy use-case page
+- `/shopify-seo-copy-generator` — Shopify SEO use-case page
+
+## Tech stack
+
+- Next.js App Router
+- Anthropic for copy generation
+- Stripe Checkout for one-time and subscription payments
+- Vercel deployment
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For production validation:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+The app expects production secrets to be configured in the hosting environment. Do not commit secret values.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Common variables include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `ANTHROPIC_API_KEY`
+- `STRIPE_SECRET_KEY`
+- `STRIPE_WEBHOOK_SECRET`
+- `NEXT_PUBLIC_SITE_URL`
 
-## Deploy on Vercel
+## Revenue goal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+SEOCopy is part of the active revenue sprint: ship a lightweight AI SEO/copy tool with immediate checkout, soft-launch distribution, and fast conversion iteration.
