@@ -115,6 +115,11 @@ const useCasePages = [
     body: "SEO page titles, meta descriptions, social previews, and CTA ideas from a URL, keyword, or rough page brief.",
   },
   {
+    title: "Homepage Title Generator",
+    href: "/homepage-title-generator",
+    body: "Homepage SEO title tags, meta descriptions, social previews, hero headlines, and CTA copy from a rough offer.",
+  },
+  {
     title: "Website Copy Generator",
     href: "/website-copy-generator",
     body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
