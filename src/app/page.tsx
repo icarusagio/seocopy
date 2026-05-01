@@ -60,6 +60,11 @@ const useCasePages = [
     body: "Search snippets, hero copy, social previews, and CTA variants for founder-led launches.",
   },
   {
+    title: "Meta Tag Generator",
+    href: "/meta-tag-generator",
+    body: "SEO title tags, meta descriptions, Open Graph copy, and social preview angles for any product page or landing page.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
