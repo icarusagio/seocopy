@@ -105,6 +105,11 @@ const useCasePages = [
     body: "Search-friendly title tags, snippet copy, and headline variants for pages competing for buyer intent.",
   },
   {
+    title: "AI Page Title Generator",
+    href: "/ai-page-title-generator",
+    body: "SEO page titles, meta descriptions, social previews, and CTA ideas from a URL, keyword, or rough page brief.",
+  },
+  {
     title: "Website Copy Generator",
     href: "/website-copy-generator",
     body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
