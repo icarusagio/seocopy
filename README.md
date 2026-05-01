@@ -40,6 +40,7 @@ Use it when you need to:
 - `/website-copy-generator` — website copy use-case page
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
+- `/product-page-seo-generator` — ecommerce product page SEO use-case page
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page
