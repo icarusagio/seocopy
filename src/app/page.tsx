@@ -80,6 +80,11 @@ const useCasePages = [
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
   },
   {
+    title: "Shopify Product Description Generator",
+    href: "/shopify-product-description-generator",
+    body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",
+  },
+  {
     title: "Product Page SEO Generator",
     href: "/product-page-seo-generator",
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",
