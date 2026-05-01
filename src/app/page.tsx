@@ -70,6 +70,11 @@ const useCasePages = [
     body: "Two free AI generations for SEO titles, meta descriptions, social previews, headlines, and CTA variants.",
   },
   {
+    title: "Blog Title Generator",
+    href: "/blog-title-generator",
+    body: "SEO blog titles, snippets, social previews, and CTA angles from one rough topic or keyword.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
