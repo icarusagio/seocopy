@@ -90,6 +90,11 @@ const useCasePages = [
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",
   },
   {
+    title: "Product SEO Title Generator",
+    href: "/product-seo-title-generator",
+    body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
+  },
+  {
     title: "Landing Page Copy Generator",
     href: "/landing-page-copy-generator",
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
