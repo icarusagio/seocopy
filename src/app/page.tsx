@@ -35,6 +35,11 @@ const pricing = [
 
 const useCasePages = [
   {
+    title: "SaaS Landing Page Copy Generator",
+    href: "/saas-landing-page-copy-generator",
+    body: "Hero copy, SEO metadata, feature-benefit sections, objection handling, and CTA variants for SaaS teams.",
+  },
+  {
     title: "Ecommerce SEO Copy Generator",
     href: "/ecommerce-seo-copy-generator",
     body: "SEO titles, meta descriptions, product-page angles, and campaign copy for ecommerce teams.",
