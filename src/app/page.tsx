@@ -65,6 +65,11 @@ const useCasePages = [
     body: "SEO title tags, meta descriptions, Open Graph copy, and social preview angles for any product page or landing page.",
   },
   {
+    title: "Free SEO Copy Generator",
+    href: "/free-seo-copy-generator",
+    body: "Two free AI generations for SEO titles, meta descriptions, social previews, headlines, and CTA variants.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
