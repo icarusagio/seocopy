@@ -55,6 +55,11 @@ const useCasePages = [
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
   },
   {
+    title: "Startup SEO Copy Generator",
+    href: "/startup-seo-copy-generator",
+    body: "Search snippets, hero copy, social previews, and CTA variants for founder-led launches.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
