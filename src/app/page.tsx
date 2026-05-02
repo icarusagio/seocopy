@@ -110,6 +110,11 @@ const useCasePages = [
     body: "SEO category descriptions, collection intros, merchandising angles, metadata, FAQs, and CTAs for ecommerce category pages.",
   },
   {
+    title: "Small Business SEO Copy Generator",
+    href: "/small-business-seo-copy-generator",
+    body: "SEO metadata, website copy, service blurbs, FAQs, and CTAs for small businesses turning local interest into calls, bookings, and quote requests.",
+  },
+  {
     title: "Service Page Copy Generator",
     href: "/service-page-copy-generator",
     body: "SEO metadata, hero copy, proof points, FAQs, and CTA variants for agencies, consultants, and local service businesses.",

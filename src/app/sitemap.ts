@@ -108,6 +108,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/small-business-seo-copy-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/service-page-copy-generator`,
       lastModified,
       changeFrequency: "weekly",
