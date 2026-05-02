@@ -44,6 +44,7 @@ Use it when you need to:
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/product-page-seo-generator` — ecommerce product page SEO use-case page
+- `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page

@@ -90,6 +90,11 @@ const useCasePages = [
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",
   },
   {
+    title: "Collection Page SEO Generator",
+    href: "/collection-page-seo-generator",
+    body: "Search titles, meta descriptions, collection intros, social previews, and CTAs for Shopify collections and ecommerce category pages.",
+  },
+  {
     title: "Product SEO Title Generator",
     href: "/product-seo-title-generator",
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
