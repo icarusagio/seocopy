@@ -100,6 +100,11 @@ const useCasePages = [
     body: "SEO metadata, hero copy, proof points, FAQs, and CTA variants for agencies, consultants, and local service businesses.",
   },
   {
+    title: "Local SEO Copy Generator",
+    href: "/local-seo-copy-generator",
+    body: "City-aware metadata, local service page copy, proof bullets, FAQs, and booking CTAs for local businesses and agencies.",
+  },
+  {
     title: "Product SEO Title Generator",
     href: "/product-seo-title-generator",
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
