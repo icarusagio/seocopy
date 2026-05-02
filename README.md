@@ -47,6 +47,7 @@ Use it when you need to:
 - `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/service-page-copy-generator` — agency, consultant, and local service page copy use-case page
 - `/local-seo-copy-generator` — local business and service-area SEO copy use-case page
+- `/real-estate-listing-description-generator` — property listing description and real estate SEO copy use-case page
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
