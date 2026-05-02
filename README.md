@@ -44,6 +44,7 @@ Use it when you need to:
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
+- `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page
 - `/product-page-seo-generator` — ecommerce product page SEO use-case page
 - `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/service-page-copy-generator` — agency, consultant, and local service page copy use-case page
