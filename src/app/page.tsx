@@ -85,6 +85,11 @@ const useCasePages = [
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",
   },
   {
+    title: "Etsy Product Description Generator",
+    href: "/etsy-product-description-generator",
+    body: "Etsy-ready listing descriptions, marketplace SEO titles, tag angles, benefit bullets, social previews, and CTAs from maker notes.",
+  },
+  {
     title: "Product Page SEO Generator",
     href: "/product-page-seo-generator",
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",
