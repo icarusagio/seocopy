@@ -130,6 +130,11 @@ const useCasePages = [
     body: "Property descriptions, SEO metadata, social previews, FAQs, and showing CTAs for agents and real estate teams.",
   },
   {
+    title: "Restaurant Menu Description Generator",
+    href: "/restaurant-menu-description-generator",
+    body: "Menu descriptions, restaurant SEO metadata, delivery app blurbs, specials, FAQs, and ordering CTAs from rough dish notes.",
+  },
+  {
     title: "Product SEO Title Generator",
     href: "/product-seo-title-generator",
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
