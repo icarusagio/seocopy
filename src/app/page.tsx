@@ -135,6 +135,11 @@ const useCasePages = [
     body: "Menu descriptions, restaurant SEO metadata, delivery app blurbs, specials, FAQs, and ordering CTAs from rough dish notes.",
   },
   {
+    title: "Google Business Profile Description Generator",
+    href: "/google-business-profile-description-generator",
+    body: "GBP descriptions, local SEO metadata, service blurbs, Google posts, FAQs, and call-focused CTAs for local businesses.",
+  },
+  {
     title: "Product SEO Title Generator",
     href: "/product-seo-title-generator",
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",

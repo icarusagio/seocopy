@@ -53,6 +53,7 @@ Use it when you need to:
 - `/local-seo-copy-generator` — local business and service-area SEO copy use-case page
 - `/real-estate-listing-description-generator` — property listing description and real estate SEO copy use-case page
 - `/restaurant-menu-description-generator` — restaurant menu descriptions, delivery app copy, and hospitality SEO use-case page
+- `/google-business-profile-description-generator` — Google Business Profile descriptions and local SEO copy use-case page
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
