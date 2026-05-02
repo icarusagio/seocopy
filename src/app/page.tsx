@@ -105,6 +105,11 @@ const useCasePages = [
     body: "Search titles, meta descriptions, collection intros, social previews, and CTAs for Shopify collections and ecommerce category pages.",
   },
   {
+    title: "Category Description Generator",
+    href: "/category-description-generator",
+    body: "SEO category descriptions, collection intros, merchandising angles, metadata, FAQs, and CTAs for ecommerce category pages.",
+  },
+  {
     title: "Service Page Copy Generator",
     href: "/service-page-copy-generator",
     body: "SEO metadata, hero copy, proof points, FAQs, and CTA variants for agencies, consultants, and local service businesses.",
