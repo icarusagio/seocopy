@@ -174,6 +174,11 @@ const useCasePages = [
     href: "/website-copy-generator",
     body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
   },
+  {
+    title: "About Us Page Generator",
+    href: "/about-us-page-generator",
+    body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
+  },
 ];
 
 export default function Home() {
