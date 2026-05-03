@@ -210,6 +210,11 @@ const useCasePages = [
     body: "Customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA copy from one win brief.",
   },
   {
+    title: "Testimonial Generator",
+    href: "/testimonial-generator",
+    body: "Customer testimonials, review highlights, social proof snippets, SEO metadata, and CTA variants from raw customer feedback.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
