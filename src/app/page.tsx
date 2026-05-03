@@ -20,16 +20,22 @@ const pricing = [
     name: "Free",
     price: "2 generations",
     description: "Perfect for trying the workflow with no signup.",
+    cta: "Start free",
+    href: "/generate",
   },
   {
     name: "Pay Per Use",
     price: "$5",
     description: "Buy a single paid generation whenever you need one more.",
+    cta: "Buy one generation",
+    href: "/generate?plan=one-time",
   },
   {
     name: "Monthly",
     price: "$19/mo",
     description: "Unlimited generations for teams shipping landing pages every week.",
+    cta: "Start monthly",
+    href: "/generate?plan=subscription",
   },
 ];
 
@@ -471,6 +477,16 @@ export default function Home() {
               >
                 {plan.description}
               </p>
+              <Link
+                href={plan.href}
+                className={`mt-7 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${
+                  index === 1
+                    ? "bg-white text-slate-950 hover:bg-cyan-50 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-800"
+                    : "bg-slate-950 text-white hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200"
+                }`}
+              >
+                {plan.cta}
+              </Link>
             </article>
           ))}
         </div>

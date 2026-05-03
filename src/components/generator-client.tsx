@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { startTransition, useEffect, useState } from "react";
+import { startTransition, useEffect, useRef, useState } from "react";
 
 import {
   CHECKOUT_OPTIONS,
@@ -37,6 +37,7 @@ type Notice = { type: "error" | "success" | "info"; text: string };
 
 interface GeneratorClientProps {
   initialUsage: UsageState;
+  initialCheckoutPlan?: "single" | "subscription";
   checkoutState: {
     paid: boolean;
     canceled: boolean;
@@ -88,9 +89,11 @@ function OutputCard({
 
 export default function GeneratorClient({
   initialUsage,
+  initialCheckoutPlan,
   checkoutState,
 }: GeneratorClientProps) {
   const router = useRouter();
+  const checkoutStartedFromUrl = useRef(false);
   const [usage, setUsage] = useState(initialUsage);
   const [result, setResult] = useState<GenerationResult | null>(null);
   const [sourceSummary, setSourceSummary] = useState<string | undefined>();
@@ -195,6 +198,22 @@ export default function GeneratorClient({
       cancelled = true;
     };
   }, [checkoutState.paid, checkoutState.sessionId, router]);
+
+  useEffect(() => {
+    if (!initialCheckoutPlan || checkoutStartedFromUrl.current) {
+      return;
+    }
+
+    checkoutStartedFromUrl.current = true;
+    setNotice({
+      type: "info",
+      text:
+        initialCheckoutPlan === "subscription"
+          ? "Starting monthly checkout..."
+          : "Starting one-time checkout...",
+    });
+    void handleCheckout(initialCheckoutPlan);
+  }, [initialCheckoutPlan]);
 
   const isBlocked =
     !usage.subscriptionActive &&
