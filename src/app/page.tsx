@@ -195,6 +195,11 @@ const useCasePages = [
     body: "Subject lines, preview text, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Social Media Caption Generator",
+    href: "/social-media-caption-generator",
+    body: "Social captions, post hooks, SEO snippets, landing page copy, social previews, and CTA variants from one campaign brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",

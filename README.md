@@ -43,6 +43,7 @@ Use it when you need to:
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
 - `/ad-copy-generator` — paid search, social ad hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
+- `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
