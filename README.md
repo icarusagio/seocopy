@@ -51,6 +51,7 @@ Use it when you need to:
 - `/press-release-generator` — press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/landing-page-copy-generator` — landing page copy use-case page
+- `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page

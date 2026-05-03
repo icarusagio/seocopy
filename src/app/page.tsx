@@ -161,6 +161,11 @@ const useCasePages = [
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
   },
   {
+    title: "Landing Page Headline Generator",
+    href: "/landing-page-headline-generator",
+    body: "Hero headlines, subheadlines, SEO metadata, social previews, and CTA variants for faster landing page tests.",
+  },
+  {
     title: "Meta Description Generator",
     href: "/meta-description-generator",
     body: "Click-worthy meta descriptions, SEO title ideas, and OG copy for pages that need more search traffic.",
