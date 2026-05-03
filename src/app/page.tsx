@@ -185,6 +185,11 @@ const useCasePages = [
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "Ad Copy Generator",
+    href: "/ad-copy-generator",
+    body: "Paid search headlines, social ad hooks, landing page copy, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
