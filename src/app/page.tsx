@@ -215,6 +215,11 @@ const useCasePages = [
     body: "Customer testimonials, review highlights, social proof snippets, SEO metadata, and CTA variants from raw customer feedback.",
   },
   {
+    title: "Press Release Generator",
+    href: "/press-release-generator",
+    body: "Press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
