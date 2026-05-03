@@ -60,6 +60,7 @@ Use it when you need to:
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page
 - `/free-seo-copy-generator` — free SEO copy trial use-case page
+- `/faq-generator` — SEO FAQ questions, answer snippets, schema-ready copy, and CTA use-case page
 - `/blog-title-generator` — SEO blog title and snippet use-case page
 
 ## Tech stack

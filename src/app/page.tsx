@@ -70,6 +70,11 @@ const useCasePages = [
     body: "Two free AI generations for SEO titles, meta descriptions, social previews, headlines, and CTA variants.",
   },
   {
+    title: "FAQ Generator",
+    href: "/faq-generator",
+    body: "SEO FAQ questions, answer snippets, schema-ready copy, objection handling, and CTAs for landing pages.",
+  },
+  {
     title: "Blog Title Generator",
     href: "/blog-title-generator",
     body: "SEO blog titles, snippets, social previews, and CTA angles from one rough topic or keyword.",
