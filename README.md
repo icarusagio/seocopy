@@ -45,6 +45,7 @@ Use it when you need to:
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
+- `/case-study-generator` — customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA use-case page
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
