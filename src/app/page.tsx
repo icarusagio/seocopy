@@ -190,6 +190,11 @@ const useCasePages = [
     body: "Paid search headlines, social ad hooks, landing page copy, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Email Subject Line Generator",
+    href: "/email-subject-line-generator",
+    body: "Subject lines, preview text, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
