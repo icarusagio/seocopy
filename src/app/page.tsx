@@ -200,6 +200,11 @@ const useCasePages = [
     body: "Social captions, post hooks, SEO snippets, landing page copy, social previews, and CTA variants from one campaign brief.",
   },
   {
+    title: "LinkedIn Post Generator",
+    href: "/linkedin-post-generator",
+    body: "LinkedIn hooks, founder-led post drafts, proof bullets, SEO snippets, and CTA variants from one product update or campaign brief.",
+  },
+  {
     title: "Pricing Page Copy Generator",
     href: "/pricing-page-copy-generator",
     body: "Pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA variants from one offer brief.",
