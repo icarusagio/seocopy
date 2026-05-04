@@ -251,6 +251,11 @@ const useCasePages = [
     body: "Pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA variants from one offer brief.",
   },
   {
+    title: "Value Proposition Generator",
+    href: "/value-proposition-generator",
+    body: "Positioning statements, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA variants from one product brief.",
+  },
+  {
     title: "Case Study Generator",
     href: "/case-study-generator",
     body: "Customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA copy from one win brief.",

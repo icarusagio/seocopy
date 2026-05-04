@@ -49,6 +49,7 @@ Use it when you need to:
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
+- `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
 - `/case-study-generator` — customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA use-case page
 - `/testimonial-generator` — customer testimonials, review highlights, social proof snippets, SEO metadata, and CTA variants from raw customer feedback.
 - `/press-release-generator` — press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.
