@@ -76,6 +76,7 @@ Use it when you need to:
 - `/faq-generator` — SEO FAQ questions, answer snippets, schema-ready copy, and CTA use-case page
 - `/blog-title-generator` — SEO blog title and snippet use-case page
 - `/blog-post-outline-generator` — SEO blog outline, content brief, metadata, FAQ, and CTA use-case page
+- `/blog-introduction-generator` — search-intent blog introductions, article openers, metadata, social previews, and CTA use-case page
 
 ## Tech stack
 
