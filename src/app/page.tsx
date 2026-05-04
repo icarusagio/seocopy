@@ -221,6 +221,11 @@ const useCasePages = [
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "Brand Voice Generator",
+    href: "/brand-voice-generator",
+    body: "Brand voice guidelines, tone examples, SEO metadata, landing page copy, and CTA variants from one positioning brief.",
+  },
+  {
     title: "Ad Copy Generator",
     href: "/ad-copy-generator",
     body: "Paid search headlines, social ad hooks, landing page copy, SEO snippets, and CTA variants from one campaign brief.",
