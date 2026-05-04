@@ -43,6 +43,7 @@ Use it when you need to:
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
 - `/ad-copy-generator` — paid search, social ad hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
+- `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/youtube-description-generator` — YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA use-case page
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page

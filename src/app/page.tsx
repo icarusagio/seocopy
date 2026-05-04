@@ -203,7 +203,12 @@ const useCasePages = [
   {
     title: "Email Subject Line Generator",
     href: "/email-subject-line-generator",
-    body: "Subject lines, preview text, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
+    body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
+    title: "Newsletter Copy Generator",
+    href: "/newsletter-copy-generator",
+    body: "Newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA variants from one rough email brief.",
   },
   {
     title: "Social Media Caption Generator",
