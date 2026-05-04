@@ -286,6 +286,11 @@ const useCasePages = [
     body: "Press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.",
   },
   {
+    title: "Webinar Landing Page Generator",
+    href: "/webinar-landing-page-generator",
+    body: "Webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
