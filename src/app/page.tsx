@@ -96,6 +96,11 @@ const useCasePages = [
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",
   },
   {
+    title: "Blog Conclusion Generator",
+    href: "/blog-conclusion-generator",
+    body: "Article wrap-ups, recap paragraphs, final CTAs, SEO metadata, and social preview copy from one content brief.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",

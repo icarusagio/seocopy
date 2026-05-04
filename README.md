@@ -77,6 +77,7 @@ Use it when you need to:
 - `/blog-title-generator` — SEO blog title and snippet use-case page
 - `/blog-post-outline-generator` — SEO blog outline, content brief, metadata, FAQ, and CTA use-case page
 - `/blog-introduction-generator` — search-intent blog introductions, article openers, metadata, social previews, and CTA use-case page
+- `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
 
 ## Tech stack
 
