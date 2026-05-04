@@ -216,6 +216,11 @@ const useCasePages = [
     body: "YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA variants from one video brief.",
   },
   {
+    title: "Podcast Show Notes Generator",
+    href: "/podcast-show-notes-generator",
+    body: "Podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA variants from one episode brief.",
+  },
+  {
     title: "LinkedIn Post Generator",
     href: "/linkedin-post-generator",
     body: "LinkedIn hooks, founder-led post drafts, proof bullets, SEO snippets, and CTA variants from one product update or campaign brief.",
