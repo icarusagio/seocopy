@@ -106,6 +106,11 @@ const useCasePages = [
     body: "Article wrap-ups, recap paragraphs, final CTAs, SEO metadata, and social preview copy from one content brief.",
   },
   {
+    title: "Competitor Comparison Page Generator",
+    href: "/competitor-comparison-page-generator",
+    body: "Comparison pages, alternative-page positioning, proof sections, FAQs, SEO metadata, and CTAs from one competitor brief.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",

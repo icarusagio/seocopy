@@ -80,6 +80,7 @@ Use it when you need to:
 - `/content-brief-generator` — SEO content brief, outline, metadata, internal-link, FAQ, and CTA use-case page
 - `/blog-introduction-generator` — search-intent blog introductions, article openers, metadata, social previews, and CTA use-case page
 - `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
+- `/competitor-comparison-page-generator` — competitor comparison pages, alternative-page positioning, proof sections, FAQs, metadata, and CTAs use-case page
 
 ## Tech stack
 
