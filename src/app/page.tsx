@@ -211,6 +211,11 @@ const useCasePages = [
     body: "Social captions, post hooks, SEO snippets, landing page copy, social previews, and CTA variants from one campaign brief.",
   },
   {
+    title: "YouTube Description Generator",
+    href: "/youtube-description-generator",
+    body: "YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA variants from one video brief.",
+  },
+  {
     title: "LinkedIn Post Generator",
     href: "/linkedin-post-generator",
     body: "LinkedIn hooks, founder-led post drafts, proof bullets, SEO snippets, and CTA variants from one product update or campaign brief.",
