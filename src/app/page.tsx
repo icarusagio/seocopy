@@ -241,6 +241,11 @@ const useCasePages = [
     body: "Launch page headlines, announcement copy, SEO snippets, social previews, benefit bullets, and CTA variants from one launch brief.",
   },
   {
+    title: "Call to Action Generator",
+    href: "/call-to-action-generator",
+    body: "CTA buttons, supporting microcopy, objection reducers, SEO snippets, and headline angles for pages that need more clicks.",
+  },
+  {
     title: "Brand Voice Generator",
     href: "/brand-voice-generator",
     body: "Brand voice guidelines, tone examples, SEO metadata, landing page copy, and CTA variants from one positioning brief.",
