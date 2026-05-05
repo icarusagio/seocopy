@@ -61,6 +61,7 @@ Use it when you need to:
 - `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
 - `/sales-page-copy-generator` — long-form sales page copy, proof, objection handling, FAQ, SEO snippets, and CTA use-case page
 - `/proposal-generator` — client proposal positioning, scope, pricing rationale, proof, FAQs, follow-up copy, and CTA use-case page
+- `/image-alt-text-generator` — accessible image alt text, SEO captions, filename ideas, product image snippets, and metadata use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page

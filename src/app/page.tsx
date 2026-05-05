@@ -201,6 +201,11 @@ const useCasePages = [
     body: "Client proposal positioning, scope, pricing rationale, proof, FAQs, follow-up copy, and CTA variants from one project brief.",
   },
   {
+    title: "Image Alt Text Generator",
+    href: "/image-alt-text-generator",
+    body: "Accessible image alt text, SEO captions, filename ideas, product image snippets, and metadata variants from one image brief.",
+  },
+  {
     title: "Meta Description Generator",
     href: "/meta-description-generator",
     body: "Click-worthy meta descriptions, SEO title ideas, and OG copy for pages that need more search traffic.",
