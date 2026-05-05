@@ -196,6 +196,11 @@ const useCasePages = [
     body: "Long-form sales page headlines, proof sections, objection handling, FAQs, SEO snippets, and CTA variants from one offer brief.",
   },
   {
+    title: "Proposal Generator",
+    href: "/proposal-generator",
+    body: "Client proposal positioning, scope, pricing rationale, proof, FAQs, follow-up copy, and CTA variants from one project brief.",
+  },
+  {
     title: "Meta Description Generator",
     href: "/meta-description-generator",
     body: "Click-worthy meta descriptions, SEO title ideas, and OG copy for pages that need more search traffic.",
