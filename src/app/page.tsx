@@ -106,6 +106,11 @@ const useCasePages = [
     body: "Prioritized SEO audit findings, metadata rewrites, content gaps, FAQ ideas, and conversion CTAs from one URL or crawl brief.",
   },
   {
+    title: "SEO Keyword Generator",
+    href: "/seo-keyword-generator",
+    body: "Keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic.",
+  },
+  {
     title: "Blog Introduction Generator",
     href: "/blog-introduction-generator",
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",
