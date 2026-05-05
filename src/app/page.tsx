@@ -246,6 +246,11 @@ const useCasePages = [
     body: "CTA buttons, supporting microcopy, objection reducers, SEO snippets, and headline angles for pages that need more clicks.",
   },
   {
+    title: "Cold Email Generator",
+    href: "/cold-email-generator",
+    body: "Cold email drafts, subject lines, follow-up sequences, CTA options, and outreach landing snippets from one prospect or offer brief.",
+  },
+  {
     title: "Brand Voice Generator",
     href: "/brand-voice-generator",
     body: "Brand voice guidelines, tone examples, SEO metadata, landing page copy, and CTA variants from one positioning brief.",
