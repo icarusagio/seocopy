@@ -41,6 +41,7 @@ Use it when you need to:
 - `/homepage-title-generator` — homepage SEO title and hero copy use-case page
 - `/website-copy-generator` — website copy use-case page
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
+- `/product-launch-copy-generator` — product launch page headlines, announcement copy, SEO snippets, social previews, and CTA use-case page
 - `/brand-voice-generator` — brand voice guidelines, tone examples, SEO metadata, messaging angles, and CTA use-case page
 - `/ad-copy-generator` — paid search, social ad hooks, landing page copy, SEO snippets, and CTA use-case page
 - `/google-ads-copy-generator` — Google Ads headlines, descriptions, PPC landing page angles, SEO snippets, and CTA use-case page
