@@ -58,6 +58,7 @@ Use it when you need to:
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
 - `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
 - `/feature-benefit-generator` — features-to-benefits copy, proof bullets, objection reducers, SEO snippets, and CTA use-case page
+- `/microcopy-generator` — UX microcopy, form helper text, empty states, confirmations, errors, CTA labels, and SEO snippets use-case page
 - `/case-study-generator` — customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA use-case page
 - `/testimonial-generator` — customer testimonials, review highlights, social proof snippets, SEO metadata, and CTA variants from raw customer feedback.
 - `/press-release-generator` — press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.

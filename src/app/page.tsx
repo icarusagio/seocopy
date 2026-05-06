@@ -346,6 +346,11 @@ const useCasePages = [
     body: "Turn raw features and specs into buyer-focused benefits, proof bullets, objection reducers, SEO snippets, and CTA angles.",
   },
   {
+    title: "Microcopy Generator",
+    href: "/microcopy-generator",
+    body: "UX microcopy, form helper text, empty states, confirmations, errors, CTA labels, and SEO snippets from one product flow brief.",
+  },
+  {
     title: "Case Study Generator",
     href: "/case-study-generator",
     body: "Customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA copy from one win brief.",
