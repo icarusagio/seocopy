@@ -336,6 +336,11 @@ const useCasePages = [
     body: "Positioning statements, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "Feature Benefit Generator",
+    href: "/feature-benefit-generator",
+    body: "Turn raw features and specs into buyer-focused benefits, proof bullets, objection reducers, SEO snippets, and CTA angles.",
+  },
+  {
     title: "Case Study Generator",
     href: "/case-study-generator",
     body: "Customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA copy from one win brief.",
