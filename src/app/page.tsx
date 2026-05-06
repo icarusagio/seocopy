@@ -341,6 +341,11 @@ const useCasePages = [
     body: "Positioning statements, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "Unique Selling Proposition Generator",
+    href: "/unique-selling-proposition-generator",
+    body: "USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA variants from one product or service brief.",
+  },
+  {
     title: "Feature Benefit Generator",
     href: "/feature-benefit-generator",
     body: "Turn raw features and specs into buyer-focused benefits, proof bullets, objection reducers, SEO snippets, and CTA angles.",
