@@ -206,6 +206,11 @@ const useCasePages = [
     body: "Hero headlines, subheadlines, SEO metadata, social previews, and CTA variants for faster landing page tests.",
   },
   {
+    title: "Hero Headline Generator",
+    href: "/hero-headline-generator",
+    body: "Conversion-focused hero headlines, subheadlines, CTA variants, proof bullets, and SEO snippets from one offer brief.",
+  },
+  {
     title: "Sales Page Copy Generator",
     href: "/sales-page-copy-generator",
     body: "Long-form sales page headlines, proof sections, objection handling, FAQs, SEO snippets, and CTA variants from one offer brief.",

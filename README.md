@@ -64,6 +64,7 @@ Use it when you need to:
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
+- `/hero-headline-generator` — conversion-focused hero headlines, subheadlines, CTA variants, proof bullets, and SEO snippets use-case page
 - `/sales-page-copy-generator` — long-form sales page copy, proof, objection handling, FAQ, SEO snippets, and CTA use-case page
 - `/proposal-generator` — client proposal positioning, scope, pricing rationale, proof, FAQs, follow-up copy, and CTA use-case page
 - `/image-alt-text-generator` — accessible image alt text, SEO captions, filename ideas, product image snippets, and metadata use-case page
