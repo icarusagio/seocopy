@@ -90,6 +90,7 @@ Use it when you need to:
 - `/faq-generator` — SEO FAQ questions, answer snippets, schema-ready copy, and CTA use-case page
 - `/blog-title-generator` — SEO blog title and snippet use-case page
 - `/blog-post-outline-generator` — SEO blog outline, content brief, metadata, FAQ, and CTA use-case page
+- `/blog-post-generator` — SEO blog post drafts, metadata, FAQs, social previews, and CTA use-case page
 - `/content-brief-generator` — SEO content brief, outline, metadata, internal-link, FAQ, and CTA use-case page
 - `/seo-content-generator` — SEO metadata, outlines, FAQ ideas, social previews, and CTA variants from one keyword, URL, or offer brief
 - `/seo-audit-report-generator` — prioritized SEO audit findings, metadata rewrites, content gaps, FAQ ideas, and conversion CTAs from one URL or crawl brief

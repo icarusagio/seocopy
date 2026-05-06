@@ -91,6 +91,11 @@ const useCasePages = [
     body: "SEO blog outlines, search-intent angles, H2 structures, FAQ sections, metadata, and CTA variants from one topic brief.",
   },
   {
+    title: "Blog Post Generator",
+    href: "/blog-post-generator",
+    body: "SEO blog post drafts, metadata, FAQs, social previews, and CTA angles from one topic, keyword, URL, or content brief.",
+  },
+  {
     title: "Content Brief Generator",
     href: "/content-brief-generator",
     body: "Search intent, outlines, metadata, FAQ ideas, internal links, and CTAs for SEO content assignments.",
