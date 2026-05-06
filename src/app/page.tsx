@@ -39,6 +39,78 @@ const pricing = [
   },
 ];
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://seocopy.vercel.app/#app",
+      name: "SEOCopy",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      url: "https://seocopy.vercel.app/",
+      description:
+        "AI SEO metadata and landing page copy generator for founders, marketers, and Shopify merchants.",
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Free",
+          price: "0",
+          priceCurrency: "USD",
+          url: "https://seocopy.vercel.app/generate",
+          description: "Two free AI SEO copy generations with no signup.",
+        },
+        {
+          "@type": "Offer",
+          name: "Pay Per Use",
+          price: "5",
+          priceCurrency: "USD",
+          url: "https://seocopy.vercel.app/generate?plan=one-time",
+          description: "One paid SEO or landing page copy generation.",
+        },
+        {
+          "@type": "Offer",
+          name: "Monthly",
+          price: "19",
+          priceCurrency: "USD",
+          url: "https://seocopy.vercel.app/generate?plan=subscription",
+          description: "Unlimited SEO and landing page copy generations for teams.",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://seocopy.vercel.app/#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What can SEOCopy generate?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SEOCopy generates SEO titles, meta descriptions, Open Graph copy, landing page headlines, subheadlines, CTAs, FAQs, and campaign copy variants from a URL, keyword, product description, or rough offer brief.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I try SEOCopy for free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. The free plan includes two AI generations so marketers and founders can test the workflow before buying a single generation or monthly access.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who is SEOCopy built for?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SEOCopy is built for founders, Shopify merchants, content marketers, agencies, and small businesses that need publish-ready SEO metadata and conversion copy quickly.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 const useCasePages = [
   {
     title: "AI SEO Copy Generator",
@@ -385,6 +457,10 @@ const useCasePages = [
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className="relative isolate">
         <div className="absolute inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.22),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(249,115,22,0.18),_transparent_28%),linear-gradient(180deg,rgba(248,250,252,1),rgba(241,245,249,0.8)_60%,rgba(255,255,255,1))] dark:bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.22),_transparent_26%),radial-gradient(circle_at_top_right,_rgba(251,146,60,0.18),_transparent_24%),linear-gradient(180deg,rgba(2,6,23,1),rgba(15,23,42,0.92)_55%,rgba(2,6,23,1))]" />
         <div className="mx-auto flex max-w-7xl flex-col px-6 pb-24 pt-8 lg:px-10">
