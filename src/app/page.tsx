@@ -418,6 +418,11 @@ const useCasePages = [
     body: "USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA variants from one product or service brief.",
   },
   {
+    title: "Website Headline Generator",
+    href: "/website-headline-generator",
+    body: "Homepage headlines, subheadlines, proof bullets, SEO snippets, FAQ ideas, and CTA variants from one website brief.",
+  },
+  {
     title: "Feature Benefit Generator",
     href: "/feature-benefit-generator",
     body: "Turn raw features and specs into buyer-focused benefits, proof bullets, objection reducers, SEO snippets, and CTA angles.",
