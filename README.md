@@ -88,6 +88,7 @@ Use it when you need to:
 - `/real-estate-listing-description-generator` — property listing description and real estate SEO copy use-case page
 - `/restaurant-menu-description-generator` — restaurant menu descriptions, delivery app copy, and hospitality SEO use-case page
 - `/google-business-profile-description-generator` — Google Business Profile descriptions and local SEO copy use-case page
+- `/google-review-response-generator` — Google review replies, service recovery responses, local SEO snippets, FAQs, and CTA use-case page
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/product-bullet-point-generator` — ecommerce product bullet points, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and product pages
 - `/product-comparison-generator` — product comparison pages, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief

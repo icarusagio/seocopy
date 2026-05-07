@@ -283,6 +283,11 @@ const useCasePages = [
     body: "GBP descriptions, local SEO metadata, service blurbs, Google posts, FAQs, and call-focused CTAs for local businesses.",
   },
   {
+    title: "Google Review Response Generator",
+    href: "/google-review-response-generator",
+    body: "Google review replies, service recovery responses, local SEO snippets, FAQs, and CTAs for reputation-focused local businesses.",
+  },
+  {
     title: "Product SEO Title Generator",
     href: "/product-seo-title-generator",
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
