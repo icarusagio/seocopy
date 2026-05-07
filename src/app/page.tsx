@@ -423,6 +423,11 @@ const useCasePages = [
     body: "Homepage headlines, subheadlines, proof bullets, SEO snippets, FAQ ideas, and CTA variants from one website brief.",
   },
   {
+    title: "Product Positioning Generator",
+    href: "/product-positioning-generator",
+    body: "Positioning statements, differentiation angles, messaging pillars, SEO snippets, FAQs, and CTA variants from one product brief.",
+  },
+  {
     title: "Feature Benefit Generator",
     href: "/feature-benefit-generator",
     body: "Turn raw features and specs into buyer-focused benefits, proof bullets, objection reducers, SEO snippets, and CTA angles.",

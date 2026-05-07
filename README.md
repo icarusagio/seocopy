@@ -57,8 +57,9 @@ Use it when you need to:
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
 - `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
-- `/unique-selling-proposition-generator` — USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA use-case page
-- `/website-headline-generator` — website headlines, subheadlines, proof bullets, SEO snippets, FAQs, and CTA use-case page
+- `/unique-selling-proposition-generator` — USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA variants from one product or service brief.
+- `/website-headline-generator` — homepage headlines, subheadlines, proof bullets, SEO snippets, FAQ ideas, and CTA variants from one website brief.
+- `/product-positioning-generator` — product positioning statements, differentiation angles, messaging pillars, SEO snippets, FAQs, and CTA variants from one product brief.
 - `/feature-benefit-generator` — features-to-benefits copy, proof bullets, objection reducers, SEO snippets, and CTA use-case page
 - `/microcopy-generator` — UX microcopy, form helper text, empty states, confirmations, errors, CTA labels, and SEO snippets use-case page
 - `/case-study-generator` — customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA use-case page
