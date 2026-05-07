@@ -228,6 +228,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/product-bullet-point-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/landing-page-copy-generator`,
       lastModified,
       changeFrequency: "weekly",

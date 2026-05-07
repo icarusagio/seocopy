@@ -288,6 +288,11 @@ const useCasePages = [
     body: "Buyer-intent product title tags, meta descriptions, social previews, and PDP copy for ecommerce pages.",
   },
   {
+    title: "Product Bullet Point Generator",
+    href: "/product-bullet-point-generator",
+    body: "Benefit-led product bullets, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and ecommerce PDPs.",
+  },
+  {
     title: "Landing Page Copy Generator",
     href: "/landing-page-copy-generator",
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
