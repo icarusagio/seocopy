@@ -328,6 +328,11 @@ const useCasePages = [
     body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
   },
   {
+    title: "Copywriting Generator",
+    href: "/copywriting-generator",
+    body: "Conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.",
+  },
+  {
     title: "Marketing Copy Generator",
     href: "/marketing-copy-generator",
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",

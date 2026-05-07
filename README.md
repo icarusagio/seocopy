@@ -40,6 +40,7 @@ Use it when you need to:
 - `/ai-page-title-generator` — AI page title and snippet use-case page
 - `/homepage-title-generator` — homepage SEO title and hero copy use-case page
 - `/website-copy-generator` — website copy use-case page
+- `/copywriting-generator` — conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
 - `/product-launch-copy-generator` — product launch page headlines, announcement copy, SEO snippets, social previews, and CTA use-case page
 - `/call-to-action-generator` — CTA buttons, supporting microcopy, objection reducers, SEO snippets, and headline angles use-case page
