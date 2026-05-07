@@ -90,6 +90,7 @@ Use it when you need to:
 - `/google-business-profile-description-generator` — Google Business Profile descriptions and local SEO copy use-case page
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/product-bullet-point-generator` — ecommerce product bullet points, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and product pages
+- `/product-comparison-generator` — product comparison pages, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page

@@ -293,6 +293,11 @@ const useCasePages = [
     body: "Benefit-led product bullets, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and ecommerce PDPs.",
   },
   {
+    title: "Product Comparison Generator",
+    href: "/product-comparison-generator",
+    body: "Comparison-page copy, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief.",
+  },
+  {
     title: "Landing Page Copy Generator",
     href: "/landing-page-copy-generator",
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
