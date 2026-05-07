@@ -243,6 +243,11 @@ const useCasePages = [
     body: "Shopify product and collection meta descriptions, SEO title ideas, social previews, benefit bullets, and CTA copy for ecommerce search traffic.",
   },
   {
+    title: "Shopify Image Alt Text Generator",
+    href: "/shopify-image-alt-text-generator",
+    body: "Shopify product image alt text, collection image descriptions, SEO captions, filename ideas, and accessibility-friendly variants for ecommerce image updates.",
+  },
+  {
     title: "Category Description Generator",
     href: "/category-description-generator",
     body: "SEO category descriptions, collection intros, merchandising angles, metadata, FAQs, and CTAs for ecommerce category pages.",

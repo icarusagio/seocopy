@@ -174,6 +174,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/shopify-image-alt-text-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/category-description-generator`,
       lastModified,
       changeFrequency: "weekly",
