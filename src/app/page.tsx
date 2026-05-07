@@ -233,6 +233,11 @@ const useCasePages = [
     body: "Search titles, meta descriptions, collection intros, social previews, and CTAs for Shopify collections and ecommerce category pages.",
   },
   {
+    title: "Shopify Collection Description Generator",
+    href: "/shopify-collection-description-generator",
+    body: "Shopify collection descriptions, SEO metadata, social previews, benefit bullets, and CTA ideas for category pages and gift guides.",
+  },
+  {
     title: "Category Description Generator",
     href: "/category-description-generator",
     body: "SEO category descriptions, collection intros, merchandising angles, metadata, FAQs, and CTAs for ecommerce category pages.",
