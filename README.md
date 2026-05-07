@@ -81,6 +81,7 @@ Use it when you need to:
 - `/product-page-seo-generator` — ecommerce product page SEO use-case page
 - `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/category-description-generator` — ecommerce category description and merchandising copy use-case page
+- `/shopify-meta-description-generator` — Shopify product and collection meta descriptions, SEO title ideas, social previews, benefit bullets, and CTA copy use-case page
 - `/small-business-seo-copy-generator` — small business SEO, website copy, and CTA use-case page
 - `/service-page-copy-generator` — agency, consultant, and local service page copy use-case page
 - `/local-seo-copy-generator` — local business and service-area SEO copy use-case page
