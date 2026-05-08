@@ -51,8 +51,9 @@ Use it when you need to:
 - `/facebook-ad-copy-generator` — Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy use-case page
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
-- `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, and CTA use-case page
-- `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, and CTA use-case page
+- `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
+- `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
+- `/tiktok-caption-generator` — TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief
 - `/youtube-description-generator` — YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA use-case page
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
