@@ -60,6 +60,7 @@ Use it when you need to:
 - `/twitter-bio-generator` — Twitter/X bios, profile taglines, pinned-post hooks, SEO snippets, social previews, and CTA variants from one profile brief
 - `/youtube-description-generator` — YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA use-case page
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page
+- `/youtube-script-generator` — YouTube scripts, hooks, intros, SEO titles, descriptions, pinned comments, and CTA variants from one creator brief
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
 - `/linkedin-headline-generator` — LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief

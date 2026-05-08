@@ -463,6 +463,11 @@ const useCasePages = [
     body: "YouTube titles, thumbnail hooks, search angles, description openings, and CTA variants from one video brief.",
   },
   {
+    title: "YouTube Script Generator",
+    href: "/youtube-script-generator",
+    body: "Video scripts, hooks, intros, SEO titles, descriptions, pinned comments, and CTA variants from one creator brief.",
+  },
+  {
     title: "Podcast Show Notes Generator",
     href: "/podcast-show-notes-generator",
     body: "Podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA variants from one episode brief.",
