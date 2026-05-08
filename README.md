@@ -72,6 +72,7 @@ Use it when you need to:
 - `/webinar-landing-page-generator` — webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.
 - `/tagline-generator` — brand taglines, slogans, homepage one-liners, SEO snippets, social previews, and CTA variants from one positioning brief.
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
+- `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
 - `/hero-headline-generator` — conversion-focused hero headlines, subheadlines, CTA variants, proof bullets, and SEO snippets use-case page

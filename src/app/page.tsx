@@ -517,6 +517,11 @@ const useCasePages = [
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
   },
+  {
+    title: "App Store Description Generator",
+    href: "/app-store-description-generator",
+    body: "App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTAs from one app brief.",
+  },
 ];
 
 export default function Home() {

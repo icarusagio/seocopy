@@ -503,5 +503,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${siteUrl}/app-store-description-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
 }
