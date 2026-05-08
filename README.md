@@ -61,6 +61,7 @@ Use it when you need to:
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
+- `/linkedin-headline-generator` — LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
 - `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
 - `/unique-selling-proposition-generator` — USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA variants from one product or service brief.
