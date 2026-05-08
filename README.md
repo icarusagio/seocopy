@@ -115,6 +115,7 @@ Use it when you need to:
 - `/seo-keyword-generator` — keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic
 - `/blog-introduction-generator` — search-intent blog introductions, article openers, metadata, social previews, and CTA variants from one topic brief
 - `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
+- `/blog-meta-description-generator` — blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief
 - `/competitor-comparison-page-generator` — competitor comparison pages, alternative-page positioning, proof sections, FAQs, metadata, and CTAs use-case page
 
 ## Tech stack

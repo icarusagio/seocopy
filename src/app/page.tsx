@@ -198,6 +198,11 @@ const useCasePages = [
     body: "Article wrap-ups, recap paragraphs, final CTAs, SEO metadata, and social preview copy from one content brief.",
   },
   {
+    title: "Blog Meta Description Generator",
+    href: "/blog-meta-description-generator",
+    body: "Blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief.",
+  },
+  {
     title: "Competitor Comparison Page Generator",
     href: "/competitor-comparison-page-generator",
     body: "Comparison pages, alternative-page positioning, proof sections, FAQs, SEO metadata, and CTAs from one competitor brief.",
