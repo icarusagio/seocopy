@@ -75,6 +75,7 @@ Use it when you need to:
 - `/case-study-generator` — customer story outlines, interview questions, proof snippets, SEO metadata, pull quotes, and CTA use-case page
 - `/testimonial-generator` — customer testimonials, review highlights, social proof snippets, SEO metadata, and CTA variants from raw customer feedback.
 - `/press-release-generator` — press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.
+- `/press-kit-generator` — company boilerplates, founder bios, product facts, media pitches, FAQs, SEO snippets, and CTAs from one brand or launch brief.
 - `/webinar-landing-page-generator` — webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.
 - `/tagline-generator` — brand taglines, slogans, homepage one-liners, SEO snippets, social previews, and CTA variants from one positioning brief.
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page

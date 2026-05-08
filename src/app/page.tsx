@@ -538,6 +538,11 @@ const useCasePages = [
     body: "Press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.",
   },
   {
+    title: "Press Kit Generator",
+    href: "/press-kit-generator",
+    body: "Company boilerplates, founder bios, product facts, media pitches, FAQs, SEO snippets, and CTAs from one brand or launch brief.",
+  },
+  {
     title: "Webinar Landing Page Generator",
     href: "/webinar-landing-page-generator",
     body: "Webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.",
