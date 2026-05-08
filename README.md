@@ -54,6 +54,7 @@ Use it when you need to:
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/tiktok-caption-generator` — TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief
+- `/pinterest-pin-description-generator` — Pinterest pin descriptions, board SEO copy, keyword angles, idea pin hooks, and CTA variants from one visual campaign brief
 - `/twitter-bio-generator` — Twitter/X bios, profile taglines, pinned-post hooks, SEO snippets, social previews, and CTA variants from one profile brief
 - `/youtube-description-generator` — YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA use-case page
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page

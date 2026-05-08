@@ -396,6 +396,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/pinterest-pin-description-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/twitter-bio-generator`,
       lastModified,
       changeFrequency: "weekly",

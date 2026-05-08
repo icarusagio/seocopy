@@ -428,6 +428,11 @@ const useCasePages = [
     body: "TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief.",
   },
   {
+    title: "Pinterest Pin Description Generator",
+    href: "/pinterest-pin-description-generator",
+    body: "Pinterest pin descriptions, board SEO copy, keyword angles, idea pin hooks, and CTA variants from one visual campaign brief.",
+  },
+  {
     title: "Twitter Bio Generator",
     href: "/twitter-bio-generator",
     body: "Twitter/X bios, profile taglines, pinned-post hooks, SEO snippets, social previews, and CTA variants from one profile brief.",
