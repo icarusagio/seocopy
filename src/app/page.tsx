@@ -423,6 +423,11 @@ const useCasePages = [
     body: "Instagram captions, post hooks, landing page copy, SEO snippets, social previews, and CTA variants from one offer brief.",
   },
   {
+    title: "Instagram Bio Generator",
+    href: "/instagram-bio-generator",
+    body: "Instagram bios, creator profile taglines, link-in-bio CTAs, keyword angles, and pinned-post hooks from one profile brief.",
+  },
+  {
     title: "TikTok Caption Generator",
     href: "/tiktok-caption-generator",
     body: "TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief.",

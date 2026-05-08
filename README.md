@@ -53,6 +53,7 @@ Use it when you need to:
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
+- `/instagram-bio-generator` — Instagram bios, creator profile taglines, link-in-bio CTAs, keyword angles, and pinned-post hooks from one profile brief
 - `/tiktok-caption-generator` — TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief
 - `/pinterest-pin-description-generator` — Pinterest pin descriptions, board SEO copy, keyword angles, idea pin hooks, and CTA variants from one visual campaign brief
 - `/twitter-bio-generator` — Twitter/X bios, profile taglines, pinned-post hooks, SEO snippets, social previews, and CTA variants from one profile brief
