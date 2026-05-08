@@ -465,7 +465,12 @@ const useCasePages = [
   {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
-    body: "LinkedIn profile headlines, keyword angles, proof-led hooks, and CTA variants from one professional profile brief.",
+    body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
+  },
+  {
+    title: "LinkedIn Summary Generator",
+    href: "/linkedin-summary-generator",
+    body: "LinkedIn About sections, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one profile brief.",
   },
   {
     title: "Pricing Page Copy Generator",
