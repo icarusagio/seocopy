@@ -498,6 +498,11 @@ const useCasePages = [
     body: "Webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.",
   },
   {
+    title: "Tagline Generator",
+    href: "/tagline-generator",
+    body: "Brand taglines, slogans, homepage one-liners, SEO snippets, social previews, and CTA variants from one positioning brief.",
+  },
+  {
     title: "About Us Page Generator",
     href: "/about-us-page-generator",
     body: "About page copy, founder story, mission statements, proof points, FAQs, metadata, and CTAs from rough brand notes.",
