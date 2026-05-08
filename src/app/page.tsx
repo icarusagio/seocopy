@@ -373,6 +373,11 @@ const useCasePages = [
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "AI Copy Rewriter",
+    href: "/ai-copy-rewriter",
+    body: "Rewrite rough website, product, ad, and landing page copy into clearer SEO snippets, headlines, social previews, and CTA variants.",
+  },
+  {
     title: "Product Launch Copy Generator",
     href: "/product-launch-copy-generator",
     body: "Launch page headlines, announcement copy, SEO snippets, social previews, benefit bullets, and CTA variants from one launch brief.",

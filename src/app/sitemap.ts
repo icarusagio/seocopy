@@ -330,6 +330,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/ai-copy-rewriter`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/product-launch-copy-generator`,
       lastModified,
       changeFrequency: "weekly",
