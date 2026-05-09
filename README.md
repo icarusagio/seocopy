@@ -52,6 +52,7 @@ Use it when you need to:
 - `/google-ads-copy-generator` — Google Ads headlines, descriptions, PPC landing page angles, SEO snippets, and CTA use-case page
 - `/facebook-ad-copy-generator` — Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy use-case page
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
+- `/email-marketing-copy-generator` — promotional emails, lifecycle sends, subject lines, preview text, landing snippets, FAQs, and CTA variants from one campaign brief
 - `/email-preview-text-generator` — email preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page

@@ -438,6 +438,11 @@ const useCasePages = [
     body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Email Marketing Copy Generator",
+    href: "/email-marketing-copy-generator",
+    body: "Promotional emails, lifecycle sends, subject lines, preview text, landing snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "Email Preview Text Generator",
     href: "/email-preview-text-generator",
     body: "Preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief.",
