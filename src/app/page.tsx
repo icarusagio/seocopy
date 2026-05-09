@@ -228,6 +228,11 @@ const useCasePages = [
     body: "Amazon-ready product descriptions, SEO titles, feature bullets, keyword angles, A+ content ideas, and campaign copy from product specs.",
   },
   {
+    title: "Amazon Product Title Generator",
+    href: "/amazon-product-title-generator",
+    body: "Amazon listing titles, marketplace SEO snippets, feature-led angles, bullets, and campaign CTAs from one product brief.",
+  },
+  {
     title: "Product Page SEO Generator",
     href: "/product-page-seo-generator",
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",
