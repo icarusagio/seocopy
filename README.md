@@ -42,6 +42,7 @@ Use it when you need to:
 - `/website-copy-generator` — website copy use-case page
 - `/copywriting-generator` — conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
+- `/advertorial-copy-generator` — story-led advertorial hooks, proof sections, SEO snippets, FAQs, and CTA variants for native ad and pre-sell page tests
 - `/ai-copy-rewriter` — rewrite rough website, product, ad, and landing page copy into clearer SEO snippets, headlines, social previews, and CTA variants
 - `/product-launch-copy-generator` — product launch page headlines, announcement copy, SEO snippets, social previews, and CTA use-case page
 - `/call-to-action-generator` — CTA buttons, supporting microcopy, objection reducers, SEO snippets, and headline angles use-case page

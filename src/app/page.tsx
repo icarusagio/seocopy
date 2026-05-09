@@ -378,6 +378,11 @@ const useCasePages = [
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",
   },
   {
+    title: "Advertorial Copy Generator",
+    href: "/advertorial-copy-generator",
+    body: "Story-led advertorial hooks, proof sections, SEO snippets, FAQs, and CTA variants for native ad and pre-sell page tests.",
+  },
+  {
     title: "AI Copy Rewriter",
     href: "/ai-copy-rewriter",
     body: "Rewrite rough website, product, ad, and landing page copy into clearer SEO snippets, headlines, social previews, and CTA variants.",

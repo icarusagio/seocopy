@@ -336,6 +336,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/advertorial-copy-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/ai-copy-rewriter`,
       lastModified,
       changeFrequency: "weekly",
