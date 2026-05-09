@@ -240,6 +240,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/shopify-product-title-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/product-bullet-point-generator`,
       lastModified,
       changeFrequency: "weekly",
