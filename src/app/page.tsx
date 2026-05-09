@@ -428,6 +428,11 @@ const useCasePages = [
     body: "Brand voice guidelines, tone examples, SEO metadata, landing page copy, and CTA variants from one positioning brief.",
   },
   {
+    title: "Brand Story Generator",
+    href: "/brand-story-generator",
+    body: "Founder stories, About page narratives, proof bullets, SEO snippets, social previews, and CTAs from one positioning brief.",
+  },
+  {
     title: "Ad Copy Generator",
     href: "/ad-copy-generator",
     body: "Paid search headlines, social ad hooks, landing page copy, SEO snippets, and CTA variants from one campaign brief.",
