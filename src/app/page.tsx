@@ -193,6 +193,11 @@ const useCasePages = [
     body: "Readable URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages.",
   },
   {
+    title: "Schema Markup Generator",
+    href: "/schema-markup-generator",
+    body: "Schema type recommendations, JSON-LD starter copy, FAQ snippets, metadata, and validation notes for richer search results.",
+  },
+  {
     title: "Blog Introduction Generator",
     href: "/blog-introduction-generator",
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",
