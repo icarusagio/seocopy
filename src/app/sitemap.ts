@@ -384,6 +384,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/sms-marketing-copy-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/newsletter-copy-generator`,
       lastModified,
       changeFrequency: "weekly",

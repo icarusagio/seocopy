@@ -418,6 +418,11 @@ const useCasePages = [
     body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "SMS Marketing Copy Generator",
+    href: "/sms-marketing-copy-generator",
+    body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "Newsletter Copy Generator",
     href: "/newsletter-copy-generator",
     body: "Newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA variants from one rough email brief.",
