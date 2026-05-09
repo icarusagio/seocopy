@@ -109,6 +109,7 @@ Use it when you need to:
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/shopify-product-title-generator` — Shopify product titles, SEO title tags, collection angles, social previews, and PDP copy variants from one product brief
 - `/product-name-generator` — brandable product names, ecommerce listing titles, SEO snippets, social previews, and launch copy angles from one product brief
+- `/product-name-ideas-generator` — product name ideas, naming territories, SEO listing titles, social previews, and launch copy from one product brief
 - `/product-bullet-point-generator` — ecommerce product bullet points, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and product pages
 - `/product-comparison-generator` — product comparison pages, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
