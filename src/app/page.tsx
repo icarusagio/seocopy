@@ -188,6 +188,11 @@ const useCasePages = [
     body: "Keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic.",
   },
   {
+    title: "SEO Friendly URL Generator",
+    href: "/seo-friendly-url-generator",
+    body: "Readable URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages.",
+  },
+  {
     title: "Blog Introduction Generator",
     href: "/blog-introduction-generator",
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",
