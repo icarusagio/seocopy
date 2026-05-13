@@ -119,6 +119,7 @@ Use it when you need to:
 - `/free-seo-copy-generator` — free SEO copy trial use-case page
 - `/faq-generator` — SEO FAQ questions, answer snippets, schema-ready copy, and CTA use-case page
 - `/blog-title-generator` — SEO blog title and snippet use-case page
+- `/blog-topic-generator` — SEO blog topic ideas, search-intent angles, metadata prompts, FAQs, internal links, and CTA direction from one product or keyword brief
 - `/blog-post-outline-generator` — SEO blog outline, content brief, metadata, FAQ, and CTA use-case page
 - `/blog-post-generator` — SEO blog post drafts, metadata, FAQs, social previews, and CTA use-case page
 - `/content-brief-generator` — SEO content brief, outline, metadata, internal-link, FAQ, and CTA use-case page
