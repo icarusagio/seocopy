@@ -127,6 +127,7 @@ Use it when you need to:
 - `/seo-keyword-generator` — keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic
 - `/seo-friendly-url-generator` — SEO-friendly URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages
 - `/schema-markup-generator` — schema type recommendations, JSON-LD starter copy, FAQ snippets, metadata, and validation notes for richer search results
+- `/content-calendar-generator` — SEO content calendar ideas, publishing plans, metadata prompts, FAQ angles, and CTA direction from one product or audience brief
 - `/blog-introduction-generator` — search-intent blog introductions, article openers, metadata, social previews, and CTA variants from one topic brief
 - `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
 - `/blog-meta-description-generator` — blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief
