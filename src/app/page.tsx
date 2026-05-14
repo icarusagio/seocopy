@@ -133,6 +133,11 @@ const useCasePages = [
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
   },
   {
+    title: "Shopify App Store Listing Generator",
+    href: "/shopify-app-store-listing-generator",
+    body: "App subtitles, listing copy, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs for Shopify app launches.",
+  },
+  {
     title: "Startup SEO Copy Generator",
     href: "/startup-seo-copy-generator",
     body: "Search snippets, hero copy, social previews, and CTA variants for founder-led launches.",

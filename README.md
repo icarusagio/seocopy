@@ -115,6 +115,7 @@ Use it when you need to:
 - `/product-bullet-point-generator` — ecommerce product bullet points, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and product pages
 - `/product-comparison-generator` — product comparison pages, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
+- `/shopify-app-store-listing-generator` — Shopify App Store listing copy, app subtitles, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs from one app brief
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page
 - `/free-seo-copy-generator` — free SEO copy trial use-case page
