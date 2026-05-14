@@ -94,6 +94,7 @@ Use it when you need to:
 - `/proposal-generator` — client proposal positioning, scope, pricing rationale, proof, FAQs, follow-up copy, and CTA use-case page
 - `/image-alt-text-generator` — accessible image alt text, SEO captions, filename ideas, product image snippets, and metadata use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
+- `/ai-product-description-generator` — AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, Shopify and Amazon listing angles, FAQs, and CTAs from one product brief
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
 - `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page

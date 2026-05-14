@@ -243,6 +243,11 @@ const useCasePages = [
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
   },
   {
+    title: "AI Product Description Generator",
+    href: "/ai-product-description-generator",
+    body: "AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, and Shopify/Amazon listing angles from one product brief.",
+  },
+  {
     title: "Shopify Product Description Generator",
     href: "/shopify-product-description-generator",
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",

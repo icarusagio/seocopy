@@ -24,6 +24,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "ai-product-description-generator",
+    requiredTexts: [
+      "AI Product Description Generator",
+      "AI product descriptions",
+      "feature-to-benefit product copy",
+      "ecommerce SEO snippets",
+      "Shopify and Amazon listing angles",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
