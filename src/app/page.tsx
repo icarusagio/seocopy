@@ -353,6 +353,11 @@ const useCasePages = [
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
   },
   {
+    title: "B2B Landing Page Copy Generator",
+    href: "/b2b-landing-page-copy-generator",
+    body: "Demo-focused B2B page copy, proof sections, objection handling, SEO snippets, FAQs, and sales CTAs from one offer brief.",
+  },
+  {
     title: "Landing Page Headline Generator",
     href: "/landing-page-headline-generator",
     body: "Hero headlines, subheadlines, SEO metadata, social previews, and CTA variants for faster landing page tests.",

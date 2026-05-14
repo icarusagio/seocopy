@@ -86,6 +86,7 @@ Use it when you need to:
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
 - `/landing-page-copy-generator` — landing page copy use-case page
+- `/b2b-landing-page-copy-generator` — demo-focused B2B page copy, proof sections, objection handling, SEO snippets, FAQs, and sales CTAs from one offer brief
 - `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
 - `/hero-headline-generator` — conversion-focused hero headlines, subheadlines, CTA variants, proof bullets, and SEO snippets use-case page
 - `/sales-page-copy-generator` — long-form sales page copy, proof, objection handling, FAQ, SEO snippets, and CTA use-case page
