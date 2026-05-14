@@ -35,6 +35,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "linkedin-ad-copy-generator",
+    requiredTexts: [
+      "LinkedIn Ad Copy Generator",
+      "LinkedIn ad copy",
+      "B2B paid social hooks",
+      "sponsored content variants",
+      "lead-gen CTA angles",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

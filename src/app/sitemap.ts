@@ -474,6 +474,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/linkedin-ad-copy-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/email-subject-line-generator`,
       lastModified,
       changeFrequency: "weekly",

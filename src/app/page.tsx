@@ -573,6 +573,11 @@ const useCasePages = [
     body: "LinkedIn hooks, founder-led post drafts, proof bullets, SEO snippets, and CTA variants from one product update or campaign brief.",
   },
   {
+    title: "LinkedIn Ad Copy Generator",
+    href: "/linkedin-ad-copy-generator",
+    body: "LinkedIn ad copy, B2B paid social hooks, sponsored content variants, lead-gen CTA angles, landing snippets, and FAQs from one campaign brief.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
