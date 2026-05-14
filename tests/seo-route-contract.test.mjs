@@ -1,18 +1,18 @@
 import { readFileSync, existsSync } from "node:fs";
 import assert from "node:assert/strict";
 
-const route = "shopify-app-store-listing-generator";
+const route = "amazon-bullet-point-generator";
 const routePath = new URL(`../src/app/${route}/page.tsx`, import.meta.url);
 
 assert.ok(existsSync(routePath), `Missing route page for /${route}`);
 
 const page = readFileSync(routePath, "utf8");
 for (const requiredText of [
-  "Shopify App Store Listing Generator",
-  "Shopify App Store listing copy",
-  "app subtitle",
+  "Amazon Bullet Point Generator",
+  "Amazon bullet points",
   "feature bullets",
-  "merchant-facing benefits",
+  "marketplace SEO",
+  "benefit-led listing bullets",
   `/generate?source=${route}`,
   "FAQPage",
 ]) {

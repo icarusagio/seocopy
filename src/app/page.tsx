@@ -263,6 +263,11 @@ const useCasePages = [
     body: "Amazon listing titles, marketplace SEO snippets, feature-led angles, bullets, and campaign CTAs from one product brief.",
   },
   {
+    title: "Amazon Bullet Point Generator",
+    href: "/amazon-bullet-point-generator",
+    body: "Amazon bullet points, feature bullets, marketplace SEO snippets, benefit-led listing bullets, FAQs, and CTAs from one product brief.",
+  },
+  {
     title: "Product Page SEO Generator",
     href: "/product-page-seo-generator",
     body: "SEO titles, meta descriptions, benefit bullets, social previews, and CTAs for ecommerce product pages.",

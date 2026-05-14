@@ -97,6 +97,7 @@ Use it when you need to:
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
 - `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page
 - `/amazon-product-title-generator` — Amazon listing titles, marketplace SEO snippets, feature-led angles, bullets, and campaign CTAs from one product brief
+- `/amazon-bullet-point-generator` — Amazon bullet points, feature bullets, marketplace SEO snippets, benefit-led listing bullets, FAQs, and CTAs from one product brief
 - `/product-page-seo-generator` — ecommerce product page SEO use-case page
 - `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/category-description-generator` — ecommerce category description and merchandising copy use-case page
