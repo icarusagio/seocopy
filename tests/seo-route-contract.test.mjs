@@ -57,6 +57,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "email-sequence-generator",
+    requiredTexts: [
+      "Email Sequence Generator",
+      "email sequence copy",
+      "welcome flows",
+      "product launches",
+      "sales nurture",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

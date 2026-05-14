@@ -583,6 +583,11 @@ const useCasePages = [
     body: "Sales emails, launch announcements, lifecycle nurture copy, follow-ups, subject lines, and CTA variants from one campaign brief.",
   },
   {
+    title: "Email Sequence Generator",
+    href: "/email-sequence-generator",
+    body: "Welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
