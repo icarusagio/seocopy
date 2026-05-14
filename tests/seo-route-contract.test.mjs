@@ -79,6 +79,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "abandoned-cart-email-generator",
+    requiredTexts: [
+      "Abandoned Cart Email Generator",
+      "abandoned cart emails",
+      "cart recovery sequences",
+      "discount and urgency angles",
+      "Shopify recovery copy",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
