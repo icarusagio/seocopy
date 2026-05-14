@@ -208,6 +208,11 @@ const useCasePages = [
     body: "SEO content calendar ideas, publishing plans, metadata prompts, FAQ angles, and CTA direction from one product or audience brief.",
   },
   {
+    title: "Lead Magnet Generator",
+    href: "/lead-magnet-generator",
+    body: "Lead magnet ideas, opt-in page copy, SEO snippets, nurture email angles, FAQs, and CTAs from one audience or offer brief.",
+  },
+  {
     title: "Blog Introduction Generator",
     href: "/blog-introduction-generator",
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",
