@@ -68,6 +68,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "review-request-email-generator",
+    requiredTexts: [
+      "Review Request Email Generator",
+      "review request emails",
+      "post-purchase review flows",
+      "customer feedback prompts",
+      "testimonial collection CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

@@ -588,6 +588,11 @@ const useCasePages = [
     body: "Welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief.",
   },
   {
+    title: "Review Request Email Generator",
+    href: "/review-request-email-generator",
+    body: "Review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
