@@ -46,6 +46,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "ai-email-writer-generator",
+    requiredTexts: [
+      "AI Email Writer Generator",
+      "AI email writer",
+      "sales emails",
+      "launch announcements",
+      "lifecycle nurture copy",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

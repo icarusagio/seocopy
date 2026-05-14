@@ -578,6 +578,11 @@ const useCasePages = [
     body: "LinkedIn ad copy, B2B paid social hooks, sponsored content variants, lead-gen CTA angles, landing snippets, and FAQs from one campaign brief.",
   },
   {
+    title: "AI Email Writer Generator",
+    href: "/ai-email-writer-generator",
+    body: "Sales emails, launch announcements, lifecycle nurture copy, follow-ups, subject lines, and CTA variants from one campaign brief.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
