@@ -145,6 +145,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "discount-email-generator",
+    requiredTexts: [
+      "Discount Email Generator",
+      "discount emails",
+      "promo code announcements",
+      "limited-time offer angles",
+      "coupon redemption CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

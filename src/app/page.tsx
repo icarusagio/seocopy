@@ -518,6 +518,11 @@ const useCasePages = [
     body: "Post-purchase emails, order confirmation follow-ups, cross-sell recommendations, second-purchase CTAs, FAQs, and SEO snippets from one customer moment.",
   },
   {
+    title: "Discount Email Generator",
+    href: "/discount-email-generator",
+    body: "Discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief.",
+  },
+  {
     title: "SMS Marketing Copy Generator",
     href: "/sms-marketing-copy-generator",
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",

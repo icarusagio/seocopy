@@ -57,6 +57,7 @@ Use it when you need to:
 - `/email-preview-text-generator` — email preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief
 - `/winback-email-generator` — winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, FAQs, and CTA variants from one retention brief
 - `/post-purchase-email-generator` — post-purchase emails, order confirmation follow-ups, cross-sell recommendations, second-purchase CTAs, FAQs, and SEO snippets from one customer moment
+- `/discount-email-generator` — discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
