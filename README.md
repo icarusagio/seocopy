@@ -55,6 +55,7 @@ Use it when you need to:
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
 - `/email-marketing-copy-generator` — promotional emails, lifecycle sends, subject lines, preview text, landing snippets, FAQs, and CTA variants from one campaign brief
 - `/email-preview-text-generator` — email preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief
+- `/winback-email-generator` — winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, FAQs, and CTA variants from one retention brief
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page

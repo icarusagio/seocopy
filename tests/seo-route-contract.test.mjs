@@ -123,6 +123,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "winback-email-generator",
+    requiredTexts: [
+      "Winback Email Generator",
+      "winback emails",
+      "customer reactivation campaigns",
+      "lapsed-customer offers",
+      "subscription renewal nudges",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

@@ -508,6 +508,11 @@ const useCasePages = [
     body: "Preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief.",
   },
   {
+    title: "Winback Email Generator",
+    href: "/winback-email-generator",
+    body: "Winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, and CTA variants from one retention brief.",
+  },
+  {
     title: "SMS Marketing Copy Generator",
     href: "/sms-marketing-copy-generator",
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",
