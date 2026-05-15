@@ -576,6 +576,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/abandoned-cart-sms-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/newsletter-copy-generator`,
       lastModified,
       changeFrequency: "weekly",

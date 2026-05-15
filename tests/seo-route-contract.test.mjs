@@ -201,6 +201,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "abandoned-cart-sms-generator",
+    requiredTexts: [
+      "Abandoned Cart SMS Generator",
+      "abandoned cart SMS",
+      "Shopify cart recovery texts",
+      "discount and urgency reminders",
+      "compliance-safe opt-out language",
+      "FAQPage",
+    ],
+  },
+  {
     route: "podcast-title-generator",
     requiredTexts: [
       "Podcast Title Generator",

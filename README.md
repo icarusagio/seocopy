@@ -60,6 +60,7 @@ Use it when you need to:
 - `/discount-email-generator` — discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief
 - `/checkout-page-copy-generator` — checkout page copy, trust-building payment CTAs, shipping and returns reassurance, checkout FAQ snippets, and conversion copy from one checkout brief
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
+- `/abandoned-cart-sms-generator` — abandoned cart SMS, Shopify cart recovery texts, discount and urgency reminders, compliance-safe opt-out language, and mobile CTAs from one checkout brief
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page

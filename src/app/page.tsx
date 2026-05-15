@@ -548,6 +548,11 @@ const useCasePages = [
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Abandoned Cart SMS Generator",
+    href: "/abandoned-cart-sms-generator",
+    body: "Abandoned cart SMS, Shopify cart recovery texts, discount and urgency reminders, compliance-safe opt-out language, and mobile CTAs from one checkout brief.",
+  },
+  {
     title: "Newsletter Copy Generator",
     href: "/newsletter-copy-generator",
     body: "Newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA variants from one rough email brief.",
