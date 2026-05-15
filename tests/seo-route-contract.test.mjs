@@ -36,6 +36,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "landing-page-ab-test-generator",
+    requiredTexts: [
+      "Landing Page A/B Test Generator",
+      "landing page A/B tests",
+      "variant hypotheses",
+      "experiment-ready copy blocks",
+      "conversion test ideas",
+      "FAQPage",
+    ],
+  },
+  {
     route: "ai-product-description-generator",
     requiredTexts: [
       "AI Product Description Generator",

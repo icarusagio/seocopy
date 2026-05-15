@@ -99,8 +99,9 @@ Use it when you need to:
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
 - `/landing-page-copy-generator` — landing page copy use-case page
-- `/landing-page-outline-generator` — landing page outline, section-by-section page plan, conversion flow, wireframe-ready copy brief, FAQs, and CTA use-case page
+- `/landing-page-outline-generator` — landing page outlines, section-by-section page plans, conversion flows, wireframe-ready copy briefs, SEO snippets, FAQs, and CTAs from one offer brief
 - `/landing-page-wireframe-generator` — landing page wireframes, section layout blocks, above-the-fold structure, conversion-ready wireframe notes, FAQs, and CTA direction from one offer brief
+- `/landing-page-ab-test-generator` — landing page A/B tests, variant hypotheses, experiment-ready copy blocks, conversion test ideas, FAQs, and CTA directions from one offer brief
 - `/b2b-landing-page-copy-generator` — demo-focused B2B page copy, proof sections, objection handling, SEO snippets, FAQs, and sales CTAs from one offer brief
 - `/landing-page-headline-generator` — landing page hero headline, SEO metadata, social preview, and CTA use-case page
 - `/hero-headline-generator` — conversion-focused hero headlines, subheadlines, CTA variants, proof bullets, and SEO snippets use-case page

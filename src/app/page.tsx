@@ -383,6 +383,11 @@ const useCasePages = [
     body: "Landing page wireframes, section layout blocks, above-the-fold structure, conversion-ready wireframe notes, FAQs, and CTA direction from one offer brief.",
   },
   {
+    title: "Landing Page A/B Test Generator",
+    href: "/landing-page-ab-test-generator",
+    body: "Landing page A/B tests, variant hypotheses, experiment-ready copy blocks, conversion test ideas, FAQs, and CTA directions from one offer brief.",
+  },
+  {
     title: "B2B Landing Page Copy Generator",
     href: "/b2b-landing-page-copy-generator",
     body: "Demo-focused B2B page copy, proof sections, objection handling, SEO snippets, FAQs, and sales CTAs from one offer brief.",
