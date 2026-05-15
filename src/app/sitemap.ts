@@ -504,6 +504,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/browse-abandonment-email-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/welcome-email-generator`,
       lastModified,
       changeFrequency: "weekly",

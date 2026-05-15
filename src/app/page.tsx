@@ -598,6 +598,11 @@ const useCasePages = [
     body: "Abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment.",
   },
   {
+    title: "Browse Abandonment Email Generator",
+    href: "/browse-abandonment-email-generator",
+    body: "Browse abandonment emails, product-view recovery flows, personalized product reminders, Shopify browse recovery copy, FAQs, and SEO snippets from one viewed product moment.",
+  },
+  {
     title: "Welcome Email Generator",
     href: "/welcome-email-generator",
     body: "Welcome emails, onboarding email sequences, first-purchase nurture copy, subscriber activation CTAs, FAQs, and SEO snippets from one signup moment.",

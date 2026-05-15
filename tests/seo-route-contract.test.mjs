@@ -112,6 +112,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "browse-abandonment-email-generator",
+    requiredTexts: [
+      "Browse Abandonment Email Generator",
+      "browse abandonment emails",
+      "product-view recovery flows",
+      "personalized product reminders",
+      "Shopify browse recovery copy",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
