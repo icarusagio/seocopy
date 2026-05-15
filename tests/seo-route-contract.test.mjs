@@ -90,6 +90,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "welcome-email-generator",
+    requiredTexts: [
+      "Welcome Email Generator",
+      "welcome emails",
+      "onboarding email sequences",
+      "first-purchase nurture copy",
+      "subscriber activation CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

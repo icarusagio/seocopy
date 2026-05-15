@@ -598,6 +598,11 @@ const useCasePages = [
     body: "Abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment.",
   },
   {
+    title: "Welcome Email Generator",
+    href: "/welcome-email-generator",
+    body: "Welcome emails, onboarding email sequences, first-purchase nurture copy, subscriber activation CTAs, FAQs, and SEO snippets from one signup moment.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",

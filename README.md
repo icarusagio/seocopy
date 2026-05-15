@@ -64,6 +64,7 @@ Use it when you need to:
 - `/email-sequence-generator` — email sequence copy for welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief
 - `/review-request-email-generator` — review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment
 - `/abandoned-cart-email-generator` — abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment
+- `/welcome-email-generator` — welcome emails, onboarding email sequences, first-purchase nurture copy, subscriber activation CTAs, FAQs, and SEO snippets from one signup moment
 - `/instagram-bio-generator` — Instagram bios, creator profile taglines, link-in-bio CTAs, keyword angles, and pinned-post hooks from one profile brief
 - `/tiktok-caption-generator` — TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief
 - `/pinterest-pin-description-generator` — Pinterest pin descriptions, board SEO copy, keyword angles, idea pin hooks, and CTA variants from one visual campaign brief
