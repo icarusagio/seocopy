@@ -101,6 +101,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "sales-email-generator",
+    requiredTexts: [
+      "Sales Email Generator",
+      "sales emails",
+      "demo follow-up emails",
+      "proposal follow-up copy",
+      "objection-handling CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
