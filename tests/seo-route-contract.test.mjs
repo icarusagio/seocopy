@@ -178,6 +178,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "podcast-title-generator",
+    requiredTexts: [
+      "Podcast Title Generator",
+      "podcast titles",
+      "episode hooks",
+      "SEO episode titles",
+      "show description angles",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

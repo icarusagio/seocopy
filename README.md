@@ -79,6 +79,7 @@ Use it when you need to:
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page
 - `/youtube-script-generator` — YouTube scripts, hooks, intros, SEO titles, descriptions, pinned comments, and CTA variants from one creator brief
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
+- `/podcast-title-generator` — podcast titles, episode hooks, SEO episode titles, show description angles, social teasers, and CTA variants from one episode brief
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
 - `/linkedin-headline-generator` — LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief
 - `/linkedin-summary-generator` — LinkedIn About summaries, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one professional profile brief
