@@ -134,6 +134,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "post-purchase-email-generator",
+    requiredTexts: [
+      "Post-Purchase Email Generator",
+      "post-purchase emails",
+      "order confirmation follow-ups",
+      "cross-sell recommendations",
+      "second-purchase CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
