@@ -25,6 +25,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "landing-page-wireframe-generator",
+    requiredTexts: [
+      "Landing Page Wireframe Generator",
+      "landing page wireframes",
+      "section layout blocks",
+      "above-the-fold structure",
+      "conversion-ready wireframe notes",
+      "FAQPage",
+    ],
+  },
+  {
     route: "ai-product-description-generator",
     requiredTexts: [
       "AI Product Description Generator",

@@ -336,6 +336,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/landing-page-wireframe-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/b2b-landing-page-copy-generator`,
       lastModified,
       changeFrequency: "weekly",
