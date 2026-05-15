@@ -523,6 +523,11 @@ const useCasePages = [
     body: "Discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief.",
   },
   {
+    title: "Referral Email Generator",
+    href: "/referral-email-generator",
+    body: "Referral emails, friend-invite campaigns, reward reminders, advocate sharing CTAs, FAQs, and SEO snippets from one referral program brief.",
+  },
+  {
     title: "SMS Marketing Copy Generator",
     href: "/sms-marketing-copy-generator",
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",

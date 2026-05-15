@@ -156,6 +156,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "referral-email-generator",
+    requiredTexts: [
+      "Referral Email Generator",
+      "referral emails",
+      "friend-invite campaigns",
+      "reward reminders",
+      "advocate sharing CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

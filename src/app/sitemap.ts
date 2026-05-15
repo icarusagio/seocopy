@@ -737,5 +737,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${siteUrl}/referral-email-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
 }

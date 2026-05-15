@@ -150,6 +150,7 @@ Use it when you need to:
 - `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
 - `/blog-meta-description-generator` — blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief
 - `/competitor-comparison-page-generator` — competitor comparison pages, alternative-page positioning, proof sections, FAQs, metadata, and CTAs use-case page
+- `/referral-email-generator` — referral emails, friend-invite campaigns, reward reminders, advocate sharing CTAs, FAQs, and SEO snippets from one referral program brief
 
 ## Tech stack
 
