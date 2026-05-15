@@ -528,6 +528,11 @@ const useCasePages = [
     body: "Referral emails, friend-invite campaigns, reward reminders, advocate sharing CTAs, FAQs, and SEO snippets from one referral program brief.",
   },
   {
+    title: "Checkout Page Copy Generator",
+    href: "/checkout-page-copy-generator",
+    body: "Checkout page copy, trust-building payment CTAs, shipping and returns reassurance, checkout FAQ snippets, and conversion copy from one checkout brief.",
+  },
+  {
     title: "SMS Marketing Copy Generator",
     href: "/sms-marketing-copy-generator",
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",

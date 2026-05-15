@@ -167,6 +167,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "checkout-page-copy-generator",
+    requiredTexts: [
+      "Checkout Page Copy Generator",
+      "checkout page copy",
+      "trust-building payment CTAs",
+      "shipping and returns reassurance",
+      "checkout FAQ snippets",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
