@@ -266,6 +266,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "product-faq-generator",
+    requiredTexts: [
+      "Product FAQ Generator",
+      "product FAQs",
+      "buyer objection answers",
+      "PDP FAQ schema snippets",
+      "Shopify product questions",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
