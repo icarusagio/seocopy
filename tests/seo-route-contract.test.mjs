@@ -212,6 +212,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "instagram-ad-copy-generator",
+    requiredTexts: [
+      "Instagram Ad Copy Generator",
+      "Instagram ad copy",
+      "Reels hooks",
+      "Story ad variants",
+      "paid social landing snippets",
+      "FAQPage",
+    ],
+  },
+  {
     route: "podcast-title-generator",
     requiredTexts: [
       "Podcast Title Generator",

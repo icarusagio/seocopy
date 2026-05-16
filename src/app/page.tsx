@@ -503,6 +503,11 @@ const useCasePages = [
     body: "Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and SEO metadata from one paid social campaign brief.",
   },
   {
+    title: "Instagram Ad Copy Generator",
+    href: "/instagram-ad-copy-generator",
+    body: "Instagram ad copy, Reels hooks, Story ad variants, carousel captions, CTAs, and paid social landing snippets from one campaign brief.",
+  },
+  {
     title: "Email Subject Line Generator",
     href: "/email-subject-line-generator",
     body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",
