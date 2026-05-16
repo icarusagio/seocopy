@@ -263,6 +263,11 @@ const useCasePages = [
     body: "Product review copy, star-rating summaries, testimonial snippets, review request follow-ups, and SEO proof blocks from one customer-feedback brief.",
   },
   {
+    title: "Return Policy Generator",
+    href: "/return-policy-generator",
+    body: "Return policy copy, refund and exchange rules, shipping cutoff notes, support-reducing FAQs, and trust snippets from one store operations brief.",
+  },
+  {
     title: "Shopify Product Description Generator",
     href: "/shopify-product-description-generator",
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",

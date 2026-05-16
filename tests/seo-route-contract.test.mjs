@@ -311,6 +311,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "return-policy-generator",
+    requiredTexts: [
+      "Return Policy Generator",
+      "return policy copy",
+      "refund and exchange rules",
+      "shipping cutoff notes",
+      "support-reducing FAQs",
+      "FAQPage",
+    ],
+  },
+  {
     route: "email-signature-generator",
     requiredTexts: [
       "Email Signature Generator",
