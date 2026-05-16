@@ -223,6 +223,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "black-friday-email-generator",
+    requiredTexts: [
+      "Black Friday Email Generator",
+      "Black Friday emails",
+      "Cyber Monday follow-ups",
+      "promo code reminders",
+      "holiday sale landing snippets",
+      "FAQPage",
+    ],
+  },
+  {
     route: "podcast-title-generator",
     requiredTexts: [
       "Podcast Title Generator",

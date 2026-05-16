@@ -59,6 +59,7 @@ Use it when you need to:
 - `/winback-email-generator` — winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, FAQs, and CTA variants from one retention brief
 - `/post-purchase-email-generator` — post-purchase emails, order confirmation follow-ups, cross-sell recommendations, second-purchase CTAs, FAQs, and SEO snippets from one customer moment
 - `/discount-email-generator` — discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief
+- `/black-friday-email-generator` — Black Friday emails, Cyber Monday follow-ups, promo code reminders, holiday sale landing snippets, FAQs, and CTAs from one seasonal offer brief
 - `/checkout-page-copy-generator` — checkout page copy, trust-building payment CTAs, shipping and returns reassurance, checkout FAQ snippets, and conversion copy from one checkout brief
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
 - `/abandoned-cart-sms-generator` — abandoned cart SMS, Shopify cart recovery texts, discount and urgency reminders, compliance-safe opt-out language, and mobile CTAs from one checkout brief

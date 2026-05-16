@@ -538,6 +538,11 @@ const useCasePages = [
     body: "Discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief.",
   },
   {
+    title: "Black Friday Email Generator",
+    href: "/black-friday-email-generator",
+    body: "Black Friday emails, Cyber Monday follow-ups, promo code reminders, holiday sale landing snippets, FAQs, and CTAs from one seasonal offer brief.",
+  },
+  {
     title: "Referral Email Generator",
     href: "/referral-email-generator",
     body: "Referral emails, friend-invite campaigns, reward reminders, advocate sharing CTAs, FAQs, and SEO snippets from one referral program brief.",
