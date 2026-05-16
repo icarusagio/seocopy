@@ -25,6 +25,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "landing-page-seo-generator",
+    requiredTexts: [
+      "Landing Page SEO Generator",
+      "landing page SEO",
+      "search-intent sections",
+      "metadata and H1 ideas",
+      "FAQ schema prompts",
+      "FAQPage",
+    ],
+  },
+  {
     route: "landing-page-wireframe-generator",
     requiredTexts: [
       "Landing Page Wireframe Generator",

@@ -105,6 +105,7 @@ Use it when you need to:
 - `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
 - `/landing-page-copy-generator` — landing page copy use-case page
 - `/landing-page-outline-generator` — landing page outlines, section-by-section page plans, conversion flows, wireframe-ready copy briefs, SEO snippets, FAQs, and CTAs from one offer brief
+- `/landing-page-seo-generator` — landing page SEO, search-intent sections, metadata and H1 ideas, FAQ schema prompts, social previews, and CTA variants from one offer brief
 - `/landing-page-wireframe-generator` — landing page wireframes, section layout blocks, above-the-fold structure, conversion-ready wireframe notes, FAQs, and CTA direction from one offer brief
 - `/landing-page-ab-test-generator` — landing page A/B tests, variant hypotheses, experiment-ready copy blocks, conversion test ideas, FAQs, and CTA directions from one offer brief
 - `/b2b-landing-page-copy-generator` — demo-focused B2B page copy, proof sections, objection handling, SEO snippets, FAQs, and sales CTAs from one offer brief

@@ -383,6 +383,11 @@ const useCasePages = [
     body: "Section-by-section page plans, conversion flows, wireframe-ready copy briefs, FAQs, and CTAs from one offer brief.",
   },
   {
+    title: "Landing Page SEO Generator",
+    href: "/landing-page-seo-generator",
+    body: "Landing page SEO, search-intent sections, metadata and H1 ideas, FAQ schema prompts, social previews, and CTA variants from one offer brief.",
+  },
+  {
     title: "Landing Page Wireframe Generator",
     href: "/landing-page-wireframe-generator",
     body: "Landing page wireframes, section layout blocks, above-the-fold structure, conversion-ready wireframe notes, FAQs, and CTA direction from one offer brief.",
