@@ -332,6 +332,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "shopify-email-marketing-generator",
+    requiredTexts: [
+      "Shopify Email Marketing Generator",
+      "Shopify email marketing",
+      "product-drop email campaigns",
+      "segmented promo angles",
+      "Klaviyo-ready copy blocks",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
