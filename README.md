@@ -121,6 +121,7 @@ Use it when you need to:
 - `/product-faq-generator` — product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief
 - `/product-review-generator` — product review copy, star-rating summaries, testimonial snippets, review request follow-ups, and SEO proof blocks from one customer-feedback brief
 - `/return-policy-generator` — return policy copy, refund and exchange rules, shipping cutoff notes, support-reducing FAQs, and trust snippets from one store operations brief
+- `/shipping-policy-generator` — shipping policy copy, delivery timelines, carrier cutoff notes, support-reducing shipping FAQs, and delivery trust snippets from one fulfillment brief
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
 - `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page

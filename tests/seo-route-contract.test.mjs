@@ -322,6 +322,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "shipping-policy-generator",
+    requiredTexts: [
+      "Shipping Policy Generator",
+      "shipping policy copy",
+      "delivery timelines",
+      "carrier cutoff notes",
+      "support-reducing shipping FAQs",
+      "FAQPage",
+    ],
+  },
+  {
     route: "email-signature-generator",
     requiredTexts: [
       "Email Signature Generator",

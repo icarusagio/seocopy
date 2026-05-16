@@ -268,6 +268,11 @@ const useCasePages = [
     body: "Return policy copy, refund and exchange rules, shipping cutoff notes, support-reducing FAQs, and trust snippets from one store operations brief.",
   },
   {
+    title: "Shipping Policy Generator",
+    href: "/shipping-policy-generator",
+    body: "Shipping policy copy, delivery timelines, carrier cutoff notes, support-reducing shipping FAQs, and delivery trust snippets from one fulfillment brief.",
+  },
+  {
     title: "Shopify Product Description Generator",
     href: "/shopify-product-description-generator",
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",
