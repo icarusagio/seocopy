@@ -36,6 +36,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "schema-markup-generator",
+    requiredTexts: [
+      "Schema Markup Generator",
+      "schema markup",
+      "JSON-LD starter copy",
+      "FAQ snippets",
+      "validation notes",
+      "FAQPage",
+    ],
+  },
+  {
     route: "landing-page-wireframe-generator",
     requiredTexts: [
       "Landing Page Wireframe Generator",
@@ -285,6 +296,17 @@ const routeContracts = [
       "buyer objection answers",
       "PDP FAQ schema snippets",
       "Shopify product questions",
+      "FAQPage",
+    ],
+  },
+  {
+    route: "product-review-generator",
+    requiredTexts: [
+      "Product Review Generator",
+      "product review copy",
+      "star-rating summaries",
+      "testimonial snippets",
+      "review request follow-ups",
       "FAQPage",
     ],
   },

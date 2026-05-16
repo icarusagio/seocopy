@@ -253,6 +253,11 @@ const useCasePages = [
     body: "Product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief.",
   },
   {
+    title: "Product Review Generator",
+    href: "/product-review-generator",
+    body: "Product review copy, star-rating summaries, testimonial snippets, review request follow-ups, and SEO proof blocks from one customer-feedback brief.",
+  },
+  {
     title: "Shopify Product Description Generator",
     href: "/shopify-product-description-generator",
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",

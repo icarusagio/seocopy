@@ -119,6 +119,7 @@ Use it when you need to:
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/ai-product-description-generator` — AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, Shopify and Amazon listing angles, FAQs, and CTAs from one product brief
 - `/product-faq-generator` — product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief
+- `/product-review-generator` — product review copy, star-rating summaries, testimonial snippets, review request follow-ups, and SEO proof blocks from one customer-feedback brief
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
 - `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page
