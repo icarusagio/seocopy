@@ -299,6 +299,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "thank-you-page-copy-generator",
+    requiredTexts: [
+      "Thank You Page Copy Generator",
+      "thank you page copy",
+      "post-conversion next steps",
+      "upsell and referral CTAs",
+      "confirmation page FAQs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

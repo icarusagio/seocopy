@@ -573,6 +573,11 @@ const useCasePages = [
     body: "Checkout page copy, trust-building payment CTAs, shipping and returns reassurance, checkout FAQ snippets, and conversion copy from one checkout brief.",
   },
   {
+    title: "Thank You Page Copy Generator",
+    href: "/thank-you-page-copy-generator",
+    body: "Thank you page copy, post-conversion next steps, upsell and referral CTAs, confirmation page FAQs, and SEO snippets from one offer brief.",
+  },
+  {
     title: "SMS Marketing Copy Generator",
     href: "/sms-marketing-copy-generator",
     body: "SMS promos, cart nudges, winback texts, opt-out reminders, landing snippets, and CTA variants from one campaign brief.",
