@@ -288,6 +288,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "email-signature-generator",
+    requiredTexts: [
+      "Email Signature Generator",
+      "email signatures",
+      "professional signature copy",
+      "founder and sales CTAs",
+      "disclaimer snippets",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

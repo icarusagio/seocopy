@@ -538,6 +538,11 @@ const useCasePages = [
     body: "Preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief.",
   },
   {
+    title: "Email Signature Generator",
+    href: "/email-signature-generator",
+    body: "Email signatures, professional signature copy, founder and sales CTAs, disclaimer snippets, and polished signoffs from one profile brief.",
+  },
+  {
     title: "Winback Email Generator",
     href: "/winback-email-generator",
     body: "Winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, and CTA variants from one retention brief.",

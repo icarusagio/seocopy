@@ -57,6 +57,7 @@ Use it when you need to:
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
 - `/email-marketing-copy-generator` — promotional emails, lifecycle sends, subject lines, preview text, landing snippets, FAQs, and CTA variants from one campaign brief
 - `/email-preview-text-generator` — email preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief
+- `/email-signature-generator` — email signatures, professional signature copy, founder and sales CTAs, disclaimer snippets, and polished signoffs from one profile brief
 - `/winback-email-generator` — winback emails, customer reactivation campaigns, lapsed-customer offers, subscription renewal nudges, FAQs, and CTA variants from one retention brief
 - `/post-purchase-email-generator` — post-purchase emails, order confirmation follow-ups, cross-sell recommendations, second-purchase CTAs, FAQs, and SEO snippets from one customer moment
 - `/discount-email-generator` — discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief
