@@ -66,6 +66,7 @@ Use it when you need to:
 - `/abandoned-cart-sms-generator` — abandoned cart SMS, Shopify cart recovery texts, discount and urgency reminders, compliance-safe opt-out language, and mobile CTAs from one checkout brief
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
+- `/social-media-post-generator` — social media posts, platform-specific post drafts, campaign angles, engagement CTAs, and landing snippets from one campaign brief
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/linkedin-ad-copy-generator` — LinkedIn ad copy, B2B paid social hooks, sponsored content variants, lead-gen CTA angles, landing snippets, and FAQs from one campaign brief
 - `/ai-email-writer-generator` — AI email writer drafts for sales emails, launch announcements, lifecycle nurture copy, follow-ups, subject lines, and CTA variants from one campaign brief

@@ -245,6 +245,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "social-media-post-generator",
+    requiredTexts: [
+      "Social Media Post Generator",
+      "social media posts",
+      "platform-specific post drafts",
+      "campaign angles",
+      "engagement CTAs",
+      "FAQPage",
+    ],
+  },
+  {
     route: "podcast-title-generator",
     requiredTexts: [
       "Podcast Title Generator",
