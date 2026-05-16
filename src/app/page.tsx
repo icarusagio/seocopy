@@ -508,6 +508,11 @@ const useCasePages = [
     body: "Instagram ad copy, Reels hooks, Story ad variants, carousel captions, CTAs, and paid social landing snippets from one campaign brief.",
   },
   {
+    title: "UGC Ad Script Generator",
+    href: "/ugc-ad-script-generator",
+    body: "UGC ad scripts, creator hook ideas, testimonial-style product proof, B-roll prompts, short-form video CTAs, and landing snippets from one campaign brief.",
+  },
+  {
     title: "Email Subject Line Generator",
     href: "/email-subject-line-generator",
     body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",

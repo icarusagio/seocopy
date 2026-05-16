@@ -234,6 +234,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "ugc-ad-script-generator",
+    requiredTexts: [
+      "UGC Ad Script Generator",
+      "UGC ad scripts",
+      "creator hook ideas",
+      "testimonial-style product proof",
+      "short-form video CTAs",
+      "FAQPage",
+    ],
+  },
+  {
     route: "podcast-title-generator",
     requiredTexts: [
       "Podcast Title Generator",
