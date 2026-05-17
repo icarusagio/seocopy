@@ -233,6 +233,11 @@ const useCasePages = [
     body: "Popup copy, exit-intent offers, email capture modals, discount and lead magnet variants, reassurance microcopy, and CTAs from one campaign brief.",
   },
   {
+    title: "Homepage Copy Generator",
+    href: "/homepage-copy-generator",
+    body: "Homepage copy, hero section messaging, homepage section copy, proof blocks, FAQs, and above-the-fold CTAs from one offer brief.",
+  },
+  {
     title: "Blog Introduction Generator",
     href: "/blog-introduction-generator",
     body: "Search-intent blog introductions, article openers, SEO metadata, social previews, and CTA variants from one topic brief.",

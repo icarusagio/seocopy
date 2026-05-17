@@ -398,6 +398,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "homepage-copy-generator",
+    requiredTexts: [
+      "Homepage Copy Generator",
+      "homepage copy",
+      "hero section messaging",
+      "homepage section copy",
+      "above-the-fold CTAs",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
