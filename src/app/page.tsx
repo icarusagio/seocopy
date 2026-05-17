@@ -273,6 +273,11 @@ const useCasePages = [
     body: "Product demo scripts, demo flow, feature proof moments, objection-handling talk tracks, follow-up CTAs, and FAQs from one product or sales brief.",
   },
   {
+    title: "Product Explainer Video Generator",
+    href: "/product-explainer-video-generator",
+    body: "Product explainer videos, voiceover hooks, problem-solution storyboards, scene-by-scene scripts, and launch CTAs from one product brief.",
+  },
+  {
     title: "Product FAQ Generator",
     href: "/product-faq-generator",
     body: "Product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief.",

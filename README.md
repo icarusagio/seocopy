@@ -119,6 +119,7 @@ Use it when you need to:
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/ai-product-description-generator` — AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, Shopify and Amazon listing angles, FAQs, and CTAs from one product brief
 - `/product-demo-script-generator` — product demo scripts, demo flow, feature proof moments, objection-handling talk tracks, follow-up CTAs, and FAQs from one product or sales brief
+- `/product-explainer-video-generator` — product explainer videos, explainer video scripts, problem-solution storyboards, voiceover hooks, scene-by-scene outlines, and launch CTAs from one product brief
 - `/product-faq-generator` — product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief
 - `/product-review-generator` — product review copy, star-rating summaries, testimonial snippets, review request follow-ups, and SEO proof blocks from one customer-feedback brief
 - `/return-policy-generator` — return policy copy, refund and exchange rules, shipping cutoff notes, support-reducing FAQs, and trust snippets from one store operations brief
