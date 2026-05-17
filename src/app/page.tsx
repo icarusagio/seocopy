@@ -258,6 +258,11 @@ const useCasePages = [
     body: "Comparison pages, alternative-page positioning, proof sections, FAQs, SEO metadata, and CTAs from one competitor brief.",
   },
   {
+    title: "Product Comparison Table Generator",
+    href: "/product-comparison-table-generator",
+    body: "Product comparison tables, feature grids, alternative-page proof points, FAQs, and CTAs from one product or competitor brief.",
+  },
+  {
     title: "Product Description Generator",
     href: "/product-description-generator",
     body: "Benefit-led ecommerce product descriptions, metadata, and CTA variants for faster merchandising.",
