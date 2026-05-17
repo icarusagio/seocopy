@@ -273,6 +273,11 @@ const useCasePages = [
     body: "Shipping policy copy, delivery timelines, carrier cutoff notes, support-reducing shipping FAQs, and delivery trust snippets from one fulfillment brief.",
   },
   {
+    title: "Terms and Conditions Generator",
+    href: "/terms-and-conditions-generator",
+    body: "Terms and conditions copy, store policy clauses, checkout acceptance language, support-reducing terms FAQs, and trust snippets from one business rules brief.",
+  },
+  {
     title: "Shopify Product Description Generator",
     href: "/shopify-product-description-generator",
     body: "Shopify-ready product descriptions, SEO metadata, benefit bullets, social previews, and CTAs from rough product notes.",

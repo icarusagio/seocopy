@@ -333,6 +333,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "terms-and-conditions-generator",
+    requiredTexts: [
+      "Terms and Conditions Generator",
+      "terms and conditions copy",
+      "store policy clauses",
+      "checkout acceptance language",
+      "support-reducing terms FAQs",
+      "FAQPage",
+    ],
+  },
+  {
     route: "email-signature-generator",
     requiredTexts: [
       "Email Signature Generator",
