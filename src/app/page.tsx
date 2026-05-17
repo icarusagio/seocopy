@@ -508,6 +508,11 @@ const useCasePages = [
     body: "Conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.",
   },
   {
+    title: "Customer Feedback Survey Generator",
+    href: "/customer-feedback-survey-generator",
+    body: "Customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief.",
+  },
+  {
     title: "Marketing Copy Generator",
     href: "/marketing-copy-generator",
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",
