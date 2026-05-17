@@ -47,6 +47,17 @@ const routeContracts = [
     ],
   },
   {
+    route: "how-to-guide-generator",
+    requiredTexts: [
+      "How-To Guide Generator",
+      "how-to guides",
+      "step-by-step tutorial sections",
+      "instructional SEO outline",
+      "FAQ schema prompts",
+      "FAQPage",
+    ],
+  },
+  {
     route: "landing-page-wireframe-generator",
     requiredTexts: [
       "Landing Page Wireframe Generator",

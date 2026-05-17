@@ -162,6 +162,7 @@ Use it when you need to:
 - `/seo-keyword-generator` — keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic
 - `/seo-friendly-url-generator` — SEO-friendly URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages
 - `/schema-markup-generator` — schema type recommendations, JSON-LD starter copy, FAQ snippets, metadata, and validation notes for richer search results
+- `/how-to-guide-generator` — how-to guides, step-by-step tutorial sections, instructional SEO outlines, FAQ schema prompts, metadata, and CTAs from one process brief
 - `/content-calendar-generator` — SEO content calendars, publishing plans, keyword clusters, metadata prompts, FAQ angles, repurposing ideas, and CTA direction from one product or audience brief
 - `/lead-magnet-generator` — lead magnet ideas, opt-in page copy, SEO snippets, nurture email angles, FAQs, and CTAs from one audience or offer brief
 - `/blog-introduction-generator` — blog introductions, article openers, SEO snippets, social previews, and CTA use-case page

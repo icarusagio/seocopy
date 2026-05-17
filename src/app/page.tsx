@@ -213,6 +213,11 @@ const useCasePages = [
     body: "Schema type recommendations, JSON-LD starter copy, FAQ snippets, metadata, and validation notes for richer search results.",
   },
   {
+    title: "How-To Guide Generator",
+    href: "/how-to-guide-generator",
+    body: "How-to guides, step-by-step tutorial sections, instructional SEO outlines, FAQ schema prompts, metadata, and CTAs from one process brief.",
+  },
+  {
     title: "Content Calendar Generator",
     href: "/content-calendar-generator",
     body: "SEO content calendar ideas, publishing plans, metadata prompts, FAQ angles, and CTA direction from one product or audience brief.",
