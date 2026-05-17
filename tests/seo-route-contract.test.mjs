@@ -388,6 +388,28 @@ const routeContracts = [
     ],
   },
   {
+    route: "shopify-collection-description-generator",
+    requiredTexts: [
+      "Shopify Collection Description Generator",
+      "Shopify collection descriptions",
+      "SEO title tags and meta descriptions",
+      "Open Graph titles and descriptions",
+      "Shopify collection SEO",
+      "FAQPage",
+    ],
+  },
+  {
+    route: "shopify-image-alt-text-generator",
+    requiredTexts: [
+      "Shopify Image Alt Text Generator",
+      "Shopify image alt text",
+      "product image alt text",
+      "accessibility first",
+      "filename ideas",
+      "FAQPage",
+    ],
+  },
+  {
     route: "popup-copy-generator",
     requiredTexts: [
       "Popup Copy Generator",

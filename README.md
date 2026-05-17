@@ -132,6 +132,8 @@ Use it when you need to:
 - `/collection-page-seo-generator` — ecommerce category and Shopify collection page SEO use-case page
 - `/category-description-generator` — ecommerce category description and merchandising copy use-case page
 - `/shopify-meta-description-generator` — Shopify product and collection meta descriptions, SEO title ideas, social previews, benefit bullets, and CTA copy use-case page
+- `/shopify-collection-description-generator` — Shopify collection descriptions, SEO metadata, social previews, benefit bullets, and CTA ideas for ecommerce category pages
+- `/shopify-image-alt-text-generator` — Shopify product image alt text, collection image descriptions, SEO captions, filename ideas, and accessibility-friendly variants
 - `/small-business-seo-copy-generator` — small business SEO, website copy, and CTA use-case page
 - `/service-page-copy-generator` — agency, consultant, and local service page copy use-case page
 - `/local-seo-copy-generator` — local business and service-area SEO copy use-case page
