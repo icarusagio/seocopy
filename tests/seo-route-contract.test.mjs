@@ -387,6 +387,17 @@ const routeContracts = [
       "FAQPage",
     ],
   },
+  {
+    route: "popup-copy-generator",
+    requiredTexts: [
+      "Popup Copy Generator",
+      "popup copy",
+      "exit-intent offers",
+      "email capture modals",
+      "discount and lead magnet variants",
+      "FAQPage",
+    ],
+  },
 ];
 
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");

@@ -165,6 +165,7 @@ Use it when you need to:
 - `/how-to-guide-generator` — how-to guides, step-by-step tutorial sections, instructional SEO outlines, FAQ schema prompts, metadata, and CTAs from one process brief
 - `/content-calendar-generator` — SEO content calendars, publishing plans, keyword clusters, metadata prompts, FAQ angles, repurposing ideas, and CTA direction from one product or audience brief
 - `/lead-magnet-generator` — lead magnet ideas, opt-in page copy, SEO snippets, nurture email angles, FAQs, and CTAs from one audience or offer brief
+- `/popup-copy-generator` — popup copy, exit-intent offers, email capture modals, discount and lead magnet variants, reassurance microcopy, and CTAs from one campaign brief
 - `/blog-introduction-generator` — blog introductions, article openers, SEO snippets, social previews, and CTA use-case page
 - `/blog-conclusion-generator` — blog conclusions, recap paragraphs, final CTAs, metadata, social previews, and FAQ ideas use-case page
 - `/blog-meta-description-generator` — blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief
