@@ -1,5 +1,156 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync } from "node:fs";
 import assert from "node:assert/strict";
+import { test } from "node:test";
+
+const appDir = new URL("../src/app/", import.meta.url);
+const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
+const home = readFileSync(new URL("../src/app/page.tsx", import.meta.url), "utf8");
+const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
+
+const routeInventory = [
+  "/abandoned-cart-email-generator",
+  "/abandoned-cart-sms-generator",
+  "/about-us-page-generator",
+  "/ad-copy-generator",
+  "/advertorial-copy-generator",
+  "/ai-copy-rewriter",
+  "/ai-email-writer-generator",
+  "/ai-page-title-generator",
+  "/ai-product-description-generator",
+  "/ai-seo-copy-generator",
+  "/amazon-bullet-point-generator",
+  "/amazon-product-description-generator",
+  "/amazon-product-title-generator",
+  "/app-store-description-generator",
+  "/b2b-landing-page-copy-generator",
+  "/black-friday-email-generator",
+  "/blog-conclusion-generator",
+  "/blog-introduction-generator",
+  "/blog-meta-description-generator",
+  "/blog-post-generator",
+  "/blog-post-outline-generator",
+  "/blog-title-generator",
+  "/blog-topic-generator",
+  "/brand-story-generator",
+  "/brand-voice-generator",
+  "/browse-abandonment-email-generator",
+  "/call-to-action-generator",
+  "/case-study-generator",
+  "/category-description-generator",
+  "/checkout-page-copy-generator",
+  "/cold-email-generator",
+  "/collection-page-seo-generator",
+  "/competitor-comparison-page-generator",
+  "/content-brief-generator",
+  "/content-calendar-generator",
+  "/copywriting-generator",
+  "/discount-email-generator",
+  "/ecommerce-seo-copy-generator",
+  "/email-marketing-copy-generator",
+  "/email-preview-text-generator",
+  "/email-sequence-generator",
+  "/email-signature-generator",
+  "/email-subject-line-generator",
+  "/etsy-product-description-generator",
+  "/facebook-ad-copy-generator",
+  "/faq-generator",
+  "/feature-benefit-generator",
+  "/free-seo-copy-generator",
+  "/google-ads-copy-generator",
+  "/google-business-profile-description-generator",
+  "/google-review-response-generator",
+  "/hero-headline-generator",
+  "/homepage-copy-generator",
+  "/homepage-title-generator",
+  "/how-to-guide-generator",
+  "/image-alt-text-generator",
+  "/instagram-ad-copy-generator",
+  "/instagram-bio-generator",
+  "/instagram-caption-generator",
+  "/landing-page-ab-test-generator",
+  "/landing-page-copy-generator",
+  "/landing-page-headline-generator",
+  "/landing-page-outline-generator",
+  "/landing-page-seo-generator",
+  "/landing-page-wireframe-generator",
+  "/lead-magnet-generator",
+  "/linkedin-ad-copy-generator",
+  "/linkedin-headline-generator",
+  "/linkedin-post-generator",
+  "/linkedin-summary-generator",
+  "/local-seo-copy-generator",
+  "/marketing-copy-generator",
+  "/meta-description-generator",
+  "/meta-tag-generator",
+  "/microcopy-generator",
+  "/newsletter-copy-generator",
+  "/pinterest-pin-description-generator",
+  "/podcast-show-notes-generator",
+  "/podcast-title-generator",
+  "/popup-copy-generator",
+  "/post-purchase-email-generator",
+  "/press-kit-generator",
+  "/press-release-generator",
+  "/pricing-page-copy-generator",
+  "/product-bullet-point-generator",
+  "/product-comparison-generator",
+  "/product-description-generator",
+  "/product-faq-generator",
+  "/product-launch-copy-generator",
+  "/product-name-generator",
+  "/product-name-ideas-generator",
+  "/product-page-seo-generator",
+  "/product-positioning-generator",
+  "/product-review-generator",
+  "/product-seo-title-generator",
+  "/proposal-generator",
+  "/real-estate-listing-description-generator",
+  "/referral-email-generator",
+  "/restaurant-menu-description-generator",
+  "/return-policy-generator",
+  "/review-request-email-generator",
+  "/saas-landing-page-copy-generator",
+  "/sales-email-generator",
+  "/sales-page-copy-generator",
+  "/schema-markup-generator",
+  "/seo-audit-report-generator",
+  "/seo-content-generator",
+  "/seo-friendly-url-generator",
+  "/seo-keyword-generator",
+  "/seo-title-generator",
+  "/service-page-copy-generator",
+  "/shipping-policy-generator",
+  "/shopify-app-store-listing-generator",
+  "/shopify-collection-description-generator",
+  "/shopify-email-marketing-generator",
+  "/shopify-image-alt-text-generator",
+  "/shopify-meta-description-generator",
+  "/shopify-product-description-generator",
+  "/shopify-product-title-generator",
+  "/shopify-seo-copy-generator",
+  "/small-business-seo-copy-generator",
+  "/sms-marketing-copy-generator",
+  "/social-media-caption-generator",
+  "/social-media-post-generator",
+  "/startup-seo-copy-generator",
+  "/tagline-generator",
+  "/terms-and-conditions-generator",
+  "/testimonial-generator",
+  "/thank-you-page-copy-generator",
+  "/tiktok-caption-generator",
+  "/twitter-bio-generator",
+  "/ugc-ad-script-generator",
+  "/unique-selling-proposition-generator",
+  "/value-proposition-generator",
+  "/webinar-landing-page-generator",
+  "/website-copy-generator",
+  "/website-headline-generator",
+  "/welcome-email-generator",
+  "/winback-email-generator",
+  "/youtube-description-generator",
+  "/youtube-script-generator",
+  "/youtube-title-generator"
+];
 
 const routeContracts = [
   {
@@ -433,20 +584,42 @@ const routeContracts = [
   },
 ];
 
-const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
-const home = readFileSync(new URL("../src/app/page.tsx", import.meta.url), "utf8");
-const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
+const discoveredMarketingRoutes = readdirSync(appDir, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => `/${entry.name}`)
+  .filter((route) => route !== "/generate" && !route.startsWith("("))
+  .filter((route) => existsSync(new URL(`../src/app/${route.slice(1)}/page.tsx`, import.meta.url)))
+  .sort();
 
-for (const { route, requiredTexts } of routeContracts) {
-  const routePath = new URL(`../src/app/${route}/page.tsx`, import.meta.url);
-  assert.ok(existsSync(routePath), `Missing route page for /${route}`);
+test("route inventory stays synchronized with App Router marketing pages", () => {
+  assert.deepEqual(
+    routeInventory,
+    discoveredMarketingRoutes,
+    "Update routeInventory whenever a marketing page is added or removed",
+  );
+});
 
-  const page = readFileSync(routePath, "utf8");
-  for (const requiredText of [...requiredTexts, `/generate?source=${route}`]) {
-    assert.ok(page.includes(requiredText), `/${route} missing required page content: ${requiredText}`);
+test("all marketing routes are discoverable from homepage, sitemap, and README", () => {
+  for (const route of routeInventory) {
+    const routePath = new URL(`../src/app/${route.slice(1)}/page.tsx`, import.meta.url);
+    assert.ok(existsSync(routePath), `Missing route page for ${route}`);
+
+    const page = readFileSync(routePath, "utf8");
+    assert.ok(page.includes(`/generate?source=${route.slice(1)}`), `${route} missing generator CTA source`);
+    assert.ok(sitemap.includes(route), `sitemap missing ${route}`);
+    assert.ok(home.includes(route), `homepage use-case list missing ${route}`);
+    assert.ok(readme.includes(route), `README product routes missing ${route}`);
   }
+});
 
-  assert.ok(sitemap.includes(`/${route}`), `sitemap missing /${route}`);
-  assert.ok(home.includes(`/${route}`), `homepage use-case list missing /${route}`);
-  assert.ok(readme.includes(`/${route}`), `README product routes missing /${route}`);
-}
+test("high-intent route contracts keep revenue copy intact", () => {
+  for (const { route, requiredTexts } of routeContracts) {
+    const routePath = new URL(`../src/app/${route}/page.tsx`, import.meta.url);
+    assert.ok(existsSync(routePath), `Missing route page for /${route}`);
+
+    const page = readFileSync(routePath, "utf8");
+    for (const requiredText of [...requiredTexts, `/generate?source=${route}`]) {
+      assert.ok(page.includes(requiredText), `/${route} missing required page content: ${requiredText}`);
+    }
+  }
+});
