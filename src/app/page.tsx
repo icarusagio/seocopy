@@ -268,6 +268,11 @@ const useCasePages = [
     body: "AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, and Shopify/Amazon listing angles from one product brief.",
   },
   {
+    title: "Product Demo Script Generator",
+    href: "/product-demo-script-generator",
+    body: "Product demo scripts, demo flow, feature proof moments, objection-handling talk tracks, follow-up CTAs, and FAQs from one product or sales brief.",
+  },
+  {
     title: "Product FAQ Generator",
     href: "/product-faq-generator",
     body: "Product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief.",
