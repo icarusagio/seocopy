@@ -138,6 +138,11 @@ const useCasePages = [
     body: "App subtitles, listing copy, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs for Shopify app launches.",
   },
   {
+    title: "Shopify App Launch Copy Generator",
+    href: "/shopify-app-launch-copy-generator",
+    body: "Launch emails, Product Hunt blurbs, social posts, App Store update notes, merchant FAQs, SEO snippets, and install CTAs for Shopify app launches.",
+  },
+  {
     title: "Shopify Email Marketing Generator",
     href: "/shopify-email-marketing-generator",
     body: "Product-drop email campaigns, segmented promo angles, Klaviyo-ready copy blocks, subject lines, preview text, and CTAs for Shopify merchants.",

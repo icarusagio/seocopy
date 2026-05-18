@@ -155,6 +155,7 @@ Use it when you need to:
 - `/product-comparison-table-generator` — product comparison tables, feature grids, alternative-page proof points, FAQs, and CTAs from one product or competitor brief
 - `/shopify-seo-copy-generator` — Shopify SEO use-case page
 - `/shopify-app-store-listing-generator` — Shopify App Store listing copy, app subtitles, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs from one app brief
+- `/shopify-app-launch-copy-generator` — Shopify app launch emails, Product Hunt blurbs, social posts, App Store update notes, merchant FAQs, SEO snippets, and install CTAs from one app launch brief
 - `/shopify-email-marketing-generator` — Shopify email marketing copy, product-drop email campaigns, segmented promo angles, Klaviyo-ready copy blocks, subject lines, preview text, and CTAs from one store brief
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page
