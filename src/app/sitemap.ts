@@ -582,6 +582,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/google-ads-headline-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/facebook-ad-copy-generator`,
       lastModified,
       changeFrequency: "weekly",

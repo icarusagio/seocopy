@@ -583,9 +583,14 @@ const useCasePages = [
     body: "Google Ads headlines, descriptions, landing page angles, SEO snippets, and CTA variants from one PPC campaign brief.",
   },
   {
+    title: "Google Ads Headline Generator",
+    href: "/google-ads-headline-generator",
+    body: "Responsive search ad headlines, keyword-matched PPC angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "Facebook Ad Copy Generator",
     href: "/facebook-ad-copy-generator",
-    body: "Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and SEO metadata from one paid social campaign brief.",
+    body: "Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy from one campaign brief.",
   },
   {
     title: "Instagram Ad Copy Generator",
