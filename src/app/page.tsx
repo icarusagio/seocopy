@@ -533,6 +533,11 @@ const useCasePages = [
     body: "Customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief.",
   },
   {
+    title: "Customer Retention Email Generator",
+    href: "/customer-retention-email-generator",
+    body: "Customer retention emails, lifecycle email copy, repeat-purchase CTAs, loyalty offers, renewal reminders, and save-flow FAQs from one segment brief.",
+  },
+  {
     title: "Marketing Copy Generator",
     href: "/marketing-copy-generator",
     body: "Campaign-ready SEO snippets, landing page headlines, social previews, and CTA variants from one product brief.",

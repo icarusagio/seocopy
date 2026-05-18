@@ -44,6 +44,7 @@ Use it when you need to:
 - `/course-description-generator` — course descriptions, learning outcomes, module summaries, FAQs, SEO snippets, and enrollment CTAs from one course brief.
 - `/job-description-generator` — job descriptions, responsibilities, qualifications, candidate FAQs, interview scorecard prompts, and hiring CTAs from one role brief.
 - `/customer-feedback-survey-generator` — customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief
+- `/customer-retention-email-generator` — customer retention emails, lifecycle email copy, repeat-purchase CTAs, loyalty offers, renewal reminders, and save-flow FAQs from one segment brief
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
 - `/advertorial-copy-generator` — story-led advertorial hooks, proof sections, SEO snippets, FAQs, and CTA variants for native ad and pre-sell page tests
 - `/ai-copy-rewriter` — rewrite rough website, product, ad, and landing page copy into clearer SEO snippets, headlines, social previews, and CTA variants
