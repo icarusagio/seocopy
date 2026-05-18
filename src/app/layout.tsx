@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import AnalyticsProvider from "@/components/analytics-provider";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <AnalyticsProvider>{children}</AnalyticsProvider>
+        <Analytics />
       </body>
     </html>
   );
