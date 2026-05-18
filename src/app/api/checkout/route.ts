@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { captureServerEvent } from "@/lib/analytics";
 import { CHECKOUT_OPTIONS } from "@/lib/constants";
 import { getStripe } from "@/lib/stripe";
 
@@ -70,6 +71,12 @@ export async function POST(request: Request) {
         cancel_url: `${origin}/generate?canceled=true`,
       });
 
+      void captureServerEvent(
+        "seo_copy_checkout_started",
+        { plan, amount: option.amount, mode: "subscription" },
+        request,
+      );
+
       return NextResponse.json({ url: session.url });
     }
 
@@ -93,9 +100,20 @@ export async function POST(request: Request) {
       cancel_url: `${origin}/generate?canceled=true`,
     });
 
+    void captureServerEvent(
+      "seo_copy_checkout_started",
+      { plan, amount: option.amount, mode: "payment" },
+      request,
+    );
+
     return NextResponse.json({ url: session.url });
   } catch (error) {
     console.error("[checkout] Stripe session creation failed:", error);
+    void captureServerEvent(
+      "seo_copy_checkout_error",
+      { plan, message: error instanceof Error ? error.message : "unknown" },
+      request,
+    );
     return NextResponse.json(
       {
         error:

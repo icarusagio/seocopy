@@ -218,6 +218,38 @@ Common variables include:
 - `STRIPE_WEBHOOK_SECRET`
 - `NEXT_PUBLIC_SITE_URL`
 
+## Analytics and data science
+
+SEOCopy uses PostHog for product analytics. When configured, the app captures:
+
+- Client pageviews and autocaptured clicks/forms across every route
+- Server-side generator lifecycle events: `seo_copy_generate_success`, `seo_copy_generate_blocked`, `seo_copy_generate_error`, `seo_copy_generate_rate_limited`
+- Server-side checkout events: `seo_copy_checkout_started`, `seo_copy_checkout_error`
+
+Production analytics variables:
+
+- `NEXT_PUBLIC_POSTHOG_KEY` — PostHog project API key for client and server event capture
+- `NEXT_PUBLIC_POSTHOG_HOST` — PostHog capture host, for example `https://us.i.posthog.com`; defaults to the US capture endpoint
+- `POSTHOG_API_HOST` — PostHog app/API host for dashboard queries, for example `https://us.posthog.com`; defaults to the US API host
+- `POSTHOG_PROJECT_ID` — PostHog project ID for the private analytics API
+- `POSTHOG_PERSONAL_API_KEY` — PostHog personal API key with query/read access
+- `ANALYTICS_ADMIN_TOKEN` — private token required to load `/analytics`
+
+Usage stats dashboard:
+
+1. Set the variables above in Vercel.
+2. Visit `/analytics`.
+3. Enter `ANALYTICS_ADMIN_TOKEN` to load daily visitors, pageviews, top pages, referrers, generation segments, and checkout starts.
+
+Raw export and local analysis:
+
+```bash
+POSTHOG_PROJECT_ID=... POSTHOG_PERSONAL_API_KEY=... npm run analytics:export -- 30
+npm run analytics:analyze -- analytics-exports/seocopy-events-YYYY-MM-DDTHH-MM-SS.json
+```
+
+The export script writes JSON and CSV files so notebooks, pandas, DuckDB, or ad hoc data-science scripts can analyze acquisition, conversion, funnel drop-off, popular routes, and generator usage.
+
 ## Revenue goal
 
 SEOCopy is part of the active revenue sprint: ship a lightweight AI SEO/copy tool with immediate checkout, soft-launch distribution, and fast conversion iteration.
