@@ -513,6 +513,11 @@ const useCasePages = [
     body: "Conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.",
   },
   {
+    title: "Course Description Generator",
+    href: "/course-description-generator",
+    body: "Course descriptions, learning outcomes, module summaries, FAQs, SEO snippets, and enrollment CTAs from one course brief.",
+  },
+  {
     title: "Customer Feedback Survey Generator",
     href: "/customer-feedback-survey-generator",
     body: "Customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief.",

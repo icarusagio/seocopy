@@ -41,6 +41,7 @@ Use it when you need to:
 - `/homepage-title-generator` — homepage SEO title and hero copy use-case page
 - `/website-copy-generator` — website copy use-case page
 - `/copywriting-generator` — conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.
+- `/course-description-generator` — course descriptions, learning outcomes, module summaries, FAQs, SEO snippets, and enrollment CTAs from one course brief.
 - `/customer-feedback-survey-generator` — customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief
 - `/marketing-copy-generator` — marketing campaign copy, SEO snippets, social previews, and CTA use-case page
 - `/advertorial-copy-generator` — story-led advertorial hooks, proof sections, SEO snippets, FAQs, and CTA variants for native ad and pre-sell page tests
