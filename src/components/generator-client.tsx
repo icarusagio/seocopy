@@ -1,8 +1,9 @@
 "use client";
 
+import posthog from "posthog-js";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { startTransition, useEffect, useRef, useState } from "react";
+import { startTransition, useCallback, useEffect, useRef, useState } from "react";
 
 import {
   CHECKOUT_OPTIONS,
@@ -18,6 +19,20 @@ import type {
   Tone,
   UsageState,
 } from "@/lib/types";
+
+function trackRevenueEvent(
+  eventName: string,
+  properties?: Record<string, string | number | boolean | null | undefined>,
+) {
+  if (!process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+    return;
+  }
+
+  posthog.capture(eventName, {
+    surface: "generator",
+    ...properties,
+  });
+}
 
 function defaultUsageFromFreeCount(freeUsed: number): UsageState {
   return {
@@ -73,6 +88,9 @@ function OutputCard({
               type="button"
               onClick={() => {
                 navigator.clipboard.writeText(value);
+                trackRevenueEvent("seocopy_output_copied", {
+                  output_section: title,
+                });
                 setCopiedValue(value);
                 window.setTimeout(() => setCopiedValue(null), 1500);
               }}
@@ -115,6 +133,12 @@ export default function GeneratorClient({
     industry: "",
     tone: "Professional",
   });
+
+  useEffect(() => {
+    if (checkoutState.canceled) {
+      trackRevenueEvent("seocopy_checkout_canceled");
+    }
+  }, [checkoutState.canceled]);
 
   useEffect(() => {
     const storedValue = window.localStorage.getItem("seocopy_free_used");
@@ -172,6 +196,11 @@ export default function GeneratorClient({
 
           if (!cancelled) {
             setUsage((payload as { usage: UsageState }).usage);
+            trackRevenueEvent("seocopy_payment_confirmed", {
+              access_mode: (payload as { usage: UsageState }).usage.accessMode,
+              paid_credits: (payload as { usage: UsageState }).usage.paidCredits,
+              subscription_active: (payload as { usage: UsageState }).usage.subscriptionActive,
+            });
             setNotice({
               type: "success",
               text:
@@ -199,22 +228,6 @@ export default function GeneratorClient({
     };
   }, [checkoutState.paid, checkoutState.sessionId, router]);
 
-  useEffect(() => {
-    if (!initialCheckoutPlan || checkoutStartedFromUrl.current) {
-      return;
-    }
-
-    checkoutStartedFromUrl.current = true;
-    setNotice({
-      type: "info",
-      text:
-        initialCheckoutPlan === "subscription"
-          ? "Starting monthly checkout..."
-          : "Starting one-time checkout...",
-    });
-    void handleCheckout(initialCheckoutPlan);
-  }, [initialCheckoutPlan]);
-
   const isBlocked =
     !usage.subscriptionActive &&
     usage.paidCredits < 1 &&
@@ -224,6 +237,16 @@ export default function GeneratorClient({
     event.preventDefault();
     setPending(true);
     setNotice(null);
+    trackRevenueEvent("seocopy_generate_submitted", {
+      has_url: Boolean(form.url?.trim()),
+      has_description: Boolean(form.description?.trim()),
+      industry: form.industry || "unspecified",
+      tone: form.tone || "unspecified",
+      access_mode: usage.accessMode,
+      free_remaining: usage.freeRemaining,
+      paid_credits: usage.paidCredits,
+      subscription_active: usage.subscriptionActive,
+    });
 
     try {
       const response = await fetch("/api/generate", {
@@ -251,6 +274,13 @@ export default function GeneratorClient({
         String(res.usage.freeUsed),
       );
       setFreeUsageCookie(res.usage.freeUsed);
+      trackRevenueEvent("seocopy_generate_succeeded", {
+        access_mode: res.usage.accessMode,
+        free_remaining: res.usage.freeRemaining,
+        paid_credits: res.usage.paidCredits,
+        subscription_active: res.usage.subscriptionActive,
+        has_source_summary: Boolean(res.sourceSummary),
+      });
       setNotice({
         type: "success",
         text:
@@ -261,6 +291,12 @@ export default function GeneratorClient({
               : "Generation complete. Subscription access is active.",
       });
     } catch (error) {
+      trackRevenueEvent("seocopy_generate_failed", {
+        message:
+          error instanceof Error
+            ? error.message.slice(0, 120)
+            : "unknown_generation_error",
+      });
       setNotice({
         type: "error",
         text:
@@ -273,9 +309,16 @@ export default function GeneratorClient({
     }
   }
 
-  async function handleCheckout(plan: "single" | "subscription") {
+  const handleCheckout = useCallback(async (plan: "single" | "subscription") => {
     setCheckoutPending(plan);
     setNotice(null);
+    trackRevenueEvent("seocopy_checkout_started", {
+      plan,
+      access_mode: usage.accessMode,
+      free_remaining: usage.freeRemaining,
+      paid_credits: usage.paidCredits,
+      subscription_active: usage.subscriptionActive,
+    });
 
     try {
       const response = await fetch("/api/checkout", {
@@ -292,8 +335,18 @@ export default function GeneratorClient({
         throw new Error(payload.error ?? "Unable to start checkout.");
       }
 
+      trackRevenueEvent("seocopy_checkout_redirected", {
+        plan,
+      });
       window.location.href = payload.url;
     } catch (error) {
+      trackRevenueEvent("seocopy_checkout_failed", {
+        plan,
+        message:
+          error instanceof Error
+            ? error.message.slice(0, 120)
+            : "unknown_checkout_error",
+      });
       setNotice({
         type: "error",
         text:
@@ -303,7 +356,28 @@ export default function GeneratorClient({
       });
       setCheckoutPending(null);
     }
-  }
+  }, [
+    usage.accessMode,
+    usage.freeRemaining,
+    usage.paidCredits,
+    usage.subscriptionActive,
+  ]);
+
+  useEffect(() => {
+    if (!initialCheckoutPlan || checkoutStartedFromUrl.current) {
+      return;
+    }
+
+    checkoutStartedFromUrl.current = true;
+    setNotice({
+      type: "info",
+      text:
+        initialCheckoutPlan === "subscription"
+          ? "Starting monthly checkout..."
+          : "Starting one-time checkout...",
+    });
+    void handleCheckout(initialCheckoutPlan);
+  }, [handleCheckout, initialCheckoutPlan]);
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-6 py-10 lg:px-10">
