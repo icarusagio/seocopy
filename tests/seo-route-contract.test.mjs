@@ -5,6 +5,7 @@ import { test } from "node:test";
 const appDir = new URL("../src/app/", import.meta.url);
 const sitemap = readFileSync(new URL("../src/app/sitemap.ts", import.meta.url), "utf8");
 const home = readFileSync(new URL("../src/app/page.tsx", import.meta.url), "utf8");
+const manifest = readFileSync(new URL("../src/app/manifest.ts", import.meta.url), "utf8");
 const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
 
 const routeInventory = [
@@ -705,6 +706,15 @@ test("route inventory stays synchronized with App Router marketing pages", () =>
     discoveredMarketingRoutes,
     "Update routeInventory whenever a marketing page is added or removed",
   );
+});
+
+test("web app manifest opens installed users into the revenue funnel", () => {
+  assert.ok(manifest.includes('name: "SEOCopy — AI SEO Copy Generator"'), "manifest missing product name");
+  assert.ok(manifest.includes('start_url: "/generate"'), "manifest should open to generator funnel");
+  assert.ok(manifest.includes('display: "standalone"'), "manifest should enable app-like launch");
+  assert.ok(manifest.includes('theme_color: "#2563eb"'), "manifest missing browser theme color");
+  assert.ok(manifest.includes('"business", "productivity", "marketing"'), "manifest missing buyer-facing categories");
+  assert.ok(!manifest.includes('/favicon.ico'), "manifest should not advertise missing favicon asset");
 });
 
 test("all marketing routes are discoverable from homepage, sitemap, and README", () => {
