@@ -76,7 +76,7 @@ export async function GET(request: Request) {
 
   const days = Math.min(Math.max(Number(url.searchParams.get("days") ?? 30), 1), 90);
 
-  const [daily, topPages, actions, referrers, generationBreakdown] = await Promise.all([
+  const [daily, topPages, actions, referrers, generationBreakdown, conversionFunnel] = await Promise.all([
     runHogql(`
       SELECT
         toDate(timestamp) AS day,
@@ -135,6 +135,18 @@ export async function GET(request: Request) {
       ORDER BY generations DESC
       LIMIT 50
     `),
+    runHogql(`
+      SELECT
+        uniqIf(person_id, event = '$pageview') AS visitors,
+        uniqIf(person_id, event = 'seo_copy_generate_success') AS generators,
+        uniqIf(person_id, event = 'seo_copy_checkout_started') AS checkout_starters,
+        round(if(visitors = 0, 0, generators / visitors * 100), 2) AS visitor_to_generation_rate,
+        round(if(generators = 0, 0, checkout_starters / generators * 100), 2) AS generation_to_checkout_rate,
+        round(if(visitors = 0, 0, checkout_starters / visitors * 100), 2) AS visitor_to_checkout_rate
+      FROM events
+      WHERE timestamp >= now() - INTERVAL ${days} DAY
+        AND (event = '$pageview' OR event LIKE 'seo_copy_%')
+    `),
   ]);
 
   return NextResponse.json({
@@ -145,5 +157,6 @@ export async function GET(request: Request) {
     actions,
     referrers,
     generationBreakdown,
+    conversionFunnel,
   });
 }

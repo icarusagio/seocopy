@@ -16,6 +16,7 @@ type AnalyticsPayload = {
   actions: QueryResult;
   referrers: QueryResult;
   generationBreakdown: QueryResult;
+  conversionFunnel: QueryResult;
   error?: string;
 };
 
@@ -74,8 +75,26 @@ export default function AnalyticsDashboardClient() {
     const generations = rows.reduce((sum, row) => sum + Number(row[3] ?? 0), 0);
     const checkoutStarts = rows.reduce((sum, row) => sum + Number(row[4] ?? 0), 0);
     const visitors = Math.max(...rows.map((row) => Number(row[1] ?? 0)), 0);
+    const funnel = data?.conversionFunnel.results?.[0] ?? [];
+    const uniqueVisitors = Number(funnel[0] ?? 0);
+    const uniqueGenerators = Number(funnel[1] ?? 0);
+    const uniqueCheckoutStarters = Number(funnel[2] ?? 0);
+    const visitorToGenerationRate = Number(funnel[3] ?? 0);
+    const generationToCheckoutRate = Number(funnel[4] ?? 0);
+    const visitorToCheckoutRate = Number(funnel[5] ?? 0);
 
-    return { pageviews, generations, checkoutStarts, visitorsPeakDay: visitors };
+    return {
+      pageviews,
+      generations,
+      checkoutStarts,
+      visitorsPeakDay: visitors,
+      uniqueVisitors,
+      uniqueGenerators,
+      uniqueCheckoutStarters,
+      visitorToGenerationRate,
+      generationToCheckoutRate,
+      visitorToCheckoutRate,
+    };
   }, [data]);
 
   async function loadAnalytics(event: React.FormEvent<HTMLFormElement>) {
@@ -110,7 +129,7 @@ export default function AnalyticsDashboardClient() {
           </p>
           <h1 className="text-4xl font-semibold tracking-tight">SEOCopy usage stats</h1>
           <p className="mt-3 max-w-3xl text-slate-600 dark:text-slate-300">
-            Page views, visitor trends, conversion events, top pages, referrers, and generator usage from PostHog. This dashboard is protected by ANALYTICS_ADMIN_TOKEN.
+            Page views, visitor trends, conversion-event rates, top pages, referrers, and generator usage from PostHog. This dashboard is protected by ANALYTICS_ADMIN_TOKEN.
           </p>
           <form onSubmit={loadAnalytics} className="mt-6 flex flex-col gap-3 sm:flex-row">
             <input
@@ -152,6 +171,20 @@ export default function AnalyticsDashboardClient() {
                 <div key={label} className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">{label}</p>
                   <p className="mt-2 text-3xl font-semibold">{value}</p>
+                </div>
+              ))}
+            </section>
+
+            <section className="grid gap-4 lg:grid-cols-3">
+              {[
+                ["Visitor → generation", `${totals.visitorToGenerationRate}%`, `${totals.uniqueGenerators} of ${totals.uniqueVisitors} visitors generated copy`],
+                ["Generation → checkout", `${totals.generationToCheckoutRate}%`, `${totals.uniqueCheckoutStarters} generator users started checkout`],
+                ["Visitor → checkout", `${totals.visitorToCheckoutRate}%`, `${totals.uniqueCheckoutStarters} of ${totals.uniqueVisitors} visitors reached paid intent`],
+              ].map(([label, value, detail]) => (
+                <div key={label} className="rounded-2xl border border-cyan-200 bg-cyan-50 p-5 dark:border-cyan-300/20 dark:bg-cyan-300/10">
+                  <p className="text-xs uppercase tracking-[0.2em] text-cyan-700 dark:text-cyan-200">{label}</p>
+                  <p className="mt-2 text-3xl font-semibold">{value}</p>
+                  <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{detail}</p>
                 </div>
               ))}
             </section>
