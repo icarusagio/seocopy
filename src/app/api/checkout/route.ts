@@ -3,6 +3,28 @@ import { NextResponse } from "next/server";
 import { CHECKOUT_OPTIONS } from "@/lib/constants";
 import { getStripe } from "@/lib/stripe";
 
+function getCheckoutOrigin(request: Request) {
+  const candidates = [
+    request.headers.get("origin"),
+    request.headers.get("referer"),
+    request.url,
+  ];
+
+  for (const candidate of candidates) {
+    if (!candidate) {
+      continue;
+    }
+
+    try {
+      return new URL(candidate).origin;
+    } catch {
+      // Ignore malformed proxy/client headers and try the next source.
+    }
+  }
+
+  return "http://localhost:3000";
+}
+
 export async function POST(request: Request) {
   let body: { plan?: string };
   try {
@@ -23,10 +45,7 @@ export async function POST(request: Request) {
   const option = CHECKOUT_OPTIONS[plan];
   const stripe = getStripe();
 
-  const origin =
-    request.headers.get("origin") ??
-    request.headers.get("referer")?.replace(/\/+$/, "") ??
-    "http://localhost:3000";
+  const origin = getCheckoutOrigin(request);
 
   try {
     if (plan === "subscription") {
