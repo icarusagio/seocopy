@@ -39,6 +39,33 @@ const pricing = [
   },
 ];
 
+const sampleOutputs = [
+  {
+    vertical: "DTC skincare",
+    input: "Sensitive-skin serum launch with a premium positioning.",
+    title: "Barrier Repair Serum for Calm, Camera-Ready Skin",
+    description:
+      "Soothe redness, rebuild your moisture barrier, and get a healthy glow with a dermatologist-informed serum made for sensitive skin.",
+    cta: "Build my skincare page",
+  },
+  {
+    vertical: "Local service",
+    input: "Emergency plumbing page for homeowners in Austin.",
+    title: "Austin Emergency Plumbers Available in 60 Minutes",
+    description:
+      "Book licensed plumbers for burst pipes, leaks, and clogged drains with upfront pricing, fast arrival windows, and cleanup included.",
+    cta: "Write my local SEO page",
+  },
+  {
+    vertical: "B2B SaaS",
+    input: "Analytics product for revenue teams trying to reduce churn.",
+    title: "Spot Expansion Risks Before Renewal Calls Start",
+    description:
+      "Turn product usage, support signals, and account notes into renewal-ready insights so customer success teams know where to act first.",
+    cta: "Draft my SaaS landing copy",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1040,6 +1067,63 @@ export default function Home() {
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="mb-8 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+            Output proof
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+            See the type of publish-ready copy buyers get before they pay.
+          </h2>
+          <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+            Each free generation returns concrete SEO assets and conversion angles,
+            so founders, merchants, and marketers can judge quality before opening
+            a paid checkout.
+          </p>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {sampleOutputs.map((sample) => (
+            <article
+              key={sample.vertical}
+              className="flex h-full flex-col rounded-[1.75rem] border border-black/10 bg-white/80 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/5"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-700 dark:text-cyan-300">
+                {sample.vertical}
+              </p>
+              <p className="mt-4 rounded-2xl bg-slate-100 p-4 text-sm leading-6 text-slate-600 dark:bg-white/10 dark:text-slate-300">
+                <span className="font-semibold text-slate-950 dark:text-white">Input:</span>{" "}
+                {sample.input}
+              </p>
+              <div className="mt-5 flex flex-1 flex-col gap-4">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+                    SEO title
+                  </p>
+                  <h3 className="mt-2 text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                    {sample.title}
+                  </h3>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+                    Meta description
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                    {sample.description}
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/generate"
+                className="mt-6 inline-flex justify-center rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950 dark:border-white/15 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"
+              >
+                {sample.cta}
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
 
