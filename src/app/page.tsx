@@ -518,6 +518,11 @@ const useCasePages = [
     body: "Course descriptions, learning outcomes, module summaries, FAQs, SEO snippets, and enrollment CTAs from one course brief.",
   },
   {
+    title: "Job Description Generator",
+    href: "/job-description-generator",
+    body: "Job descriptions, responsibilities, qualifications, candidate FAQs, interview scorecard prompts, and hiring CTAs from one role brief.",
+  },
+  {
     title: "Customer Feedback Survey Generator",
     href: "/customer-feedback-survey-generator",
     body: "Customer feedback surveys, post-purchase survey questions, NPS prompts, product feedback forms, and retention insight CTAs from one research brief.",
