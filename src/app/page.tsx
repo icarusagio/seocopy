@@ -760,6 +760,11 @@ const useCasePages = [
     body: "Twitter/X bios, profile taglines, pinned-post hooks, SEO snippets, social previews, and CTA variants from one profile brief.",
   },
   {
+    title: "X Twitter Post Generator",
+    href: "/x-twitter-post-generator",
+    body: "X/Twitter posts, hooks, threads, launch updates, engagement prompts, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "YouTube Description Generator",
     href: "/youtube-description-generator",
     body: "YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA variants from one video brief.",

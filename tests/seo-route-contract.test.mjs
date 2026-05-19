@@ -162,6 +162,7 @@ const routeInventory = [
   "/welcome-email-generator",
   "/white-paper-generator",
   "/winback-email-generator",
+  "/x-twitter-post-generator",
   "/youtube-description-generator",
   "/youtube-script-generator",
   "/youtube-title-generator"
@@ -462,6 +463,17 @@ const routeContracts = [
       "platform-specific post drafts",
       "campaign angles",
       "engagement CTAs",
+      "FAQPage",
+    ],
+  },
+  {
+    route: "x-twitter-post-generator",
+    requiredTexts: [
+      "X Twitter Post Generator",
+      "X/Twitter posts",
+      "thread outlines",
+      "engagement prompts",
+      "conversion CTAs",
       "FAQPage",
     ],
   },

@@ -188,6 +188,7 @@ Use it when you need to:
 - `/blog-meta-description-generator` — blog meta descriptions, SERP snippets, social previews, title alternatives, and CTA variants from one article brief
 - `/competitor-comparison-page-generator` — competitor comparison pages, alternative-page positioning, proof sections, FAQs, metadata, and CTAs use-case page
 - `/referral-email-generator` — referral emails, friend-invite campaigns, reward reminders, advocate sharing CTAs, FAQs, and SEO snippets from one referral program brief
+- `/x-twitter-post-generator` — X/Twitter posts, hooks, threads, launch updates, engagement prompts, SEO snippets, and CTA variants from one campaign or product brief
 
 ## Tech stack
 
