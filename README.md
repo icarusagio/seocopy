@@ -93,6 +93,7 @@ Use it when you need to:
 - `/youtube-description-generator` — YouTube descriptions, SEO titles, chapters, pinned comments, social previews, and CTA use-case page
 - `/youtube-title-generator` — YouTube titles, thumbnail hooks, search angles, description openings, and CTA use-case page
 - `/youtube-script-generator` — YouTube scripts, hooks, intros, SEO titles, descriptions, pinned comments, and CTA variants from one creator brief
+- `/youtube-shorts-script-generator` — YouTube Shorts scripts, hooks, retention beats, caption overlays, SEO snippets, and CTA variants from one short-form video brief
 - `/podcast-show-notes-generator` — podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA use-case page
 - `/podcast-title-generator` — podcast titles, episode hooks, SEO episode titles, show description angles, social teasers, and CTA variants from one episode brief
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page

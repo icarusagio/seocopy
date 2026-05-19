@@ -165,6 +165,7 @@ const routeInventory = [
   "/x-twitter-post-generator",
   "/youtube-description-generator",
   "/youtube-script-generator",
+  "/youtube-shorts-script-generator",
   "/youtube-title-generator"
 ];
 
@@ -749,6 +750,17 @@ const routeContracts = [
       "executive summary",
       "research-backed sections",
       "lead magnet CTAs",
+      "FAQPage",
+    ],
+  },
+  {
+    route: "youtube-shorts-script-generator",
+    requiredTexts: [
+      "YouTube Shorts Script Generator",
+      "YouTube Shorts scripts",
+      "retention beats",
+      "caption overlays",
+      "YouTube Shorts hooks",
       "FAQPage",
     ],
   },
