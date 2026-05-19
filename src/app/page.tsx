@@ -260,6 +260,11 @@ const useCasePages = [
     body: "Lead magnet ideas, opt-in page copy, SEO snippets, nurture email angles, FAQs, and CTAs from one audience or offer brief.",
   },
   {
+    title: "Lead Nurturing Email Generator",
+    href: "/lead-nurturing-email-generator",
+    body: "Lead nurturing emails, drip campaign copy, segment-aware follow-ups, objection reducers, sales handoff notes, and conversion CTAs from one prospect brief.",
+  },
+  {
     title: "Popup Copy Generator",
     href: "/popup-copy-generator",
     body: "Popup copy, exit-intent offers, email capture modals, discount and lead magnet variants, reassurance microcopy, and CTAs from one campaign brief.",
