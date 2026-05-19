@@ -57,6 +57,7 @@ Use it when you need to:
 - `/google-ads-copy-generator` — Google Ads headlines, descriptions, PPC landing page angles, SEO snippets, and CTA use-case page
 - `/google-ads-description-generator` — Google Ads descriptions, responsive search ad copy, PPC offer angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief
 - `/google-ads-headline-generator` — responsive search ad headlines, keyword-matched PPC angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief
+- `/microsoft-ads-description-generator` — Microsoft Ads descriptions, Bing search ad copy, PPC offer angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief
 - `/facebook-ad-copy-generator` — Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy use-case page
 - `/instagram-ad-copy-generator` — Instagram ad copy, Reels hooks, Story ad variants, carousel captions, CTAs, and paid social landing snippets from one campaign brief
 - `/ugc-ad-script-generator` — UGC ad scripts, creator hook ideas, testimonial-style product proof, B-roll prompts, short-form video CTAs, and landing snippets from one campaign brief

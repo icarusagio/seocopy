@@ -630,6 +630,11 @@ const useCasePages = [
     body: "Responsive search ad headlines, keyword-matched PPC angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Microsoft Ads Description Generator",
+    href: "/microsoft-ads-description-generator",
+    body: "Microsoft Ads descriptions, Bing search ad copy, PPC offer angles, landing page hooks, SEO snippets, and CTA variants from one campaign brief.",
+  },
+  {
     title: "Facebook Ad Copy Generator",
     href: "/facebook-ad-copy-generator",
     body: "Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy from one campaign brief.",
