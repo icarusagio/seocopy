@@ -885,6 +885,11 @@ const useCasePages = [
     body: "Webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.",
   },
   {
+    title: "White Paper Generator",
+    href: "/white-paper-generator",
+    body: "White paper outlines, executive summaries, research-backed sections, lead magnet CTAs, FAQs, and SEO snippets from one B2B topic brief.",
+  },
+  {
     title: "Tagline Generator",
     href: "/tagline-generator",
     body: "Brand taglines, slogans, homepage one-liners, SEO snippets, social previews, and CTA variants from one positioning brief.",

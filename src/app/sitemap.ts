@@ -894,6 +894,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/white-paper-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/tagline-generator`,
       lastModified,
       changeFrequency: "weekly",

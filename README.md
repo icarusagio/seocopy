@@ -107,6 +107,7 @@ Use it when you need to:
 - `/press-release-generator` — press releases, media pitches, announcement copy, SEO metadata, social previews, and CTA variants from one launch brief.
 - `/press-kit-generator` — company boilerplates, founder bios, product facts, media pitches, FAQs, SEO snippets, and CTAs from one brand or launch brief.
 - `/webinar-landing-page-generator` — webinar registration pages, agendas, speaker proof, SEO snippets, reminder copy, and CTA variants from one event brief.
+- `/white-paper-generator` — white paper outlines, executive summaries, research-backed sections, lead magnet CTAs, FAQs, and SEO snippets from one B2B topic brief
 - `/tagline-generator` — brand taglines, slogans, homepage one-liners, SEO snippets, social previews, and CTA variants from one positioning brief.
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
