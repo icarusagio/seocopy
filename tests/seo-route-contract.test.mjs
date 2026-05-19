@@ -61,6 +61,7 @@ const routeInventory = [
   "/feature-benefit-generator",
   "/free-seo-copy-generator",
   "/google-ads-copy-generator",
+  "/google-ads-description-generator",
   "/google-ads-headline-generator",
   "/google-business-profile-description-generator",
   "/google-review-response-generator",
