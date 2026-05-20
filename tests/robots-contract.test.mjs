@@ -8,6 +8,6 @@ test("robots metadata allows revenue pages while pointing crawlers at the sitema
   assert.match(robots, /allow:\s*"\/"/);
   assert.match(robots, /sitemap:\s*`\$\{siteUrl\}\/sitemap\.xml`/);
   assert.match(robots, /host:\s*siteUrl/);
-  assert.match(robots, /disallow:\s*\["\/api\/",\s*"\/analytics"\]/);
+  assert.match(robots, /disallow:\s*\["\/api\/",\s*"\/analytics",\s*"\/analytics\/"\]/);
   assert.doesNotMatch(robots, /disallow:\s*"\/"/);
 });
