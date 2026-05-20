@@ -50,3 +50,20 @@ test("homepage highlights the fastest revenue-producing copy tasks", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives trial visitors copy-paste prompt starters", () => {
+  const requiredCopy = [
+    "Copy-paste prompt starters",
+    "Remove the blank-page step before the first free generation.",
+    "Product page sprint",
+    "Local service sprint",
+    "Retention campaign sprint",
+    "homepage-prompt-starter-product-page",
+    "homepage-prompt-starter-local-service",
+    "homepage-prompt-starter-retention",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

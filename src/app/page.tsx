@@ -93,6 +93,27 @@ const revenueShortcuts = [
   },
 ];
 
+const promptStarters = [
+  {
+    label: "Product page sprint",
+    prompt:
+      "Write SEO metadata, proof bullets, FAQs, and a primary CTA for a $79 posture-correcting desk chair aimed at remote workers with back pain.",
+    href: "/generate?source=homepage-prompt-starter-product-page",
+  },
+  {
+    label: "Local service sprint",
+    prompt:
+      "Create a local SEO landing page angle, title, meta description, FAQs, and call CTA for same-day HVAC repair in Phoenix.",
+    href: "/generate?source=homepage-prompt-starter-local-service",
+  },
+  {
+    label: "Retention campaign sprint",
+    prompt:
+      "Draft a winback email, subject line, preview text, SMS variant, and offer CTA for inactive subscribers who bought skincare 90 days ago.",
+    href: "/generate?source=homepage-prompt-starter-retention",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1132,6 +1153,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-cyan-700 dark:text-cyan-300">
                   {shortcut.cta} →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-black/10 bg-white/80 p-8 shadow-[0_24px_80px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/5">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+              Copy-paste prompt starters
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Remove the blank-page step before the first free generation.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Start from a revenue-ready brief, paste it into the generator, and swap in your product,
+              audience, proof points, and CTA so the free trial gets to useful output faster.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {promptStarters.map((starter) => (
+              <Link
+                key={starter.label}
+                href={starter.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-0.5 hover:border-cyan-300 dark:border-white/10 dark:bg-slate-950/40"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {starter.label}
+                </h3>
+                <p className="mt-4 flex-1 rounded-2xl bg-white p-4 text-sm leading-7 text-slate-600 dark:bg-white/5 dark:text-slate-300">
+                  “{starter.prompt}”
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-cyan-700 dark:text-cyan-300">
+                  Open generator with this sprint →
                 </span>
               </Link>
             ))}
