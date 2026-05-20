@@ -129,6 +129,30 @@ const trialChecklist = [
   },
 ];
 
+const conversionSprints = [
+  {
+    name: "Product page rescue",
+    before: "Premium travel mug with lid. Keeps drinks hot. Available in black and silver.",
+    after:
+      "Leakproof Travel Mug That Keeps Coffee Hot Through the Commute — stainless steel insulation, cup-holder fit, and a spill-safe lid for busy mornings.",
+    href: "/generate?source=homepage-before-after-product-page",
+  },
+  {
+    name: "Local service booking",
+    before: "We offer pest control services in Dallas. Call us for a quote.",
+    after:
+      "Dallas Pest Control With Same-Week Appointments — stop ants, roaches, and rodents with licensed technicians, upfront pricing, and family-safe treatment options.",
+    href: "/generate?source=homepage-before-after-local-service",
+  },
+  {
+    name: "Retention email winback",
+    before: "Come back and shop our sale. Use this coupon before it ends.",
+    after:
+      "Your favorites are back in stock — take 15% off the routine you loved, plus see three new bundles picked for your last order.",
+    href: "/generate?source=homepage-before-after-retention-email",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1246,6 +1270,50 @@ export default function Home() {
           >
             Run the two-generation trial →
           </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-amber-200 bg-amber-50/80 p-8 shadow-[0_24px_80px_rgba(245,158,11,0.12)] dark:border-amber-300/20 dark:bg-amber-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-700 dark:text-amber-300">
+              Before/after conversion proof
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Show trial visitors the rewrite quality before they spend a free generation.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Concrete before-and-after examples make the upgrade path easier to trust: SEOCopy can turn flat product, service, and retention copy into specific revenue-ready angles.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {conversionSprints.map((sprint) => (
+              <Link
+                key={sprint.name}
+                href={sprint.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(15,23,42,0.12)] dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {sprint.name}
+                </h3>
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+                  Before
+                </p>
+                <p className="mt-2 rounded-2xl bg-slate-100 p-4 text-sm leading-6 text-slate-600 dark:bg-white/10 dark:text-slate-300">
+                  “{sprint.before}”
+                </p>
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700 dark:text-amber-300">
+                  After
+                </p>
+                <p className="mt-2 flex-1 rounded-2xl bg-amber-100/70 p-4 text-sm font-medium leading-6 text-slate-800 dark:bg-amber-300/10 dark:text-slate-100">
+                  “{sprint.after}”
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-amber-800 dark:text-amber-200">
+                  Try this rewrite sprint →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

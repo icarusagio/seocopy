@@ -82,3 +82,23 @@ test("homepage explains the free trial activation path before paid checkout", ()
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage shows before-and-after conversion proof before trial activation", () => {
+  const requiredCopy = [
+    "Before/after conversion proof",
+    "Show trial visitors the rewrite quality before they spend a free generation.",
+    "Product page rescue",
+    "Local service booking",
+    "Retention email winback",
+    "Leakproof Travel Mug That Keeps Coffee Hot Through the Commute",
+    "Dallas Pest Control With Same-Week Appointments",
+    "Your favorites are back in stock",
+    "homepage-before-after-product-page",
+    "homepage-before-after-local-service",
+    "homepage-before-after-retention-email",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
