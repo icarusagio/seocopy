@@ -441,6 +441,11 @@ const useCasePages = [
     body: "GBP descriptions, local SEO metadata, service blurbs, Google posts, FAQs, and call-focused CTAs for local businesses.",
   },
   {
+    title: "Google Business Profile Post Generator",
+    href: "/google-business-profile-post-generator",
+    body: "Google Business Profile posts, local offer updates, event promos, service announcements, FAQs, and call-focused CTAs for active local profiles.",
+  },
+  {
     title: "Google Review Response Generator",
     href: "/google-review-response-generator",
     body: "Google review replies, service recovery responses, local SEO snippets, FAQs, and CTAs for reputation-focused local businesses.",

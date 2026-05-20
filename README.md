@@ -152,9 +152,10 @@ Use it when you need to:
 - `/service-page-copy-generator` — agency, consultant, and local service page copy use-case page
 - `/local-seo-copy-generator` — local business and service-area SEO copy use-case page
 - `/real-estate-listing-description-generator` — property listing description and real estate SEO copy use-case page
-- `/restaurant-menu-description-generator` — restaurant menu descriptions, delivery app copy, and hospitality SEO use-case page
+- `/restaurant-menu-description-generator` — menu descriptions, restaurant SEO metadata, delivery app blurbs, specials, FAQs, and ordering CTAs from rough dish notes
 - `/google-business-profile-description-generator` — Google Business Profile descriptions and local SEO copy use-case page
-- `/google-review-response-generator` — Google review replies, service recovery responses, local SEO snippets, FAQs, and CTA use-case page
+- `/google-business-profile-post-generator` — Google Business Profile posts, local offer updates, event promos, service announcements, FAQs, and call-focused CTAs for active local profiles
+- `/google-review-response-generator` — Google review replies, service recovery responses, local SEO snippets, FAQs, and CTAs for reputation-focused local businesses
 - `/product-seo-title-generator` — ecommerce product title tag use-case page
 - `/shopify-product-title-generator` — Shopify product titles, SEO title tags, collection angles, social previews, and PDP copy variants from one product brief
 - `/product-name-generator` — brandable product names, ecommerce listing titles, SEO snippets, social previews, and launch copy angles from one product brief
