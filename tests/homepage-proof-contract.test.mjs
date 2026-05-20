@@ -67,3 +67,18 @@ test("homepage gives trial visitors copy-paste prompt starters", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage explains the free trial activation path before paid checkout", () => {
+  const requiredCopy = [
+    "Free trial activation path",
+    "Know exactly when a free generation is worth paying for.",
+    "1. Paste a ready brief",
+    "2. Compare the output to a live page",
+    "3. Upgrade only for the next revenue asset",
+    "homepage-trial-activation-path",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

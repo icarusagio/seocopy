@@ -114,6 +114,21 @@ const promptStarters = [
   },
 ];
 
+const trialChecklist = [
+  {
+    step: "1. Paste a ready brief",
+    body: "Start from a product, landing page, or retention prompt so the first free run has enough context to produce buyer-facing copy.",
+  },
+  {
+    step: "2. Compare the output to a live page",
+    body: "Check the SEO title, meta description, CTA, FAQs, and objection handling against the page or campaign you want to improve.",
+  },
+  {
+    step: "3. Upgrade only for the next revenue asset",
+    body: "Use the $5 one-off option when the free output proves useful and you need the next product page, email, or landing page variation.",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1193,6 +1208,44 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-emerald-200 bg-emerald-50/80 p-8 shadow-[0_24px_80px_rgba(16,185,129,0.12)] dark:border-emerald-300/20 dark:bg-emerald-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700 dark:text-emerald-300">
+              Free trial activation path
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Know exactly when a free generation is worth paying for.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              The first session now gives visitors a simple quality gate: paste a complete brief,
+              judge the generated revenue asset, then buy only when the next output can support a real campaign.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {trialChecklist.map((item) => (
+              <article
+                key={item.step}
+                className="rounded-[1.5rem] border border-black/10 bg-white/85 p-6 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {item.step}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+          <Link
+            href="/generate?source=homepage-trial-activation-path"
+            className="mt-8 inline-flex rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 dark:bg-emerald-300 dark:text-slate-950 dark:hover:bg-emerald-200"
+          >
+            Run the two-generation trial →
+          </Link>
         </div>
       </section>
 
