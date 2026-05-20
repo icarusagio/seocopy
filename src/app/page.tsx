@@ -181,6 +181,11 @@ const useCasePages = [
     body: "Product-drop email campaigns, segmented promo angles, Klaviyo-ready copy blocks, subject lines, preview text, and CTAs for Shopify merchants.",
   },
   {
+    title: "Klaviyo Email Generator",
+    href: "/klaviyo-email-generator",
+    body: "Klaviyo subject lines, preview text, campaign blocks, lifecycle flow copy, segment variants, FAQs, and CTAs for ecommerce teams.",
+  },
+  {
     title: "Startup SEO Copy Generator",
     href: "/startup-seo-copy-generator",
     body: "Search snippets, hero copy, social previews, and CTA variants for founder-led launches.",

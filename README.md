@@ -82,6 +82,7 @@ Use it when you need to:
 - `/linkedin-carousel-generator` — LinkedIn carousels, slide-by-slide outlines, hook slides, captions, SEO snippets, and CTA variants from one B2B content brief
 - `/ai-email-writer-generator` — AI email writer drafts for sales emails, launch announcements, lifecycle nurture copy, follow-ups, subject lines, and CTA variants from one campaign brief
 - `/email-sequence-generator` — email sequence copy for welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief
+- `/klaviyo-email-generator` — Klaviyo-ready subject lines, preview text, ecommerce campaign blocks, lifecycle flow copy, segment variants, FAQs, and CTAs from one store brief
 - `/review-request-email-generator` — review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment
 - `/abandoned-cart-email-generator` — abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment
 - `/browse-abandonment-email-generator` — browse abandonment emails, product-view recovery flows, personalized product reminders, Shopify browse recovery copy, FAQs, and SEO snippets from one viewed product moment

@@ -74,6 +74,7 @@ const routeInventory = [
   "/instagram-bio-generator",
   "/instagram-caption-generator",
   "/job-description-generator",
+  "/klaviyo-email-generator",
   "/landing-page-ab-test-generator",
   "/landing-page-copy-generator",
   "/landing-page-headline-generator",
