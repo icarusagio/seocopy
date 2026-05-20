@@ -72,6 +72,27 @@ const sampleOutputs = [
   },
 ];
 
+const revenueShortcuts = [
+  {
+    title: "Launch a product page today",
+    body: "Turn a rough offer into SEO metadata, proof bullets, FAQs, and CTA copy for the page most likely to start a checkout.",
+    href: "/product-page-seo-generator",
+    cta: "Build a product page",
+  },
+  {
+    title: "Fix an underperforming landing page",
+    body: "Rewrite the hero, objection handling, pricing CTA, and social preview copy before you buy another traffic test.",
+    href: "/landing-page-seo-generator",
+    cta: "Rewrite a landing page",
+  },
+  {
+    title: "Ship a revenue email",
+    body: "Generate subject lines, preview text, offer framing, and CTA variants for a winback, sale, or launch campaign.",
+    href: "/email-marketing-copy-generator",
+    cta: "Draft an email campaign",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1079,6 +1100,42 @@ export default function Home() {
               </p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50/80 p-8 shadow-[0_24px_80px_rgba(14,165,233,0.12)] dark:border-cyan-300/20 dark:bg-cyan-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+              Revenue sprint shortcuts
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Start with the copy task closest to revenue.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Pick the asset that can unlock a checkout, campaign, or conversion test fastest,
+              then use the free generator before deciding whether to pay for more outputs.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {revenueShortcuts.map((shortcut) => (
+              <Link
+                key={shortcut.href}
+                href={shortcut.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-cyan-400 dark:border-white/10 dark:bg-slate-950/50"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {shortcut.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {shortcut.body}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-cyan-700 dark:text-cyan-300">
+                  {shortcut.cta} →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -33,3 +33,20 @@ test("homepage pricing section reduces checkout risk before paid conversion", ()
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage highlights the fastest revenue-producing copy tasks", () => {
+  const requiredCopy = [
+    "Revenue sprint shortcuts",
+    "Start with the copy task closest to revenue.",
+    "Launch a product page today",
+    "Fix an underperforming landing page",
+    "Ship a revenue email",
+    "/product-page-seo-generator",
+    "/landing-page-seo-generator",
+    "/email-marketing-copy-generator",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
