@@ -661,6 +661,11 @@ const useCasePages = [
     body: "Instagram ad copy, Reels hooks, Story ad variants, carousel captions, CTAs, and paid social landing snippets from one campaign brief.",
   },
   {
+    title: "Pinterest Ad Copy Generator",
+    href: "/pinterest-ad-copy-generator",
+    body: "Pinterest ad copy, promoted pin headlines, shopping campaign descriptions, creative angles, FAQs, and save-to-cart CTAs from one visual commerce brief.",
+  },
+  {
     title: "TikTok Ad Copy Generator",
     href: "/tiktok-ad-copy-generator",
     body: "TikTok ad hooks, primary text, Spark Ads angles, creator-style CTAs, landing page snippets, and paid social copy from one campaign brief.",
