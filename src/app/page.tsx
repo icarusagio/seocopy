@@ -845,6 +845,11 @@ const useCasePages = [
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",
   },
   {
+    title: "LinkedIn Carousel Generator",
+    href: "/linkedin-carousel-generator",
+    body: "LinkedIn carousels, slide-by-slide outlines, hook slides, captions, SEO snippets, and CTA variants from one B2B content brief.",
+  },
+  {
     title: "LinkedIn Summary Generator",
     href: "/linkedin-summary-generator",
     body: "LinkedIn About sections, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one profile brief.",

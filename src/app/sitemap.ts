@@ -642,6 +642,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/linkedin-carousel-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/ai-email-writer-generator`,
       lastModified,
       changeFrequency: "weekly",
