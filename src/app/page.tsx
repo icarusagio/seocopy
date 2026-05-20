@@ -28,14 +28,14 @@ const pricing = [
     price: "$5",
     description: "Buy a single paid generation whenever you need one more.",
     cta: "Buy one generation",
-    href: "/generate?plan=one-time",
+    href: "/generate?plan=one-time&source=homepage-pricing-card",
   },
   {
     name: "Monthly",
     price: "$19/mo",
     description: "Unlimited generations for teams shipping landing pages every week.",
     cta: "Start monthly",
-    href: "/generate?plan=subscription",
+    href: "/generate?plan=subscription&source=homepage-pricing-card",
   },
 ];
 

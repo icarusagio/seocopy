@@ -27,3 +27,21 @@ test("analytics helper is gated by the public PostHog key", () => {
   assert.match(generatorClient, /process\.env\.NEXT_PUBLIC_POSTHOG_KEY/);
   assert.match(generatorClient, /posthog\.capture\(eventName/);
 });
+
+test("checkout analytics preserves safe CTA source attribution", async () => {
+  const generatePage = await readFile(
+    new URL("../src/app/generate/page.tsx", import.meta.url),
+    "utf8",
+  );
+  const homepage = await readFile(
+    new URL("../src/app/page.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(homepage, /plan=one-time&source=homepage-pricing-card/);
+  assert.match(homepage, /plan=subscription&source=homepage-pricing-card/);
+  assert.match(generatePage, /\^\[a-z0-9-\]\{1,48\}\$/);
+  assert.match(generatorClient, /initialCheckoutSource \?\? "url-plan"/);
+  assert.match(generatorClient, /source = "generator-pricing-card"/);
+  assert.match(generatorClient, /source,/);
+});

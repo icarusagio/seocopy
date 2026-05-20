@@ -15,12 +15,18 @@ export default async function GeneratePage({
   const paid = params.paid === "true";
   const canceled = params.canceled === "true";
   const requestedPlan = params.plan;
+  const requestedSource = params.source;
   const initialCheckoutPlan =
     requestedPlan === "subscription"
       ? "subscription"
       : requestedPlan === "one-time"
         ? "single"
         : undefined;
+  const initialCheckoutSource =
+    typeof requestedSource === "string" &&
+    /^[a-z0-9-]{1,48}$/.test(requestedSource)
+      ? requestedSource
+      : undefined;
   const sessionId =
     typeof params.session_id === "string" ? params.session_id : undefined;
 
@@ -28,6 +34,7 @@ export default async function GeneratePage({
     <GeneratorClient
       initialUsage={usage}
       initialCheckoutPlan={initialCheckoutPlan}
+      initialCheckoutSource={initialCheckoutSource}
       checkoutState={{ paid, canceled, sessionId }}
     />
   );

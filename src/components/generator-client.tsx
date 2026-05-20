@@ -53,6 +53,7 @@ type Notice = { type: "error" | "success" | "info"; text: string };
 interface GeneratorClientProps {
   initialUsage: UsageState;
   initialCheckoutPlan?: "single" | "subscription";
+  initialCheckoutSource?: string;
   checkoutState: {
     paid: boolean;
     canceled: boolean;
@@ -108,6 +109,7 @@ function OutputCard({
 export default function GeneratorClient({
   initialUsage,
   initialCheckoutPlan,
+  initialCheckoutSource,
   checkoutState,
 }: GeneratorClientProps) {
   const router = useRouter();
@@ -309,11 +311,15 @@ export default function GeneratorClient({
     }
   }
 
-  const handleCheckout = useCallback(async (plan: "single" | "subscription") => {
+  const handleCheckout = useCallback(async (
+    plan: "single" | "subscription",
+    source = "generator-pricing-card",
+  ) => {
     setCheckoutPending(plan);
     setNotice(null);
     trackRevenueEvent("seocopy_checkout_started", {
       plan,
+      source,
       access_mode: usage.accessMode,
       free_remaining: usage.freeRemaining,
       paid_credits: usage.paidCredits,
@@ -337,11 +343,13 @@ export default function GeneratorClient({
 
       trackRevenueEvent("seocopy_checkout_redirected", {
         plan,
+        source,
       });
       window.location.href = payload.url;
     } catch (error) {
       trackRevenueEvent("seocopy_checkout_failed", {
         plan,
+        source,
         message:
           error instanceof Error
             ? error.message.slice(0, 120)
@@ -376,8 +384,8 @@ export default function GeneratorClient({
           ? "Starting monthly checkout..."
           : "Starting one-time checkout...",
     });
-    void handleCheckout(initialCheckoutPlan);
-  }, [handleCheckout, initialCheckoutPlan]);
+    void handleCheckout(initialCheckoutPlan, initialCheckoutSource ?? "url-plan");
+  }, [handleCheckout, initialCheckoutPlan, initialCheckoutSource]);
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-6 py-10 lg:px-10">
@@ -561,7 +569,7 @@ export default function GeneratorClient({
             <div className="mt-6 space-y-4">
               <button
                 type="button"
-                onClick={() => void handleCheckout("single")}
+                onClick={() => void handleCheckout("single", "generator-pricing-card")}
                 disabled={checkoutPending !== null}
                 className="flex w-full items-center justify-between rounded-2xl border border-white/15 bg-white/10 px-5 py-4 text-left transition hover:bg-white/15 disabled:cursor-not-allowed disabled:opacity-70"
               >
@@ -580,7 +588,9 @@ export default function GeneratorClient({
 
               <button
                 type="button"
-                onClick={() => void handleCheckout("subscription")}
+                onClick={() =>
+                  void handleCheckout("subscription", "generator-pricing-card")
+                }
                 disabled={checkoutPending !== null}
                 className="flex w-full items-center justify-between rounded-2xl border border-white/15 bg-white px-5 py-4 text-left text-slate-950 transition hover:bg-cyan-50 disabled:cursor-not-allowed disabled:opacity-70"
               >
