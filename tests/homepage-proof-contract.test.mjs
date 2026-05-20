@@ -20,3 +20,16 @@ test("homepage includes output proof samples for buyer-intent conversion", () =>
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage pricing section reduces checkout risk before paid conversion", () => {
+  const requiredCopy = [
+    "Low-risk checkout promise",
+    "Try 2 free generations with no signup before you buy.",
+    "Keep every title, description, CTA, and page section you generate.",
+    "Use one $5 generation for a one-off sprint or cancel monthly access anytime.",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

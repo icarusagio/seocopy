@@ -39,6 +39,12 @@ const pricing = [
   },
 ];
 
+const pricingTrustBullets = [
+  "Try 2 free generations with no signup before you buy.",
+  "Keep every title, description, CTA, and page section you generate.",
+  "Use one $5 generation for a one-off sprint or cancel monthly access anytime.",
+];
+
 const sampleOutputs = [
   {
     vertical: "DTC skincare",
@@ -1198,13 +1204,30 @@ export default function Home() {
       </section>
 
       <section id="pricing" className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-        <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
-            Pricing
-          </p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-950 dark:text-white">
-            Simple pricing for testing, one-off work, and always-on production.
-          </h2>
+        <div className="mb-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-end">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+              Pricing
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Simple pricing for testing, one-off work, and always-on production.
+            </h2>
+          </div>
+          <div className="rounded-[1.5rem] border border-cyan-200 bg-cyan-50/80 p-5 text-sm leading-6 text-slate-700 dark:border-cyan-300/30 dark:bg-cyan-300/10 dark:text-slate-200">
+            <p className="font-semibold text-slate-950 dark:text-white">
+              Low-risk checkout promise
+            </p>
+            <ul className="mt-3 space-y-2">
+              {pricingTrustBullets.map((bullet) => (
+                <li key={bullet} className="flex gap-2">
+                  <span aria-hidden="true" className="text-cyan-700 dark:text-cyan-300">
+                    ✓
+                  </span>
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           {pricing.map((plan, index) => (
