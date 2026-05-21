@@ -362,6 +362,11 @@ const useCasePages = [
     body: "Lead nurturing emails, drip campaign copy, segment-aware follow-ups, objection reducers, sales handoff notes, and conversion CTAs from one prospect brief.",
   },
   {
+    title: "Coupon Email Generator",
+    href: "/coupon-email-generator",
+    body: "Coupon emails, promo code announcements, redemption reminders, offer FAQs, urgency angles, and click-ready CTAs from one campaign brief.",
+  },
+  {
     title: "Loyalty Program Email Generator",
     href: "/loyalty-program-email-generator",
     body: "Loyalty program emails, rewards campaign copy, VIP tier announcements, points reminders, member perks CTAs, and repeat-purchase nudges from one retention brief.",
