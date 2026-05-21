@@ -932,6 +932,11 @@ const useCasePages = [
     body: "Churn reduction emails, cancellation-save copy, renewal-risk nudges, retention offers, customer success FAQs, and landing snippets from one customer-risk brief.",
   },
   {
+    title: "Product Update Email Generator",
+    href: "/product-update-email-generator",
+    body: "Product update emails, feature announcement copy, release-note summaries, upgrade CTAs, FAQs, and landing snippets from one launch brief.",
+  },
+  {
     title: "Review Request Email Generator",
     href: "/review-request-email-generator",
     body: "Review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment.",

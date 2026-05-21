@@ -85,6 +85,7 @@ Use it when you need to:
 - `/email-sequence-generator` — email sequence copy for welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief
 - `/trial-activation-email-generator` — trial activation emails, onboarding nudges, feature prompts, usage reminders, upgrade CTAs, FAQs, and lifecycle landing snippets from one SaaS trial brief
 - `/churn-reduction-email-generator` — churn reduction emails, cancellation-save copy, renewal-risk nudges, retention offers, customer success FAQs, and landing snippets from one customer-risk brief
+- `/product-update-email-generator` — product update emails, feature announcement copy, release-note summaries, upgrade CTAs, FAQs, and landing snippets from one launch brief
 - `/klaviyo-email-generator` — Klaviyo-ready subject lines, preview text, ecommerce campaign blocks, lifecycle flow copy, segment variants, FAQs, and CTAs from one store brief
 - `/review-request-email-generator` — review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment
 - `/abandoned-cart-email-generator` — abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment
