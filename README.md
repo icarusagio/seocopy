@@ -168,6 +168,7 @@ Use it when you need to:
 - `/shopify-app-store-listing-generator` — Shopify App Store listing copy, app subtitles, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs from one app brief
 - `/shopify-app-launch-copy-generator` — Shopify app launch emails, Product Hunt blurbs, social posts, App Store update notes, merchant FAQs, SEO snippets, and install CTAs from one app launch brief
 - `/shopify-email-marketing-generator` — Shopify email marketing copy, product-drop email campaigns, segmented promo angles, Klaviyo-ready copy blocks, subject lines, preview text, and CTAs from one store brief
+- `/mailchimp-email-generator` — Mailchimp newsletter copy, promo campaigns, audience segment variants, subject lines, preview text, landing snippets, and CTAs from one brief
 - `/startup-seo-copy-generator` — startup launch SEO/copy use-case page
 - `/meta-tag-generator` — SEO and social metadata use-case page
 - `/free-seo-copy-generator` — free SEO copy trial use-case page

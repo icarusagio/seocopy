@@ -267,6 +267,11 @@ const useCasePages = [
     body: "Klaviyo subject lines, preview text, campaign blocks, lifecycle flow copy, segment variants, FAQs, and CTAs for ecommerce teams.",
   },
   {
+    title: "Mailchimp Email Generator",
+    href: "/mailchimp-email-generator",
+    body: "Mailchimp newsletter copy, promo campaigns, audience segment variants, subject lines, preview text, landing snippets, and CTAs from one brief.",
+  },
+  {
     title: "Startup SEO Copy Generator",
     href: "/startup-seo-copy-generator",
     body: "Search snippets, hero copy, social previews, and CTA variants for founder-led launches.",
