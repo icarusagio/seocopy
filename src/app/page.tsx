@@ -752,6 +752,11 @@ const useCasePages = [
     body: "Pinterest ad copy, promoted pin headlines, shopping campaign descriptions, creative angles, FAQs, and save-to-cart CTAs from one visual commerce brief.",
   },
   {
+    title: "Reddit Ad Copy Generator",
+    href: "/reddit-ad-copy-generator",
+    body: "Reddit ad copy, promoted post headlines, community-aware angles, comment-safe proof, FAQs, and conversion CTAs from one subreddit campaign brief.",
+  },
+  {
     title: "TikTok Ad Copy Generator",
     href: "/tiktok-ad-copy-generator",
     body: "TikTok ad hooks, primary text, Spark Ads angles, creator-style CTAs, landing page snippets, and paid social copy from one campaign brief.",

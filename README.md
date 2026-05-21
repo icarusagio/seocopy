@@ -61,6 +61,7 @@ Use it when you need to:
 - `/facebook-ad-copy-generator` — Facebook ad hooks, primary text, headlines, CTAs, landing page snippets, and paid social SEO copy use-case page
 - `/instagram-ad-copy-generator` — Instagram ad copy, Reels hooks, Story ad variants, carousel captions, CTAs, and paid social landing snippets from one campaign brief
 - `/pinterest-ad-copy-generator` — Pinterest ad copy, promoted pin headlines, shopping campaign descriptions, creative angles, FAQs, and save-to-cart CTAs from one visual commerce brief
+- `/reddit-ad-copy-generator` — Reddit ad copy, promoted post headlines, community-aware angles, comment-safe proof, FAQs, and conversion CTAs from one subreddit campaign brief
 - `/tiktok-ad-copy-generator` — TikTok ad hooks, primary text, Spark Ads angles, creator-style CTAs, landing page snippets, and paid social copy from one campaign brief
 - `/ugc-ad-script-generator` — UGC ad scripts, creator hook ideas, testimonial-style product proof, B-roll prompts, short-form video CTAs, and landing snippets from one campaign brief
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page

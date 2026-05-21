@@ -666,6 +666,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/reddit-ad-copy-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/tiktok-ad-copy-generator`,
       lastModified,
       changeFrequency: "weekly",
