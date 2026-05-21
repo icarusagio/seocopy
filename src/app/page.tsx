@@ -927,6 +927,11 @@ const useCasePages = [
     body: "Trial activation emails, onboarding nudges, feature prompts, usage reminders, upgrade CTAs, FAQs, and lifecycle landing snippets from one SaaS trial brief.",
   },
   {
+    title: "Churn Reduction Email Generator",
+    href: "/churn-reduction-email-generator",
+    body: "Churn reduction emails, cancellation-save copy, renewal-risk nudges, retention offers, customer success FAQs, and landing snippets from one customer-risk brief.",
+  },
+  {
     title: "Review Request Email Generator",
     href: "/review-request-email-generator",
     body: "Review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment.",
