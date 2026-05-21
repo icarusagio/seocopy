@@ -922,6 +922,11 @@ const useCasePages = [
     body: "Welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief.",
   },
   {
+    title: "Trial Activation Email Generator",
+    href: "/trial-activation-email-generator",
+    body: "Trial activation emails, onboarding nudges, feature prompts, usage reminders, upgrade CTAs, FAQs, and lifecycle landing snippets from one SaaS trial brief.",
+  },
+  {
     title: "Review Request Email Generator",
     href: "/review-request-email-generator",
     body: "Review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment.",
