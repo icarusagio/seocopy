@@ -39,6 +39,7 @@ Use it when you need to:
 - `/seo-title-generator` — title tag use-case page
 - `/ai-page-title-generator` — AI page title and snippet use-case page
 - `/homepage-title-generator` — homepage SEO title and hero copy use-case page
+- `/holiday-gift-guide-generator` — holiday gift guide copy, curated product picks, seasonal SEO snippets, email angles, FAQs, and shop-now CTAs from one ecommerce campaign brief
 - `/website-copy-generator` — website copy use-case page
 - `/copywriting-generator` — conversion-focused page copy, SEO snippets, social previews, campaign angles, and CTA variants from one product or offer brief.
 - `/course-description-generator` — course descriptions, learning outcomes, module summaries, FAQs, SEO snippets, and enrollment CTAs from one course brief.

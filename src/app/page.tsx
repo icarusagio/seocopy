@@ -647,6 +647,11 @@ const useCasePages = [
     body: "Homepage SEO title tags, meta descriptions, social previews, hero headlines, and CTA copy from a rough offer.",
   },
   {
+    title: "Holiday Gift Guide Generator",
+    href: "/holiday-gift-guide-generator",
+    body: "Holiday gift guide copy, curated product picks, seasonal SEO snippets, email angles, FAQs, and shop-now CTAs from one ecommerce campaign brief.",
+  },
+  {
     title: "Website Copy Generator",
     href: "/website-copy-generator",
     body: "Homepage-ready headlines, SEO metadata, social previews, and CTA ideas from a rough offer.",
