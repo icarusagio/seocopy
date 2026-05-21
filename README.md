@@ -191,6 +191,7 @@ Use it when you need to:
 - `/content-calendar-generator` — SEO content calendars, publishing plans, keyword clusters, metadata prompts, FAQ angles, repurposing ideas, and CTA direction from one product or audience brief
 - `/lead-magnet-generator` — lead magnet ideas, opt-in page copy, SEO snippets, nurture email angles, FAQs, and CTAs from one audience or offer brief
 - `/lead-nurturing-email-generator` — lead nurturing emails, drip campaign copy, segment-aware follow-ups, objection reducers, sales handoff notes, and conversion CTAs from one prospect brief
+- `/loyalty-program-email-generator` — loyalty program emails, rewards campaign copy, VIP tier announcements, points reminders, member perks CTAs, FAQs, and repeat-purchase nudges from one retention brief
 - `/popup-copy-generator` — popup copy, exit-intent offers, email capture modals, discount and lead magnet variants, reassurance microcopy, and CTAs from one campaign brief
 - `/homepage-copy-generator` — homepage copy, hero section messaging, homepage section copy, proof blocks, FAQs, and above-the-fold CTAs from one offer brief
 - `/blog-introduction-generator` — blog introductions, article openers, SEO snippets, social previews, and CTA use-case page

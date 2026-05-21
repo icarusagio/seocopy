@@ -180,6 +180,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/loyalty-program-email-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/trial-activation-email-generator`,
       lastModified,
       changeFrequency: "weekly",
