@@ -777,6 +777,11 @@ const useCasePages = [
     body: "Subject lines, preview text, landing hooks, SEO snippets, and CTA variants from one campaign brief.",
   },
   {
+    title: "Event Invitation Email Generator",
+    href: "/event-invitation-email-generator",
+    body: "Event invitation emails, RSVP follow-ups, agenda teasers, reminder copy, FAQs, and attendance CTAs from one event brief.",
+  },
+  {
     title: "Email Marketing Copy Generator",
     href: "/email-marketing-copy-generator",
     body: "Promotional emails, lifecycle sends, subject lines, preview text, landing snippets, and CTA variants from one campaign brief.",
