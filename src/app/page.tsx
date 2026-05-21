@@ -912,6 +912,11 @@ const useCasePages = [
     body: "Podcast show notes, episode summaries, SEO titles, timestamps, newsletter blurbs, social hooks, and CTA variants from one episode brief.",
   },
   {
+    title: "Podcast Episode Description Generator",
+    href: "/podcast-episode-description-generator",
+    body: "Podcast episode descriptions, SEO summaries, app snippets, guest blurbs, show notes hooks, and listener CTAs from one episode brief.",
+  },
+  {
     title: "Podcast Title Generator",
     href: "/podcast-title-generator",
     body: "Podcast titles, episode hooks, SEO episode titles, show description angles, social teasers, and CTA variants from one episode brief.",

@@ -78,6 +78,7 @@ Use it when you need to:
 - `/sms-marketing-copy-generator` — SMS promos, abandoned-cart texts, winback variants, opt-out reminder language, landing snippets, and CTA use-case page
 - `/abandoned-cart-sms-generator` — abandoned cart SMS, Shopify cart recovery texts, discount and urgency reminders, compliance-safe opt-out language, and mobile CTAs from one checkout brief
 - `/newsletter-copy-generator` — newsletter subject lines, preview text, issue sections, sponsor blurbs, SEO snippets, and CTA use-case page
+- `/podcast-episode-description-generator` — podcast episode descriptions, SEO summaries, app snippets, guest blurbs, show notes hooks, and listener CTAs from one episode brief
 - `/social-media-caption-generator` — social captions, post hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/social-media-post-generator` — social media posts, platform-specific post drafts, campaign angles, engagement CTAs, and landing snippets from one campaign brief
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
