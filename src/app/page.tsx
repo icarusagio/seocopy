@@ -977,6 +977,11 @@ const useCasePages = [
     body: "Abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment.",
   },
   {
+    title: "Back-in-Stock Email Generator",
+    href: "/back-in-stock-email-generator",
+    body: "Back-in-stock emails, restock alert subject lines, Shopify inventory recovery copy, product-return CTAs, FAQs, and SEO snippets from one restock brief.",
+  },
+  {
     title: "Browse Abandonment Email Generator",
     href: "/browse-abandonment-email-generator",
     body: "Browse abandonment emails, product-view recovery flows, personalized product reminders, Shopify browse recovery copy, FAQs, and SEO snippets from one viewed product moment.",

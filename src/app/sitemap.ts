@@ -744,6 +744,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/back-in-stock-email-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/browse-abandonment-email-generator`,
       lastModified,
       changeFrequency: "weekly",

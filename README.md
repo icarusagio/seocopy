@@ -95,6 +95,7 @@ Use it when you need to:
 - `/klaviyo-email-generator` — Klaviyo-ready subject lines, preview text, ecommerce campaign blocks, lifecycle flow copy, segment variants, FAQs, and CTAs from one store brief
 - `/review-request-email-generator` — review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment
 - `/abandoned-cart-email-generator` — abandoned cart emails, cart recovery sequences, discount and urgency angles, Shopify recovery copy, FAQs, and SEO snippets from one checkout moment
+- `/back-in-stock-email-generator` — back-in-stock emails, restock alert subject lines, Shopify inventory recovery copy, product-return CTAs, FAQs, and SEO snippets from one restock brief
 - `/browse-abandonment-email-generator` — browse abandonment emails, product-view recovery flows, personalized product reminders, Shopify browse recovery copy, FAQs, and SEO snippets from one viewed product moment
 - `/welcome-email-generator` — welcome emails, onboarding email sequences, first-purchase nurture copy, subscriber activation CTAs, FAQs, and SEO snippets from one signup moment
 - `/sales-email-generator` — sales emails, demo follow-up emails, proposal follow-up copy, objection-handling CTAs, FAQs, and SEO snippets from one warm pipeline moment
