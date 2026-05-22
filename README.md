@@ -67,6 +67,7 @@ Use it when you need to:
 - `/ugc-ad-script-generator` — UGC ad scripts, creator hook ideas, testimonial-style product proof, B-roll prompts, short-form video CTAs, and landing snippets from one campaign brief
 - `/email-subject-line-generator` — email subject lines, preview text, landing hooks, SEO snippets, and CTA use-case page
 - `/event-invitation-email-generator` — event invitation emails, RSVP follow-ups, agenda teasers, reminder copy, FAQs, and attendance CTAs from one event brief
+- `/webinar-invitation-email-generator` — webinar invitation emails, reminder sequences, agenda teasers, speaker proof, replay follow-ups, and CTA variants from one webinar brief
 - `/email-marketing-copy-generator` — promotional emails, lifecycle sends, subject lines, preview text, landing snippets, FAQs, and CTA variants from one campaign brief
 - `/email-preview-text-generator` — email preview text, preheader pairings, inbox snippets, landing hooks, and CTA variants from one campaign brief
 - `/email-signature-generator` — email signatures, professional signature copy, founder and sales CTAs, disclaimer snippets, and polished signoffs from one profile brief
