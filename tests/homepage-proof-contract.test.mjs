@@ -102,3 +102,29 @@ test("homepage shows before-and-after conversion proof before trial activation",
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage groups popular generators into buyer revenue pathways", () => {
+  const requiredCopy = [
+    "Revenue pathway finder",
+    "Match the next generator to the buyer outcome.",
+    "Shopify merchant",
+    "Recover carts and product views",
+    "Founder launching paid traffic",
+    "Turn ad clicks into a clearer page",
+    "Agency or content operator",
+    "Package repeatable SEO deliverables",
+    "/abandoned-cart-email-generator",
+    "/browse-abandonment-email-generator",
+    "/back-in-stock-email-generator",
+    "/landing-page-seo-generator",
+    "/google-ads-description-generator",
+    "/pricing-page-copy-generator",
+    "/seo-audit-report-generator",
+    "/content-brief-generator",
+    "/case-study-generator",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

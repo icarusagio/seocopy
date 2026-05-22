@@ -153,6 +153,36 @@ const conversionSprints = [
   },
 ];
 
+const revenuePathways = [
+  {
+    audience: "Shopify merchant",
+    goal: "Recover carts and product views",
+    pages: [
+      { label: "Abandoned cart email", href: "/abandoned-cart-email-generator" },
+      { label: "Browse abandonment email", href: "/browse-abandonment-email-generator" },
+      { label: "Back-in-stock email", href: "/back-in-stock-email-generator" },
+    ],
+  },
+  {
+    audience: "Founder launching paid traffic",
+    goal: "Turn ad clicks into a clearer page",
+    pages: [
+      { label: "Landing page SEO", href: "/landing-page-seo-generator" },
+      { label: "Google Ads description", href: "/google-ads-description-generator" },
+      { label: "Pricing page copy", href: "/pricing-page-copy-generator" },
+    ],
+  },
+  {
+    audience: "Agency or content operator",
+    goal: "Package repeatable SEO deliverables",
+    pages: [
+      { label: "SEO audit report", href: "/seo-audit-report-generator" },
+      { label: "Content brief", href: "/content-brief-generator" },
+      { label: "Case study", href: "/case-study-generator" },
+    ],
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1230,6 +1260,49 @@ export default function Home() {
               </p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-violet-200 bg-violet-50/80 p-8 shadow-[0_24px_80px_rgba(124,58,237,0.12)] dark:border-violet-300/20 dark:bg-violet-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-violet-700 dark:text-violet-300">
+              Revenue pathway finder
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Match the next generator to the buyer outcome.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Three curated paths turn the large generator library into fast choices for merchants,
+              founders, and operators who need the next asset that can drive checkout, pipeline, or retention.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {revenuePathways.map((pathway) => (
+              <article
+                key={pathway.audience}
+                className="rounded-[1.5rem] border border-black/10 bg-white/85 p-6 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-violet-700 dark:text-violet-300">
+                  {pathway.audience}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {pathway.goal}
+                </h3>
+                <div className="mt-5 flex flex-col gap-3">
+                  {pathway.pages.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="rounded-2xl border border-violet-200 bg-violet-50 px-4 py-3 text-sm font-semibold text-violet-800 transition hover:border-violet-400 hover:bg-white dark:border-violet-300/20 dark:bg-white/5 dark:text-violet-100"
+                    >
+                      {page.label} →
+                    </Link>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
