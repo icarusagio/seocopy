@@ -312,6 +312,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/etsy-product-title-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/amazon-product-description-generator`,
       lastModified,
       changeFrequency: "weekly",

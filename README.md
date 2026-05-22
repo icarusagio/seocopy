@@ -152,6 +152,7 @@ Use it when you need to:
 - `/terms-and-conditions-generator` — terms and conditions copy, store policy clauses, checkout acceptance language, support-reducing terms FAQs, and trust snippets from one business rules brief
 - `/shopify-product-description-generator` — Shopify product description and SEO use-case page
 - `/etsy-product-description-generator` — Etsy listing description and marketplace SEO use-case page
+- `/etsy-product-title-generator` — Etsy product titles, marketplace SEO snippets, tag angles, giftable benefit hooks, and listing CTAs from one handmade or vintage product brief
 - `/amazon-product-description-generator` — Amazon product description, bullets, and marketplace SEO use-case page
 - `/amazon-product-title-generator` — Amazon listing titles, marketplace SEO snippets, feature-led angles, bullets, and campaign CTAs from one product brief
 - `/amazon-bullet-point-generator` — Amazon bullet points, feature bullets, marketplace SEO snippets, benefit-led listing bullets, FAQs, and CTAs from one product brief
