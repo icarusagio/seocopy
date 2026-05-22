@@ -1002,6 +1002,11 @@ const useCasePages = [
     body: "LinkedIn carousels, slide-by-slide outlines, hook slides, captions, SEO snippets, and CTA variants from one B2B content brief.",
   },
   {
+    title: "LinkedIn Company Page Description Generator",
+    href: "/linkedin-company-page-description-generator",
+    body: "LinkedIn company About sections, tagline options, specialties, proof bullets, SEO snippets, and follow CTAs from one B2B brand brief.",
+  },
+  {
     title: "LinkedIn Summary Generator",
     href: "/linkedin-summary-generator",
     body: "LinkedIn About sections, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one profile brief.",

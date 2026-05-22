@@ -86,6 +86,7 @@ Use it when you need to:
 - `/instagram-caption-generator` — Instagram captions, hooks, landing page copy, SEO snippets, social previews, and CTA use-case page
 - `/linkedin-ad-copy-generator` — LinkedIn ad copy, B2B paid social hooks, sponsored content variants, lead-gen CTA angles, landing snippets, and FAQs from one campaign brief
 - `/linkedin-carousel-generator` — LinkedIn carousels, slide-by-slide outlines, hook slides, captions, SEO snippets, and CTA variants from one B2B content brief
+- `/linkedin-company-page-description-generator` — LinkedIn company About sections, tagline options, specialties, proof bullets, SEO snippets, and follow CTAs from one B2B brand brief
 - `/ai-email-writer-generator` — AI email writer drafts for sales emails, launch announcements, lifecycle nurture copy, follow-ups, subject lines, and CTA variants from one campaign brief
 - `/email-sequence-generator` — email sequence copy for welcome flows, product launches, sales nurture, abandoned-cart reminders, follow-ups, subject lines, and CTA variants from one campaign brief
 - `/trial-activation-email-generator` — trial activation emails, onboarding nudges, feature prompts, usage reminders, upgrade CTAs, FAQs, and lifecycle landing snippets from one SaaS trial brief
@@ -109,6 +110,7 @@ Use it when you need to:
 - `/podcast-title-generator` — podcast titles, episode hooks, SEO episode titles, show description angles, social teasers, and CTA variants from one episode brief
 - `/linkedin-post-generator` — LinkedIn post hooks, founder-led drafts, proof bullets, SEO snippets, and CTA use-case page
 - `/linkedin-headline-generator` — LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief
+- `/linkedin-company-page-description-generator` — LinkedIn company About sections, tagline options, specialties, proof bullets, SEO snippets, and follow CTAs from one B2B brand brief
 - `/linkedin-summary-generator` — LinkedIn About summaries, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one professional profile brief
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
 - `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
