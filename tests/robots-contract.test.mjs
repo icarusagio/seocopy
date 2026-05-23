@@ -1,29 +1,38 @@
-import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { test } from "node:test";
+import { readFile } from "node:fs/promises";
+import test from "node:test";
 
-const robotsSource = readFileSync(
-  new URL("../src/app/robots.ts", import.meta.url),
-  "utf8",
-);
+const robotsSource = await readFile(new URL("../src/app/robots.ts", import.meta.url), "utf8");
 
-test("robots metadata keeps public revenue pages crawlable", () => {
-  assert.match(robotsSource, /allow:\s*"\/"/);
-  assert.match(robotsSource, /userAgent:\s*"\*"/);
-  assert.match(robotsSource, /sitemap:\s*`\$\{siteUrl\}\/sitemap\.xml`/);
-  assert.match(robotsSource, /host:\s*siteUrl/);
+test("robots metadata points crawlers to public revenue pages and sitemap", () => {
+  const requiredCopy = [
+    "userAgent: \"*\"",
+    "allow: \"/\"",
+    "https://seocopy.vercel.app",
+    "sitemap: `${siteUrl}/sitemap.xml`",
+    "host: siteUrl",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(robotsSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
 });
 
-test("robots metadata blocks only non-public operational surfaces", () => {
-  const disallowMatch = robotsSource.match(/disallow:\s*\[([^\]]+)\]/s);
-  assert.ok(disallowMatch, "robots.ts should declare an explicit disallow array");
+test("robots disallows only non-public implementation surfaces", () => {
+  const disallowedPrivateSurfaces = ["/api/", "/analytics", "/analytics/", "/_next/"];
+  const publicRevenueSurfaces = [
+    "/generate",
+    "-generator",
+    "/product-page-seo-generator",
+    "/landing-page-seo-generator",
+    "/etsy-product-title-generator",
+  ];
 
-  const disallowEntries = Array.from(
-    disallowMatch[1].matchAll(/"([^"]+)"/g),
-    (match) => match[1],
-  );
+  for (const route of disallowedPrivateSurfaces) {
+    assert.match(robotsSource, new RegExp(route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
 
-  assert.deepEqual(disallowEntries, ["/api/", "/analytics", "/analytics/"]);
-  assert.ok(!disallowEntries.includes("/generate"));
-  assert.ok(!disallowEntries.some((entry) => entry.includes("generator")));
+  for (const route of publicRevenueSurfaces) {
+    assert.doesNotMatch(robotsSource, new RegExp(`disallow:\\s*[^;]*${route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`));
+  }
 });
