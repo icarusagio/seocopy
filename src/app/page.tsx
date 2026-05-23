@@ -183,6 +183,27 @@ const revenuePathways = [
   },
 ];
 
+const paidIntentSprints = [
+  {
+    audience: "Merchant with stock or cart leaks",
+    trigger: "Visitors are reaching products, then leaving before checkout.",
+    proof: "Start with cart, browse, and back-in-stock messages that can recover already-qualified demand.",
+    href: "/generate?source=homepage-paid-intent-merchant-recovery",
+  },
+  {
+    audience: "Founder buying traffic this week",
+    trigger: "Ad spend is live, but the landing page does not explain the offer fast enough.",
+    proof: "Generate the headline, objection handling, FAQs, and pricing CTA before the next campaign test.",
+    href: "/generate?source=homepage-paid-intent-traffic-page",
+  },
+  {
+    audience: "Agency packaging recurring delivery",
+    trigger: "Clients need a repeatable SEO or conversion asset instead of another blank-doc kickoff.",
+    proof: "Turn one brief into a content brief, audit report, and case-study angle you can sell as a sprint.",
+    href: "/generate?source=homepage-paid-intent-agency-sprint",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1301,6 +1322,45 @@ export default function Home() {
                   ))}
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-rose-200 bg-rose-50/80 p-8 shadow-[0_24px_80px_rgba(244,63,94,0.12)] dark:border-rose-300/20 dark:bg-rose-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose-700 dark:text-rose-300">
+              Paid-intent action map
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Turn the visitor’s revenue problem into the next generation.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Give high-intent visitors a direct path from the leak they recognize to a tracked generator session,
+              reducing the number of choices before the first paid-ready output.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {paidIntentSprints.map((sprint) => (
+              <Link
+                key={sprint.href}
+                href={sprint.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-rose-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-700 dark:text-rose-300">
+                  {sprint.audience}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {sprint.trigger}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {sprint.proof}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-rose-700 dark:text-rose-300">
+                  Open this revenue sprint →
+                </span>
+              </Link>
             ))}
           </div>
         </div>

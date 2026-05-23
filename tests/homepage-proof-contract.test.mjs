@@ -128,3 +128,23 @@ test("homepage groups popular generators into buyer revenue pathways", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage maps paid-intent visitors to tracked revenue sprints", () => {
+  const requiredCopy = [
+    "Paid-intent action map",
+    "Turn the visitor’s revenue problem into the next generation.",
+    "Merchant with stock or cart leaks",
+    "Visitors are reaching products, then leaving before checkout.",
+    "Founder buying traffic this week",
+    "Ad spend is live, but the landing page does not explain the offer fast enough.",
+    "Agency packaging recurring delivery",
+    "Clients need a repeatable SEO or conversion asset instead of another blank-doc kickoff.",
+    "homepage-paid-intent-merchant-recovery",
+    "homepage-paid-intent-traffic-page",
+    "homepage-paid-intent-agency-sprint",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
