@@ -236,6 +236,39 @@ function readyBriefBuilderHref(builder: (typeof readyBriefBuilders)[number]) {
   return `/generate?source=${builder.source}&prompt=${encodeURIComponent(builder.prompt)}`;
 }
 
+const launchPlaybooks = [
+  {
+    segment: "Shopify launch",
+    trigger: "A product drop or app launch needs one path from listing copy to launch emails.",
+    pages: [
+      { label: "Shopify App Store Listing", href: "/shopify-app-store-listing-generator" },
+      { label: "Shopify App Launch Copy", href: "/shopify-app-launch-copy-generator" },
+      { label: "Product Update Email", href: "/product-update-email-generator" },
+    ],
+    ctaHref: "/generate?source=homepage-launch-playbook-shopify",
+  },
+  {
+    segment: "Paid campaign launch",
+    trigger: "A founder is turning a new offer into ads, landing-page proof, and checkout copy.",
+    pages: [
+      { label: "Google Ads Description", href: "/google-ads-description-generator" },
+      { label: "Landing Page A/B Test", href: "/landing-page-ab-test-generator" },
+      { label: "Checkout Page Copy", href: "/checkout-page-copy-generator" },
+    ],
+    ctaHref: "/generate?source=homepage-launch-playbook-paid-campaign",
+  },
+  {
+    segment: "Retention launch",
+    trigger: "A merchant needs repeat-purchase copy after the first sale or restock moment.",
+    pages: [
+      { label: "Post-purchase Email", href: "/post-purchase-email-generator" },
+      { label: "Winback Email", href: "/winback-email-generator" },
+      { label: "Loyalty Program Email", href: "/loyalty-program-email-generator" },
+    ],
+    ctaHref: "/generate?source=homepage-launch-playbook-retention",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1437,6 +1470,55 @@ export default function Home() {
                   Open prefilled brief →
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-indigo-200 bg-indigo-50/80 p-8 shadow-[0_24px_80px_rgba(79,70,229,0.12)] dark:border-indigo-300/20 dark:bg-indigo-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-indigo-700 dark:text-indigo-300">
+              Launch playbook router
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Bundle the next three assets for a revenue launch.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              High-intent visitors can move from a launch goal to the exact generator sequence that supports listing copy,
+              paid traffic, or retention without browsing the full library first.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {launchPlaybooks.map((playbook) => (
+              <article
+                key={playbook.segment}
+                className="rounded-[1.5rem] border border-black/10 bg-white/85 p-6 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700 dark:text-indigo-300">
+                  {playbook.segment}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {playbook.trigger}
+                </h3>
+                <div className="mt-5 flex flex-col gap-3">
+                  {playbook.pages.map((page) => (
+                    <Link
+                      key={page.href}
+                      href={page.href}
+                      className="rounded-2xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-800 transition hover:border-indigo-400 hover:bg-white dark:border-indigo-300/20 dark:bg-white/5 dark:text-indigo-100"
+                    >
+                      {page.label} →
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href={playbook.ctaHref}
+                  className="mt-6 inline-flex text-sm font-semibold text-indigo-700 dark:text-indigo-300"
+                >
+                  Open launch sprint →
+                </Link>
+              </article>
             ))}
           </div>
         </div>

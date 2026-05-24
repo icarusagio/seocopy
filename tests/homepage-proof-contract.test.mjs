@@ -175,3 +175,31 @@ test("homepage preloads revenue-ready briefs for high-intent trial visitors", ()
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage routes launch visitors into bundled generator playbooks", () => {
+  const requiredCopy = [
+    "Launch playbook router",
+    "Bundle the next three assets for a revenue launch.",
+    "High-intent visitors can move from a launch goal to the exact generator sequence",
+    "Shopify launch",
+    "Paid campaign launch",
+    "Retention launch",
+    "/shopify-app-store-listing-generator",
+    "/shopify-app-launch-copy-generator",
+    "/product-update-email-generator",
+    "/google-ads-description-generator",
+    "/landing-page-ab-test-generator",
+    "/checkout-page-copy-generator",
+    "/post-purchase-email-generator",
+    "/winback-email-generator",
+    "/loyalty-program-email-generator",
+    "homepage-launch-playbook-shopify",
+    "homepage-launch-playbook-paid-campaign",
+    "homepage-launch-playbook-retention",
+    "Open launch sprint",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
