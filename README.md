@@ -116,6 +116,7 @@ Use it when you need to:
 - `/linkedin-company-page-description-generator` — LinkedIn company About sections, tagline options, specialties, proof bullets, SEO snippets, and follow CTAs from one B2B brand brief
 - `/linkedin-summary-generator` — LinkedIn About summaries, professional profile intros, proof-led story arcs, recruiter keywords, and CTA variants from one professional profile brief
 - `/pricing-page-copy-generator` — pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA use-case page
+- `/pricing-table-copy-generator` — pricing table copy, plan names, feature-grid labels, upgrade nudges, risk reducers, FAQs, and conversion CTAs from one pricing brief
 - `/value-proposition-generator` — value propositions, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA use-case page
 - `/unique-selling-proposition-generator` — USP statements, differentiation angles, proof bullets, SEO snippets, FAQs, and CTA variants from one product or service brief.
 - `/website-headline-generator` — homepage headlines, subheadlines, proof bullets, SEO snippets, FAQ ideas, and CTA variants from one website brief.

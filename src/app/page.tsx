@@ -1153,6 +1153,11 @@ const useCasePages = [
     body: "Pricing page headlines, plan blurbs, FAQs, objection handling, SEO snippets, and CTA variants from one offer brief.",
   },
   {
+    title: "Pricing Table Copy Generator",
+    href: "/pricing-table-copy-generator",
+    body: "Pricing table copy, plan names, feature-grid labels, upgrade nudges, risk reducers, FAQs, and conversion CTAs from one pricing brief.",
+  },
+  {
     title: "Value Proposition Generator",
     href: "/value-proposition-generator",
     body: "Positioning statements, homepage hero copy, proof bullets, SEO snippets, social previews, and CTA variants from one product brief.",
