@@ -19,6 +19,7 @@ const routeInventory = [
   "/ai-page-title-generator",
   "/ai-product-description-generator",
   "/ai-seo-copy-generator",
+  "/amazon-a-plus-content-generator",
   "/amazon-bullet-point-generator",
   "/amazon-product-description-generator",
   "/amazon-product-title-generator",
@@ -191,6 +192,17 @@ const routeInventory = [
 ];
 
 const routeContracts = [
+  {
+    route: "amazon-a-plus-content-generator",
+    requiredTexts: [
+      "Amazon A+ Content Generator",
+      "Amazon A+ content modules",
+      "Enhanced Brand Content copy",
+      "comparison charts",
+      "A+ content output checklist",
+      "FAQPage",
+    ],
+  },
   {
     route: "amazon-bullet-point-generator",
     requiredTexts: [

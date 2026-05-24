@@ -330,6 +330,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/amazon-a-plus-content-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/amazon-product-title-generator`,
       lastModified,
       changeFrequency: "weekly",

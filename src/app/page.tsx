@@ -588,6 +588,11 @@ const useCasePages = [
     body: "Amazon-ready product descriptions, SEO titles, feature bullets, keyword angles, A+ content ideas, and campaign copy from product specs.",
   },
   {
+    title: "Amazon A+ Content Generator",
+    href: "/amazon-a-plus-content-generator",
+    body: "Amazon A+ content modules, Enhanced Brand Content copy, comparison charts, image-copy prompts, brand story blocks, FAQs, and listing CTAs from one product brief.",
+  },
+  {
     title: "Amazon Product Title Generator",
     href: "/amazon-product-title-generator",
     body: "Amazon listing titles, marketplace SEO snippets, feature-led angles, bullets, and campaign CTAs from one product brief.",
