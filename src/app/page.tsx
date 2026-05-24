@@ -269,6 +269,24 @@ const launchPlaybooks = [
   },
 ];
 
+const checkoutReadinessSteps = [
+  {
+    stage: "1. Pick the asset tied to revenue",
+    proof: "Choose a product page, paid landing page, or retention email so the free run maps to a campaign you can ship this week.",
+    href: "/generate?source=homepage-checkout-readiness-asset",
+  },
+  {
+    stage: "2. Paste the exact offer and proof",
+    proof: "Add audience, offer, objection, proof, urgency, and CTA details before checkout so the next paid generation has sharper inputs.",
+    href: "/generate?source=homepage-checkout-readiness-brief",
+  },
+  {
+    stage: "3. Buy only when the next output has a home",
+    proof: "Use the $5 one-off generation after you know where the next copy block will be published, tested, or sent.",
+    href: "/generate?plan=one-time&source=homepage-checkout-readiness-upgrade",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1534,6 +1552,42 @@ export default function Home() {
                   Open launch sprint →
                 </Link>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-sky-200 bg-sky-50/80 p-8 shadow-[0_24px_80px_rgba(14,165,233,0.12)] dark:border-sky-300/20 dark:bg-sky-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-sky-700 dark:text-sky-300">
+              Checkout readiness ladder
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Show visitors when the next paid generation is justified.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Reduce hesitation by turning the free trial into a short decision path: pick a revenue asset,
+              sharpen the brief, then buy only when the next output has a specific publishing slot.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {checkoutReadinessSteps.map((step) => (
+              <Link
+                key={step.href}
+                href={step.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-sky-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {step.stage}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {step.proof}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-sky-700 dark:text-sky-300">
+                  Open this checkout step →
+                </span>
+              </Link>
             ))}
           </div>
         </div>

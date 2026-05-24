@@ -203,3 +203,23 @@ test("homepage routes launch visitors into bundled generator playbooks", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage reduces checkout hesitation with a paid-generation readiness ladder", () => {
+  const requiredCopy = [
+    "Checkout readiness ladder",
+    "Show visitors when the next paid generation is justified.",
+    "Reduce hesitation by turning the free trial into a short decision path",
+    "1. Pick the asset tied to revenue",
+    "2. Paste the exact offer and proof",
+    "3. Buy only when the next output has a home",
+    "homepage-checkout-readiness-asset",
+    "homepage-checkout-readiness-brief",
+    "homepage-checkout-readiness-upgrade",
+    "/generate?plan=one-time&source=homepage-checkout-readiness-upgrade",
+    "Open this checkout step",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
