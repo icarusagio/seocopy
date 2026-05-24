@@ -151,3 +151,27 @@ test("homepage maps paid-intent visitors to tracked revenue sprints", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage preloads revenue-ready briefs for high-intent trial visitors", () => {
+  const requiredCopy = [
+    "Ready-to-buy brief builder",
+    "Turn a fuzzy problem into a copy-ready prompt before the free trial.",
+    "High-intent visitors often know the revenue leak but not the inputs SEOCopy needs.",
+    "Ecommerce operator",
+    "Paid traffic founder",
+    "Agency sprint lead",
+    "Recover revenue from carts, browse sessions, or restock demand.",
+    "Turn a campaign hypothesis into page copy before spend scales.",
+    "Package one client brief into a sellable SEO or conversion deliverable.",
+    "homepage-brief-builder-ecommerce-recovery",
+    "homepage-brief-builder-paid-traffic",
+    "homepage-brief-builder-agency-sprint",
+    "readyBriefBuilderHref",
+    "encodeURIComponent(builder.prompt)",
+    "Open prefilled brief",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

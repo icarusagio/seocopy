@@ -208,6 +208,34 @@ const paidIntentSprints = [
   },
 ];
 
+const readyBriefBuilders = [
+  {
+    segment: "Ecommerce operator",
+    outcome: "Recover revenue from carts, browse sessions, or restock demand.",
+    prompt:
+      "Create a revenue recovery copy brief for an ecommerce store: include the product category, recent buyer objection, offer, urgency reason, email/SMS angle, and CTA so SEOCopy can generate the campaign copy next.",
+    source: "homepage-brief-builder-ecommerce-recovery",
+  },
+  {
+    segment: "Paid traffic founder",
+    outcome: "Turn a campaign hypothesis into page copy before spend scales.",
+    prompt:
+      "Create a paid traffic landing page copy brief: include the audience, ad promise, offer, proof points, top objections, pricing risk reversal, and conversion CTA so SEOCopy can generate the page next.",
+    source: "homepage-brief-builder-paid-traffic",
+  },
+  {
+    segment: "Agency sprint lead",
+    outcome: "Package one client brief into a sellable SEO or conversion deliverable.",
+    prompt:
+      "Create an agency delivery brief for a client SEO/conversion sprint: include the client niche, target page, buyer pain, proof assets, deliverables needed, review criteria, and next-step CTA.",
+    source: "homepage-brief-builder-agency-sprint",
+  },
+];
+
+function readyBriefBuilderHref(builder: (typeof readyBriefBuilders)[number]) {
+  return `/generate?source=${builder.source}&prompt=${encodeURIComponent(builder.prompt)}`;
+}
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1368,6 +1396,45 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-rose-700 dark:text-rose-300">
                   Open this revenue sprint →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-fuchsia-200 bg-fuchsia-50/80 p-8 shadow-[0_24px_80px_rgba(217,70,239,0.12)] dark:border-fuchsia-300/20 dark:bg-fuchsia-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-fuchsia-700 dark:text-fuchsia-300">
+              Ready-to-buy brief builder
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Turn a fuzzy problem into a copy-ready prompt before the free trial.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              High-intent visitors often know the revenue leak but not the inputs SEOCopy needs.
+              These prefilled briefs collect the buyer, offer, proof, objection, and CTA details before the first generation.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {readyBriefBuilders.map((builder) => (
+              <Link
+                key={builder.source}
+                href={readyBriefBuilderHref(builder)}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-fuchsia-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-fuchsia-700 dark:text-fuchsia-300">
+                  {builder.segment}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {builder.outcome}
+                </h3>
+                <p className="mt-4 flex-1 rounded-2xl bg-fuchsia-100/70 p-4 text-sm leading-7 text-slate-700 dark:bg-white/10 dark:text-slate-300">
+                  {builder.prompt}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-fuchsia-700 dark:text-fuchsia-300">
+                  Open prefilled brief →
                 </span>
               </Link>
             ))}
