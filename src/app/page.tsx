@@ -287,6 +287,24 @@ const checkoutReadinessSteps = [
   },
 ];
 
+const paidGenerationTriggers = [
+  {
+    signal: "The free output names a campaign you can ship today",
+    action: "Buy one more generation to produce the follow-up asset: SEO metadata plus the launch email, ad variant, or retention CTA.",
+    href: "/generate?plan=one-time&source=homepage-paid-generation-trigger-campaign",
+  },
+  {
+    signal: "You found a stronger page angle but need variants",
+    action: "Use the $5 generation to create alternate headlines, proof blocks, FAQs, and CTAs before a traffic test.",
+    href: "/generate?plan=one-time&source=homepage-paid-generation-trigger-variants",
+  },
+  {
+    signal: "A client or teammate approved the first draft",
+    action: "Turn the approval into a second deliverable while the brief is still fresh and buyer context is loaded.",
+    href: "/generate?plan=one-time&source=homepage-paid-generation-trigger-approved-brief",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1586,6 +1604,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-sky-700 dark:text-sky-300">
                   Open this checkout step →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-lime-200 bg-lime-50/80 p-8 shadow-[0_24px_80px_rgba(132,204,22,0.12)] dark:border-lime-300/20 dark:bg-lime-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-lime-700 dark:text-lime-300">
+              Paid generation triggers
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Know the exact moment to spend $5 on the next output.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Convert free-trial momentum into a concrete one-time purchase by showing visitors the revenue signals
+              that justify another generation without needing a subscription decision.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {paidGenerationTriggers.map((trigger) => (
+              <Link
+                key={trigger.href}
+                href={trigger.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-lime-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {trigger.signal}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {trigger.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-lime-700 dark:text-lime-300">
+                  Buy the next $5 output →
                 </span>
               </Link>
             ))}

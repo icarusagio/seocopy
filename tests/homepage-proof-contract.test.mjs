@@ -223,3 +223,23 @@ test("homepage reduces checkout hesitation with a paid-generation readiness ladd
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives free-trial visitors explicit one-time purchase triggers", () => {
+  const requiredCopy = [
+    "Paid generation triggers",
+    "Know the exact moment to spend $5 on the next output.",
+    "Convert free-trial momentum into a concrete one-time purchase",
+    "The free output names a campaign you can ship today",
+    "You found a stronger page angle but need variants",
+    "A client or teammate approved the first draft",
+    "homepage-paid-generation-trigger-campaign",
+    "homepage-paid-generation-trigger-variants",
+    "homepage-paid-generation-trigger-approved-brief",
+    "/generate?plan=one-time&source=homepage-paid-generation-trigger-campaign",
+    "Buy the next $5 output",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
