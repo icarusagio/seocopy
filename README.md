@@ -132,6 +132,7 @@ Use it when you need to:
 - `/about-us-page-generator` — About Us page, founder story, mission, proof, and CTA copy use-case page
 - `/app-store-description-generator` — App Store and Google Play descriptions, ASO angles, feature bullets, screenshot captions, FAQs, and CTA variants from one app brief
 - `/landing-page-copy-generator` — landing page copy use-case page
+- `/landing-page-cta-generator` — landing page CTAs, button copy, section-specific calls to action, objection reducers, FAQ prompts, and conversion microcopy from one offer brief
 - `/landing-page-outline-generator` — landing page outlines, section-by-section page plans, conversion flows, wireframe-ready copy briefs, SEO snippets, FAQs, and CTAs from one offer brief
 - `/landing-page-seo-generator` — landing page SEO, search-intent sections, metadata and H1 ideas, FAQ schema prompts, social previews, and CTA variants from one offer brief
 - `/landing-page-wireframe-generator` — landing page wireframes, section layout blocks, above-the-fold structure, conversion-ready wireframe notes, FAQs, and CTA direction from one offer brief

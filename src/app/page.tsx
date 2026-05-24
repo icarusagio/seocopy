@@ -703,6 +703,11 @@ const useCasePages = [
     body: "Hero headlines, subheadlines, CTAs, and SEO metadata for launches and page refreshes.",
   },
   {
+    title: "Landing Page CTA Generator",
+    href: "/landing-page-cta-generator",
+    body: "Landing page CTAs, button copy, section-specific calls to action, objection reducers, and conversion microcopy from one offer brief.",
+  },
+  {
     title: "Landing Page Outline Generator",
     href: "/landing-page-outline-generator",
     body: "Section-by-section page plans, conversion flows, wireframe-ready copy briefs, FAQs, and CTAs from one offer brief.",
