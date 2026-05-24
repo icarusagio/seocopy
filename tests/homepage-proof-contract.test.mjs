@@ -61,6 +61,9 @@ test("homepage gives trial visitors copy-paste prompt starters", () => {
     "homepage-prompt-starter-product-page",
     "homepage-prompt-starter-local-service",
     "homepage-prompt-starter-retention",
+    "promptStarterHref",
+    "encodeURIComponent(starter.prompt)",
+    "Open generator with this sprint",
   ];
 
   for (const copy of requiredCopy) {

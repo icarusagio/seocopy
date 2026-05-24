@@ -45,3 +45,26 @@ test("checkout analytics preserves safe CTA source attribution", async () => {
   assert.match(generatorClient, /source = "generator-pricing-card"/);
   assert.match(generatorClient, /source,/);
 });
+
+test("generator accepts safe prompt starter query text", async () => {
+  const generatePage = await readFile(
+    new URL("../src/app/generate/page.tsx", import.meta.url),
+    "utf8",
+  );
+  const homepage = await readFile(
+    new URL("../src/app/page.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(homepage, /promptStarterHref/);
+  assert.match(homepage, /encodeURIComponent\(starter\.prompt\)/);
+  assert.match(generatePage, /sanitizeInitialPrompt/);
+  assert.match(generatePage, /normalized\.length < 20 \|\| normalized\.length > 500/);
+  assert.match(generatePage, /initialPrompt=\{initialPrompt\}/);
+  assert.match(generatorClient, /initialPrompt\?: string/);
+  assert.match(generatorClient, /description: initialPrompt \?\? ""/);
+  assert.match(
+    generatorClient,
+    /Prompt starter loaded\. Swap in your offer details, then run a free generation\./,
+  );
+});

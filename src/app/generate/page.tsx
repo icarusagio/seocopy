@@ -3,6 +3,20 @@ import GeneratorClient from "@/components/generator-client";
 
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 
+function sanitizeInitialPrompt(prompt: string | string[] | undefined) {
+  if (typeof prompt !== "string") {
+    return undefined;
+  }
+
+  const normalized = prompt.trim().replace(/\s+/g, " ");
+
+  if (normalized.length < 20 || normalized.length > 500) {
+    return undefined;
+  }
+
+  return normalized;
+}
+
 export default async function GeneratePage({
   searchParams,
 }: {
@@ -16,6 +30,7 @@ export default async function GeneratePage({
   const canceled = params.canceled === "true";
   const requestedPlan = params.plan;
   const requestedSource = params.source;
+  const initialPrompt = sanitizeInitialPrompt(params.prompt);
   const initialCheckoutPlan =
     requestedPlan === "subscription"
       ? "subscription"
@@ -33,6 +48,7 @@ export default async function GeneratePage({
   return (
     <GeneratorClient
       initialUsage={usage}
+      initialPrompt={initialPrompt}
       initialCheckoutPlan={initialCheckoutPlan}
       initialCheckoutSource={initialCheckoutSource}
       checkoutState={{ paid, canceled, sessionId }}

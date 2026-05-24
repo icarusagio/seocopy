@@ -98,21 +98,25 @@ const promptStarters = [
     label: "Product page sprint",
     prompt:
       "Write SEO metadata, proof bullets, FAQs, and a primary CTA for a $79 posture-correcting desk chair aimed at remote workers with back pain.",
-    href: "/generate?source=homepage-prompt-starter-product-page",
+    source: "homepage-prompt-starter-product-page",
   },
   {
     label: "Local service sprint",
     prompt:
       "Create a local SEO landing page angle, title, meta description, FAQs, and call CTA for same-day HVAC repair in Phoenix.",
-    href: "/generate?source=homepage-prompt-starter-local-service",
+    source: "homepage-prompt-starter-local-service",
   },
   {
     label: "Retention campaign sprint",
     prompt:
       "Draft a winback email, subject line, preview text, SMS variant, and offer CTA for inactive subscribers who bought skincare 90 days ago.",
-    href: "/generate?source=homepage-prompt-starter-retention",
+    source: "homepage-prompt-starter-retention",
   },
 ];
+
+function promptStarterHref(starter: (typeof promptStarters)[number]) {
+  return `/generate?source=${starter.source}&prompt=${encodeURIComponent(starter.prompt)}`;
+}
 
 const trialChecklist = [
   {
@@ -1425,7 +1429,7 @@ export default function Home() {
             {promptStarters.map((starter) => (
               <Link
                 key={starter.label}
-                href={starter.href}
+                href={promptStarterHref(starter)}
                 className="flex h-full flex-col rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-0.5 hover:border-cyan-300 dark:border-white/10 dark:bg-slate-950/40"
               >
                 <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">

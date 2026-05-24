@@ -52,6 +52,7 @@ type Notice = { type: "error" | "success" | "info"; text: string };
 
 interface GeneratorClientProps {
   initialUsage: UsageState;
+  initialPrompt?: string;
   initialCheckoutPlan?: "single" | "subscription";
   initialCheckoutSource?: string;
   checkoutState: {
@@ -108,6 +109,7 @@ function OutputCard({
 
 export default function GeneratorClient({
   initialUsage,
+  initialPrompt,
   initialCheckoutPlan,
   initialCheckoutSource,
   checkoutState,
@@ -127,11 +129,16 @@ export default function GeneratorClient({
           type: "info",
           text: "Checkout was canceled. You can still use your free generations.",
         }
+      : initialPrompt
+        ? {
+            type: "info",
+            text: "Prompt starter loaded. Swap in your offer details, then run a free generation.",
+          }
       : null,
   );
   const [form, setForm] = useState<GeneratePayload>({
     url: "",
-    description: "",
+    description: initialPrompt ?? "",
     industry: "",
     tone: "Professional",
   });
