@@ -773,6 +773,11 @@ const useCasePages = [
     body: "Cold email drafts, subject lines, follow-up sequences, CTA options, and outreach landing snippets from one prospect or offer brief.",
   },
   {
+    title: "Influencer Outreach Email Generator",
+    href: "/influencer-outreach-email-generator",
+    body: "Influencer outreach emails, creator collaboration pitches, affiliate partnership asks, gifted-collab follow-ups, and campaign CTAs from one partnership brief.",
+  },
+  {
     title: "Brand Voice Generator",
     href: "/brand-voice-generator",
     body: "Brand voice guidelines, tone examples, SEO metadata, landing page copy, and CTA variants from one positioning brief.",

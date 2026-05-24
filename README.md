@@ -52,6 +52,7 @@ Use it when you need to:
 - `/product-launch-copy-generator` — product launch page headlines, announcement copy, SEO snippets, social previews, and CTA use-case page
 - `/call-to-action-generator` — CTA buttons, supporting microcopy, objection reducers, SEO snippets, and headline angles use-case page
 - `/cold-email-generator` — cold emails, subject lines, follow-up sequences, CTA options, and outreach landing snippets use-case page
+- `/influencer-outreach-email-generator` — influencer outreach emails, creator collaboration pitches, affiliate partnership asks, gifted-collab follow-ups, and campaign CTAs from one partnership brief
 - `/brand-voice-generator` — brand voice guidelines, tone examples, SEO metadata, messaging angles, and CTA use-case page
 - `/brand-story-generator` — founder stories, About page narratives, proof bullets, SEO snippets, social previews, and CTA variants from one positioning brief
 - `/ad-copy-generator` — paid search, social ad hooks, landing page copy, SEO snippets, and CTA use-case page

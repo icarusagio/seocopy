@@ -630,6 +630,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${siteUrl}/influencer-outreach-email-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/brand-voice-generator`,
       lastModified,
       changeFrequency: "weekly",
