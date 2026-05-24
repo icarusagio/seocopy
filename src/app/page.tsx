@@ -305,6 +305,24 @@ const paidGenerationTriggers = [
   },
 ];
 
+const subscriptionUpgradeSignals = [
+  {
+    signal: "You need more than three copy assets this month",
+    action: "Move to monthly when the roadmap includes a product page, launch emails, ads, and SEO refreshes instead of one isolated output.",
+    href: "/generate?plan=subscription&source=homepage-subscription-upgrade-signal-roadmap",
+  },
+  {
+    signal: "A paid campaign needs weekly iteration",
+    action: "Use unlimited generations to keep headlines, FAQs, objections, and CTA tests moving without deciding on a $5 checkout every run.",
+    href: "/generate?plan=subscription&source=homepage-subscription-upgrade-signal-iteration",
+  },
+  {
+    signal: "An agency or operator is shipping for multiple clients",
+    action: "Turn monthly access into a repeatable delivery lane for briefs, audits, landing pages, and lifecycle emails across accounts.",
+    href: "/generate?plan=subscription&source=homepage-subscription-upgrade-signal-agency",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1640,6 +1658,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-lime-700 dark:text-lime-300">
                   Buy the next $5 output →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-teal-200 bg-teal-50/80 p-8 shadow-[0_24px_80px_rgba(20,184,166,0.12)] dark:border-teal-300/20 dark:bg-teal-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+              Subscription upgrade signals
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Show repeat users when monthly access beats one-off checkout.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Convert serious trial users into the $19/month plan by naming the moments when unlimited generations
+              remove friction from ongoing campaigns, launch calendars, and client delivery.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionUpgradeSignals.map((signal) => (
+              <Link
+                key={signal.href}
+                href={signal.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-teal-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {signal.signal}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {signal.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-teal-700 dark:text-teal-300">
+                  Start monthly when this fits →
                 </span>
               </Link>
             ))}

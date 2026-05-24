@@ -243,3 +243,23 @@ test("homepage gives free-trial visitors explicit one-time purchase triggers", (
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage shows repeat visitors when monthly subscription beats one-off checkout", () => {
+  const requiredCopy = [
+    "Subscription upgrade signals",
+    "Show repeat users when monthly access beats one-off checkout.",
+    "Convert serious trial users into the $19/month plan",
+    "You need more than three copy assets this month",
+    "A paid campaign needs weekly iteration",
+    "An agency or operator is shipping for multiple clients",
+    "homepage-subscription-upgrade-signal-roadmap",
+    "homepage-subscription-upgrade-signal-iteration",
+    "homepage-subscription-upgrade-signal-agency",
+    "/generate?plan=subscription&source=homepage-subscription-upgrade-signal-roadmap",
+    "Start monthly when this fits",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
