@@ -404,6 +404,27 @@ const subscriptionObjectionReducers = [
   },
 ];
 
+const subscriptionRenewalGuides = [
+  {
+    moment: "Before the monthly plan starts",
+    guidance:
+      "Pick the three campaign assets that would make the first $19 month obviously useful: one live page, one lifecycle email, and one variant test.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-guide-start",
+  },
+  {
+    moment: "Halfway through the first month",
+    guidance:
+      "Use the subscription to refresh the asset that already shipped, then generate a second angle while campaign context is still current.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-guide-midpoint",
+  },
+  {
+    moment: "Before the next billing decision",
+    guidance:
+      "Package shipped copy, winners, and next briefs into a renewal note so the plan feels tied to output instead of tool access.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-guide-decision",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1919,6 +1940,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-orange-700 dark:text-orange-300">
                   Start this monthly answer →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-violet-200 bg-violet-50/80 p-8 shadow-[0_24px_80px_rgba(124,58,237,0.12)] dark:border-violet-300/20 dark:bg-violet-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-violet-700 dark:text-violet-300">
+              Subscription renewal guide
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Make the monthly plan feel accountable before checkout.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help high-intent visitors see exactly how a subscription turns into shipped assets,
+              campaign variants, and renewal proof before they commit to recurring access.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionRenewalGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-violet-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {guide.moment}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {guide.guidance}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-violet-700 dark:text-violet-300">
+                  Plan this subscription moment →
                 </span>
               </Link>
             ))}

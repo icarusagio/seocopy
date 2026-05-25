@@ -343,3 +343,23 @@ test("homepage handles subscription objections before recurring checkout", () =>
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage makes subscription renewal value concrete before checkout", () => {
+  const requiredCopy = [
+    "Subscription renewal guide",
+    "Make the monthly plan feel accountable before checkout.",
+    "Help high-intent visitors see exactly how a subscription turns into shipped assets",
+    "Before the monthly plan starts",
+    "Halfway through the first month",
+    "Before the next billing decision",
+    "homepage-subscription-renewal-guide-start",
+    "homepage-subscription-renewal-guide-midpoint",
+    "homepage-subscription-renewal-guide-decision",
+    "/generate?plan=subscription&source=homepage-subscription-renewal-guide-start",
+    "Plan this subscription moment",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
