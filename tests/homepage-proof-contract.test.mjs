@@ -423,3 +423,23 @@ test("homepage gives monthly subscribers proof loops before renewal", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage turns subscription checkout into a team rollout habit", () => {
+  const requiredCopy = [
+    "Subscription team rollout",
+    "Help teams turn monthly access into a launch habit.",
+    "Give subscription buyers a simple operating rhythm before checkout",
+    "Assign the campaign owner",
+    "Queue the next three assets",
+    "Set the weekly review rhythm",
+    "homepage-subscription-team-rollout-owner",
+    "homepage-subscription-team-rollout-asset-queue",
+    "homepage-subscription-team-rollout-review-rhythm",
+    "/generate?plan=subscription&source=homepage-subscription-team-rollout-owner",
+    "Start this team rollout",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

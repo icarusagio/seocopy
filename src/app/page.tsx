@@ -488,6 +488,27 @@ const subscriptionProofLoops = [
   },
 ];
 
+const subscriptionTeamRollouts = [
+  {
+    step: "Assign the campaign owner",
+    action:
+      "Turn monthly access into a named owner, revenue target, and first-page or first-email brief so the subscription starts with accountability.",
+    href: "/generate?plan=subscription&source=homepage-subscription-team-rollout-owner",
+  },
+  {
+    step: "Queue the next three assets",
+    action:
+      "Use the plan to prebuild a product page, paid-traffic variant, and lifecycle email before the team loses launch context.",
+    href: "/generate?plan=subscription&source=homepage-subscription-team-rollout-asset-queue",
+  },
+  {
+    step: "Set the weekly review rhythm",
+    action:
+      "Make every Friday a shipped-copy review: what went live, what variant won, and what brief deserves the next generation.",
+    href: "/generate?plan=subscription&source=homepage-subscription-team-rollout-review-rhythm",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2154,6 +2175,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-slate-700 dark:text-slate-300">
                   Build this proof loop →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-indigo-200 bg-indigo-50/80 p-8 shadow-[0_24px_80px_rgba(79,70,229,0.12)] dark:border-indigo-300/20 dark:bg-indigo-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-indigo-700 dark:text-indigo-300">
+              Subscription team rollout
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Help teams turn monthly access into a launch habit.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Give subscription buyers a simple operating rhythm before checkout: assign ownership, queue the next assets, and review shipped copy every week.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionTeamRollouts.map((rollout) => (
+              <Link
+                key={rollout.href}
+                href={rollout.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-indigo-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {rollout.step}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {rollout.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-indigo-700 dark:text-indigo-300">
+                  Start this team rollout →
                 </span>
               </Link>
             ))}
