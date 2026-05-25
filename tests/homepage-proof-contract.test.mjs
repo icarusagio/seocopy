@@ -263,3 +263,23 @@ test("homepage shows repeat visitors when monthly subscription beats one-off che
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage turns subscription interest into monthly output plans", () => {
+  const requiredCopy = [
+    "Monthly output plans",
+    "Turn a subscription into a shipping calendar.",
+    "Give high-intent visitors concrete monthly use cases",
+    "Merchant retention month",
+    "Paid traffic testing month",
+    "Agency delivery month",
+    "homepage-monthly-output-plan-retention",
+    "homepage-monthly-output-plan-paid-traffic",
+    "homepage-monthly-output-plan-agency",
+    "/generate?plan=subscription&source=homepage-monthly-output-plan-retention",
+    "Open the monthly plan",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

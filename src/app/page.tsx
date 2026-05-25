@@ -323,6 +323,24 @@ const subscriptionUpgradeSignals = [
   },
 ];
 
+const monthlyOutputPlans = [
+  {
+    plan: "Merchant retention month",
+    cadence: "Generate the product refresh, restock email, winback email, and loyalty follow-up before each campaign window.",
+    href: "/generate?plan=subscription&source=homepage-monthly-output-plan-retention",
+  },
+  {
+    plan: "Paid traffic testing month",
+    cadence: "Use one subscription to create ad variants, landing-page proof blocks, objection FAQs, and checkout CTA tests every week.",
+    href: "/generate?plan=subscription&source=homepage-monthly-output-plan-paid-traffic",
+  },
+  {
+    plan: "Agency delivery month",
+    cadence: "Turn each client brief into SEO metadata, landing-page copy, email sequences, and audit-ready recommendations without per-output checkout.",
+    href: "/generate?plan=subscription&source=homepage-monthly-output-plan-agency",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1694,6 +1712,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-teal-700 dark:text-teal-300">
                   Start monthly when this fits →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-emerald-200 bg-emerald-50/80 p-8 shadow-[0_24px_80px_rgba(16,185,129,0.12)] dark:border-emerald-300/20 dark:bg-emerald-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700 dark:text-emerald-300">
+              Monthly output plans
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Turn a subscription into a shipping calendar.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Give high-intent visitors concrete monthly use cases so the $19 plan feels like a repeatable
+              revenue workflow instead of an abstract unlimited-generation upgrade.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {monthlyOutputPlans.map((plan) => (
+              <Link
+                key={plan.href}
+                href={plan.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-emerald-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {plan.plan}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {plan.cadence}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                  Open the monthly plan →
                 </span>
               </Link>
             ))}
