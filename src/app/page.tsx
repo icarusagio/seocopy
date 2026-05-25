@@ -467,6 +467,27 @@ const subscriptionCompoundingPrompts = [
   },
 ];
 
+const subscriptionProofLoops = [
+  {
+    loop: "Weekly shipped-asset receipt",
+    action:
+      "Generate the page, email, or ad copy plus a short summary of where it shipped so the monthly plan has visible output every week.",
+    href: "/generate?plan=subscription&source=homepage-subscription-proof-loop-weekly-receipt",
+  },
+  {
+    loop: "Variant-to-winner note",
+    action:
+      "Turn a second generation into a quick winner/loser note for headlines, CTAs, or emails so teams can see why the next month is worth keeping.",
+    href: "/generate?plan=subscription&source=homepage-subscription-proof-loop-variant-winner",
+  },
+  {
+    loop: "Renewal-ready next brief",
+    action:
+      "Use the last generation of the month to summarize shipped copy, remaining gaps, and the next revenue brief before the renewal decision arrives.",
+    href: "/generate?plan=subscription&source=homepage-subscription-proof-loop-renewal-brief",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2098,6 +2119,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-emerald-700 dark:text-emerald-300">
                   Compound this monthly output →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-slate-200 bg-slate-50/80 p-8 shadow-[0_24px_80px_rgba(15,23,42,0.1)] dark:border-slate-300/20 dark:bg-slate-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-slate-300">
+              Subscription proof loops
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Make the next renewal decision easier before checkout.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Give monthly buyers a simple evidence loop: ship an asset, compare variants, and turn the month’s work into the next paid brief before renewal.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionProofLoops.map((loop) => (
+              <Link
+                key={loop.href}
+                href={loop.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-slate-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {loop.loop}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {loop.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-slate-700 dark:text-slate-300">
+                  Build this proof loop →
                 </span>
               </Link>
             ))}

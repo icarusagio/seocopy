@@ -403,3 +403,23 @@ test("homepage turns monthly subscriber wins into compounding prompts", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives monthly subscribers proof loops before renewal", () => {
+  const requiredCopy = [
+    "Subscription proof loops",
+    "Make the next renewal decision easier before checkout.",
+    "Give monthly buyers a simple evidence loop",
+    "Weekly shipped-asset receipt",
+    "Variant-to-winner note",
+    "Renewal-ready next brief",
+    "homepage-subscription-proof-loop-weekly-receipt",
+    "homepage-subscription-proof-loop-variant-winner",
+    "homepage-subscription-proof-loop-renewal-brief",
+    "/generate?plan=subscription&source=homepage-subscription-proof-loop-weekly-receipt",
+    "Build this proof loop",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
