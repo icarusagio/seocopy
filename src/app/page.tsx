@@ -1301,6 +1301,11 @@ const useCasePages = [
     body: "Product update emails, feature announcement copy, release-note summaries, upgrade CTAs, FAQs, and landing snippets from one launch brief.",
   },
   {
+    title: "Product Launch Email Generator",
+    href: "/product-launch-email-generator",
+    body: "Product launch emails, pre-launch teasers, launch-day announcements, follow-up sequences, FAQs, and conversion CTAs from one go-to-market brief.",
+  },
+  {
     title: "Review Request Email Generator",
     href: "/review-request-email-generator",
     body: "Review request emails, post-purchase review flows, customer feedback prompts, testimonial collection CTAs, FAQs, and SEO snippets from one customer moment.",
