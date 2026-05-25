@@ -363,3 +363,23 @@ test("homepage makes subscription renewal value concrete before checkout", () =>
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives subscribers expansion triggers after the first win", () => {
+  const requiredCopy = [
+    "Subscription expansion triggers",
+    "Show monthly users when to turn one win into the next sprint.",
+    "Help high-intent subscribers connect a useful first output to the repeat work",
+    "One campaign becomes three channels",
+    "A client asks for a faster second sprint",
+    "A founder needs weekly launch copy",
+    "homepage-subscription-expansion-trigger-channels",
+    "homepage-subscription-expansion-trigger-client-sprint",
+    "homepage-subscription-expansion-trigger-weekly-launch",
+    "/generate?plan=subscription&source=homepage-subscription-expansion-trigger-channels",
+    "Expand this monthly sprint",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

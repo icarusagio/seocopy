@@ -425,6 +425,27 @@ const subscriptionRenewalGuides = [
   },
 ];
 
+const subscriptionExpansionTriggers = [
+  {
+    trigger: "One campaign becomes three channels",
+    action:
+      "Use the subscription to turn the winning page angle into email, paid-social, and retargeting variants before context goes stale.",
+    href: "/generate?plan=subscription&source=homepage-subscription-expansion-trigger-channels",
+  },
+  {
+    trigger: "A client asks for a faster second sprint",
+    action:
+      "Keep the approved brief warm and generate the follow-up landing page, SEO snippets, and reporting notes without a new checkout decision.",
+    href: "/generate?plan=subscription&source=homepage-subscription-expansion-trigger-client-sprint",
+  },
+  {
+    trigger: "A founder needs weekly launch copy",
+    action:
+      "Convert product notes into a repeatable weekly rhythm of page tests, lifecycle emails, and proof blocks tied to the same launch goal.",
+    href: "/generate?plan=subscription&source=homepage-subscription-expansion-trigger-weekly-launch",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1981,6 +2002,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-violet-700 dark:text-violet-300">
                   Plan this subscription moment →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-fuchsia-200 bg-fuchsia-50/80 p-8 shadow-[0_24px_80px_rgba(217,70,239,0.12)] dark:border-fuchsia-300/20 dark:bg-fuchsia-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-fuchsia-700 dark:text-fuchsia-300">
+              Subscription expansion triggers
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Show monthly users when to turn one win into the next sprint.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help high-intent subscribers connect a useful first output to the repeat work that makes recurring access worth keeping.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionExpansionTriggers.map((trigger) => (
+              <Link
+                key={trigger.href}
+                href={trigger.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-fuchsia-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {trigger.trigger}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {trigger.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-fuchsia-700 dark:text-fuchsia-300">
+                  Expand this monthly sprint →
                 </span>
               </Link>
             ))}
