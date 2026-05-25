@@ -323,3 +323,23 @@ test("homepage gives subscribers first-month success checkpoints", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage handles subscription objections before recurring checkout", () => {
+  const requiredCopy = [
+    "Subscription objection reducers",
+    "Answer the last questions before monthly checkout.",
+    "Convert high-intent visitors who like the output but hesitate on recurring access",
+    "I am not sure I will use it every week",
+    "I need proof before adding another tool",
+    "My team already has scattered prompts",
+    "homepage-subscription-objection-weekly-use",
+    "homepage-subscription-objection-proof",
+    "homepage-subscription-objection-workflow",
+    "/generate?plan=subscription&source=homepage-subscription-objection-weekly-use",
+    "Start this monthly answer",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

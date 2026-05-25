@@ -383,6 +383,27 @@ const subscriptionSuccessCheckpoints = [
   },
 ];
 
+const subscriptionObjectionReducers = [
+  {
+    objection: "I am not sure I will use it every week",
+    answer:
+      "Start with one live campaign and use the subscription for the adjacent assets: page refresh, launch email, paid ad variants, and follow-up CTA copy.",
+    href: "/generate?plan=subscription&source=homepage-subscription-objection-weekly-use",
+  },
+  {
+    objection: "I need proof before adding another tool",
+    answer:
+      "Turn the first month into a measurable copy sprint with shipped assets, winning variants, and renewal notes ready for a founder or client review.",
+    href: "/generate?plan=subscription&source=homepage-subscription-objection-proof",
+  },
+  {
+    objection: "My team already has scattered prompts",
+    answer:
+      "Use monthly access to standardize briefs, outputs, and handoff-ready copy so every launch or SEO sprint starts from the same revenue-focused workflow.",
+    href: "/generate?plan=subscription&source=homepage-subscription-objection-workflow",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1862,6 +1883,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-amber-700 dark:text-amber-300">
                   Start this success checkpoint →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-orange-200 bg-orange-50/80 p-8 shadow-[0_24px_80px_rgba(249,115,22,0.12)] dark:border-orange-300/20 dark:bg-orange-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-700 dark:text-orange-300">
+              Subscription objection reducers
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Answer the last questions before monthly checkout.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Convert high-intent visitors who like the output but hesitate on recurring access by turning common doubts
+              into tracked subscription-start prompts they can test immediately.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionObjectionReducers.map((objection) => (
+              <Link
+                key={objection.href}
+                href={objection.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-orange-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {objection.objection}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {objection.answer}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-orange-700 dark:text-orange-300">
+                  Start this monthly answer →
                 </span>
               </Link>
             ))}
