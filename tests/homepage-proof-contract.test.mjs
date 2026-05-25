@@ -283,3 +283,23 @@ test("homepage turns subscription interest into monthly output plans", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives subscribers team-ready handoff kits", () => {
+  const requiredCopy = [
+    "Subscription handoff kits",
+    "Make monthly outputs easy to approve and ship.",
+    "Turn subscription interest into team-ready deliverables",
+    "Founder approval kit",
+    "Marketer launch kit",
+    "Client delivery kit",
+    "homepage-subscription-handoff-kit-founder",
+    "homepage-subscription-handoff-kit-marketer",
+    "homepage-subscription-handoff-kit-client",
+    "/generate?plan=subscription&source=homepage-subscription-handoff-kit-founder",
+    "Start this monthly handoff",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

@@ -341,6 +341,27 @@ const monthlyOutputPlans = [
   },
 ];
 
+const subscriptionHandoffKits = [
+  {
+    kit: "Founder approval kit",
+    promise:
+      "Create the hero, objection handling, and final CTA variants a founder can approve before paying for another traffic test.",
+    href: "/generate?plan=subscription&source=homepage-subscription-handoff-kit-founder",
+  },
+  {
+    kit: "Marketer launch kit",
+    promise:
+      "Bundle ad copy, landing-page proof blocks, email angles, and reporting notes so the next weekly launch has every asset ready.",
+    href: "/generate?plan=subscription&source=homepage-subscription-handoff-kit-marketer",
+  },
+  {
+    kit: "Client delivery kit",
+    promise:
+      "Turn one client brief into review-ready SEO metadata, campaign copy, and next-step recommendations an agency can send the same day.",
+    href: "/generate?plan=subscription&source=homepage-subscription-handoff-kit-client",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1748,6 +1769,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-emerald-700 dark:text-emerald-300">
                   Open the monthly plan →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-indigo-200 bg-indigo-50/80 p-8 shadow-[0_24px_80px_rgba(99,102,241,0.12)] dark:border-indigo-300/20 dark:bg-indigo-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-indigo-700 dark:text-indigo-300">
+              Subscription handoff kits
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Make monthly outputs easy to approve and ship.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Turn subscription interest into team-ready deliverables so founders, marketers, and agencies know
+              exactly what the next paid month will produce after checkout.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionHandoffKits.map((kit) => (
+              <Link
+                key={kit.href}
+                href={kit.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-indigo-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {kit.kit}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {kit.promise}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-indigo-700 dark:text-indigo-300">
+                  Start this monthly handoff →
                 </span>
               </Link>
             ))}
