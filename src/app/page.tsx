@@ -362,6 +362,27 @@ const subscriptionHandoffKits = [
   },
 ];
 
+const subscriptionSuccessCheckpoints = [
+  {
+    checkpoint: "Week 1: Ship the first revenue asset",
+    proof:
+      "Use monthly access to turn the approved brief into a product page, landing-page test, or retention email that can go live immediately.",
+    href: "/generate?plan=subscription&source=homepage-subscription-success-week-one",
+  },
+  {
+    checkpoint: "Week 2: Create the follow-up variants",
+    proof:
+      "Generate alternate headlines, proof blocks, and email angles while the first launch data is still fresh.",
+    href: "/generate?plan=subscription&source=homepage-subscription-success-variants",
+  },
+  {
+    checkpoint: "Week 4: Package the renewal proof",
+    proof:
+      "Summarize the shipped assets, winners, and next campaign brief so the subscription feels like a repeatable revenue system.",
+    href: "/generate?plan=subscription&source=homepage-subscription-success-renewal",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1805,6 +1826,42 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-indigo-700 dark:text-indigo-300">
                   Start this monthly handoff →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-amber-200 bg-amber-50/80 p-8 shadow-[0_24px_80px_rgba(245,158,11,0.12)] dark:border-amber-300/20 dark:bg-amber-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-700 dark:text-amber-300">
+              Subscription success checkpoints
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Show subscribers how the first month pays back.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Reduce subscription hesitation by making the first paid month feel measurable: ship one revenue asset,
+              create follow-up variants, then package the renewal proof before the next billing decision.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionSuccessCheckpoints.map((checkpoint) => (
+              <Link
+                key={checkpoint.href}
+                href={checkpoint.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-amber-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {checkpoint.checkpoint}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {checkpoint.proof}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-amber-700 dark:text-amber-300">
+                  Start this success checkpoint →
                 </span>
               </Link>
             ))}

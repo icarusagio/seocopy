@@ -303,3 +303,23 @@ test("homepage gives subscribers team-ready handoff kits", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives subscribers first-month success checkpoints", () => {
+  const requiredCopy = [
+    "Subscription success checkpoints",
+    "Show subscribers how the first month pays back.",
+    "Reduce subscription hesitation by making the first paid month feel measurable",
+    "Week 1: Ship the first revenue asset",
+    "Week 2: Create the follow-up variants",
+    "Week 4: Package the renewal proof",
+    "homepage-subscription-success-week-one",
+    "homepage-subscription-success-variants",
+    "homepage-subscription-success-renewal",
+    "/generate?plan=subscription&source=homepage-subscription-success-week-one",
+    "Start this success checkpoint",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
