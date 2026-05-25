@@ -1274,6 +1274,11 @@ const useCasePages = [
     body: "Back-in-stock emails, restock alert subject lines, Shopify inventory recovery copy, product-return CTAs, FAQs, and SEO snippets from one restock brief.",
   },
   {
+    title: "Back-in-Stock SMS Generator",
+    href: "/back-in-stock-sms-generator",
+    body: "Back-in-stock SMS alerts, Shopify restock texts, low-stock reminders, compliance-safe opt-out language, and mobile CTAs from one restock brief.",
+  },
+  {
     title: "Browse Abandonment Email Generator",
     href: "/browse-abandonment-email-generator",
     body: "Browse abandonment emails, product-view recovery flows, personalized product reminders, Shopify browse recovery copy, FAQs, and SEO snippets from one viewed product moment.",
