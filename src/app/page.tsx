@@ -446,6 +446,27 @@ const subscriptionExpansionTriggers = [
   },
 ];
 
+const subscriptionCompoundingPrompts = [
+  {
+    prompt: "Turn the shipped page into follow-up email angles",
+    outcome:
+      "Keep the same offer, objections, proof, and CTA moving into the next nurture or winback campaign without rebuilding context.",
+    href: "/generate?plan=subscription&source=homepage-subscription-compounding-prompt-email-followup",
+  },
+  {
+    prompt: "Turn the winning ad into landing-page variants",
+    outcome:
+      "Use the monthly plan to convert the strongest paid-social or search hook into hero, proof, FAQ, and CTA tests for the page.",
+    href: "/generate?plan=subscription&source=homepage-subscription-compounding-prompt-landing-variants",
+  },
+  {
+    prompt: "Turn the client approval into next-month deliverables",
+    outcome:
+      "Package the approved angle into SEO snippets, campaign copy, and a renewal-ready handoff before the next client check-in.",
+    href: "/generate?plan=subscription&source=homepage-subscription-compounding-prompt-client-renewal",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2037,6 +2058,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-fuchsia-700 dark:text-fuchsia-300">
                   Expand this monthly sprint →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-emerald-200 bg-emerald-50/80 p-8 shadow-[0_24px_80px_rgba(16,185,129,0.12)] dark:border-emerald-300/20 dark:bg-emerald-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700 dark:text-emerald-300">
+              Subscription compounding prompts
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Turn every monthly output into the next revenue brief.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Give subscribers concrete follow-up prompts so a useful first asset becomes repeatable paid work instead of a one-and-done generation.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionCompoundingPrompts.map((prompt) => (
+              <Link
+                key={prompt.href}
+                href={prompt.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-emerald-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {prompt.prompt}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {prompt.outcome}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                  Compound this monthly output →
                 </span>
               </Link>
             ))}

@@ -383,3 +383,23 @@ test("homepage gives subscribers expansion triggers after the first win", () => 
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage turns monthly subscriber wins into compounding prompts", () => {
+  const requiredCopy = [
+    "Subscription compounding prompts",
+    "Turn every monthly output into the next revenue brief.",
+    "Give subscribers concrete follow-up prompts so a useful first asset becomes repeatable paid work",
+    "Turn the shipped page into follow-up email angles",
+    "Turn the winning ad into landing-page variants",
+    "Turn the client approval into next-month deliverables",
+    "homepage-subscription-compounding-prompt-email-followup",
+    "homepage-subscription-compounding-prompt-landing-variants",
+    "homepage-subscription-compounding-prompt-client-renewal",
+    "/generate?plan=subscription&source=homepage-subscription-compounding-prompt-email-followup",
+    "Compound this monthly output",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
