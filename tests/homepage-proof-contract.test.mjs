@@ -463,3 +463,23 @@ test("homepage gives monthly buyers an approval packet before upgrading", () => 
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives subscribers ROI receipts before renewal", () => {
+  const requiredCopy = [
+    "Subscription ROI receipts",
+    "Make monthly value visible before the next billing cycle.",
+    "Help subscription buyers turn generated copy into proof they can share",
+    "Shipped asset log",
+    "Variant decision note",
+    "Next-month ROI brief",
+    "homepage-subscription-roi-receipt-shipped-assets",
+    "homepage-subscription-roi-receipt-variant-decision",
+    "homepage-subscription-roi-receipt-renewal-brief",
+    "/generate?plan=subscription&source=homepage-subscription-roi-receipt-shipped-assets",
+    "Build this ROI receipt",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

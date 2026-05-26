@@ -530,6 +530,27 @@ const subscriptionApprovalPackets = [
   },
 ];
 
+const subscriptionRoiReceipts = [
+  {
+    receipt: "Shipped asset log",
+    action:
+      "Turn each monthly generation into a simple record of the page, email, or ad that went live so the plan feels tied to shipped work.",
+    href: "/generate?plan=subscription&source=homepage-subscription-roi-receipt-shipped-assets",
+  },
+  {
+    receipt: "Variant decision note",
+    action:
+      "Summarize which headline, CTA, or email angle should win the next test so stakeholders see the subscription creating decisions, not drafts.",
+    href: "/generate?plan=subscription&source=homepage-subscription-roi-receipt-variant-decision",
+  },
+  {
+    receipt: "Next-month ROI brief",
+    action:
+      "Package the first month’s shipped copy, lessons, and next revenue bet into a renewal-ready brief before another subscription cycle starts.",
+    href: "/generate?plan=subscription&source=homepage-subscription-roi-receipt-renewal-brief",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2266,6 +2287,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-violet-700 dark:text-violet-300">
                   Build this approval packet →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-sky-200 bg-sky-50/80 p-8 shadow-[0_24px_80px_rgba(14,165,233,0.12)] dark:border-sky-300/20 dark:bg-sky-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-sky-700 dark:text-sky-300">
+              Subscription ROI receipts
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Make monthly value visible before the next billing cycle.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help subscription buyers turn generated copy into proof they can share: shipped assets, variant decisions, and the next ROI brief.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionRoiReceipts.map((receipt) => (
+              <Link
+                key={receipt.href}
+                href={receipt.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-sky-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {receipt.receipt}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {receipt.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-sky-700 dark:text-sky-300">
+                  Build this ROI receipt →
                 </span>
               </Link>
             ))}
