@@ -509,6 +509,27 @@ const subscriptionTeamRollouts = [
   },
 ];
 
+const subscriptionApprovalPackets = [
+  {
+    packet: "Budget justification note",
+    action:
+      "Turn the monthly plan into a plain-language approval memo: expected copy assets, campaign deadline, and why $19 is cheaper than another delayed launch.",
+    href: "/generate?plan=subscription&source=homepage-subscription-approval-packet-budget",
+  },
+  {
+    packet: "Stakeholder preview brief",
+    action:
+      "Generate a preview the founder, marketer, or client can review before checkout so the buyer knows what the first subscription sprint will produce.",
+    href: "/generate?plan=subscription&source=homepage-subscription-approval-packet-stakeholder",
+  },
+  {
+    packet: "Implementation handoff",
+    action:
+      "Map the first month into owner, publish destination, and review cadence so the subscription starts as an operating plan instead of another tool login.",
+    href: "/generate?plan=subscription&source=homepage-subscription-approval-packet-handoff",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2210,6 +2231,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-indigo-700 dark:text-indigo-300">
                   Start this team rollout →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-violet-200 bg-violet-50/80 p-8 shadow-[0_24px_80px_rgba(124,58,237,0.12)] dark:border-violet-300/20 dark:bg-violet-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-violet-700 dark:text-violet-300">
+              Subscription approval packets
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Give monthly buyers the internal case before they upgrade.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Reduce checkout hesitation by turning the $19 plan into a budget note, stakeholder preview, and first-month implementation handoff.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionApprovalPackets.map((packet) => (
+              <Link
+                key={packet.href}
+                href={packet.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-violet-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {packet.packet}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {packet.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-violet-700 dark:text-violet-300">
+                  Build this approval packet →
                 </span>
               </Link>
             ))}

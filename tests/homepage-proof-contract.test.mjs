@@ -443,3 +443,23 @@ test("homepage turns subscription checkout into a team rollout habit", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives monthly buyers an approval packet before upgrading", () => {
+  const requiredCopy = [
+    "Subscription approval packets",
+    "Give monthly buyers the internal case before they upgrade.",
+    "Reduce checkout hesitation by turning the $19 plan into a budget note",
+    "Budget justification note",
+    "Stakeholder preview brief",
+    "Implementation handoff",
+    "homepage-subscription-approval-packet-budget",
+    "homepage-subscription-approval-packet-stakeholder",
+    "homepage-subscription-approval-packet-handoff",
+    "/generate?plan=subscription&source=homepage-subscription-approval-packet-budget",
+    "Build this approval packet",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
