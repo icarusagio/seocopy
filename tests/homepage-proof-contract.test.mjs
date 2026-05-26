@@ -503,3 +503,23 @@ test("homepage turns renewal into the next subscription copy sprint", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage makes the subscription renewal decision explicit before churn", () => {
+  const requiredCopy = [
+    "Subscription renewal decision cards",
+    "Make the keep-paying decision explicit before churn.",
+    "Help monthly buyers turn shipped work, ownership, and measurable next steps",
+    "Renew or pause decision card",
+    "Next asset owner card",
+    "Renewal metric card",
+    "homepage-subscription-renewal-decision-renew-or-pause",
+    "homepage-subscription-renewal-decision-asset-owner",
+    "homepage-subscription-renewal-decision-metric-story",
+    "/generate?plan=subscription&source=homepage-subscription-renewal-decision-renew-or-pause",
+    "Build this renewal decision",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

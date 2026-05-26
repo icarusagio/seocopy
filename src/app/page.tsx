@@ -572,6 +572,27 @@ const subscriptionRenewalPlaybooks = [
   },
 ];
 
+const subscriptionRenewalDecisionCards = [
+  {
+    card: "Renew or pause decision card",
+    action:
+      "Compare the shipped copy, remaining backlog, and next revenue moment so buyers can justify keeping the monthly plan active instead of drifting into churn.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-decision-renew-or-pause",
+  },
+  {
+    card: "Next asset owner card",
+    action:
+      "Assign the person, deadline, and publish destination for the next generated asset before the renewal date arrives.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-decision-asset-owner",
+  },
+  {
+    card: "Renewal metric card",
+    action:
+      "Turn open rates, page tests, or campaign notes into the metric story that makes another month feel accountable.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-decision-metric-story",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2378,6 +2399,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-teal-700 dark:text-teal-300">
                   Build this renewal playbook →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-rose-200 bg-rose-50/80 p-8 shadow-[0_24px_80px_rgba(244,63,94,0.12)] dark:border-rose-300/20 dark:bg-rose-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose-700 dark:text-rose-300">
+              Subscription renewal decision cards
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Make the keep-paying decision explicit before churn.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help monthly buyers turn shipped work, ownership, and measurable next steps into a clear renewal decision before the plan quietly lapses.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionRenewalDecisionCards.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-rose-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {card.card}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {card.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-rose-700 dark:text-rose-300">
+                  Build this renewal decision →
                 </span>
               </Link>
             ))}
