@@ -483,3 +483,23 @@ test("homepage gives subscribers ROI receipts before renewal", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage turns renewal into the next subscription copy sprint", () => {
+  const requiredCopy = [
+    "Subscription renewal playbooks",
+    "Turn renewal into the next copy sprint.",
+    "Help monthly buyers decide to keep going by converting shipped proof",
+    "Renewal review agenda",
+    "Next-campaign backlog",
+    "Stakeholder renewal memo",
+    "homepage-subscription-renewal-playbook-review-agenda",
+    "homepage-subscription-renewal-playbook-campaign-backlog",
+    "homepage-subscription-renewal-playbook-stakeholder-memo",
+    "/generate?plan=subscription&source=homepage-subscription-renewal-playbook-review-agenda",
+    "Build this renewal playbook",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

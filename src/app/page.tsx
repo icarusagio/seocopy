@@ -551,6 +551,27 @@ const subscriptionRoiReceipts = [
   },
 ];
 
+const subscriptionRenewalPlaybooks = [
+  {
+    playbook: "Renewal review agenda",
+    action:
+      "Turn the month’s shipped assets into a 15-minute review: what went live, what moved the metric, and which copy sprint should renew next.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-playbook-review-agenda",
+  },
+  {
+    playbook: "Next-campaign backlog",
+    action:
+      "Convert every unused lesson into a prioritized backlog of landing pages, lifecycle emails, and ad variants the next monthly cycle can ship.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-playbook-campaign-backlog",
+  },
+  {
+    playbook: "Stakeholder renewal memo",
+    action:
+      "Package shipped proof, variant decisions, and next-month upside into a memo a founder, marketer, or client can approve before renewal.",
+    href: "/generate?plan=subscription&source=homepage-subscription-renewal-playbook-stakeholder-memo",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2322,6 +2343,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-sky-700 dark:text-sky-300">
                   Build this ROI receipt →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-teal-200 bg-teal-50/80 p-8 shadow-[0_24px_80px_rgba(20,184,166,0.12)] dark:border-teal-300/20 dark:bg-teal-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+              Subscription renewal playbooks
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Turn renewal into the next copy sprint.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help monthly buyers decide to keep going by converting shipped proof into an agenda, backlog, and stakeholder memo for the next revenue cycle.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionRenewalPlaybooks.map((playbook) => (
+              <Link
+                key={playbook.href}
+                href={playbook.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-teal-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {playbook.playbook}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {playbook.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-teal-700 dark:text-teal-300">
+                  Build this renewal playbook →
                 </span>
               </Link>
             ))}
