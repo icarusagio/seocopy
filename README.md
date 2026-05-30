@@ -183,8 +183,9 @@ Use it when you need to:
 - `/product-bullet-point-generator` — ecommerce product bullet points, feature-to-benefit rewrites, SEO metadata, FAQs, and CTAs for Shopify, Amazon, and product pages
 - `/product-comparison-generator` — product comparison pages, alternative-page positioning, proof tables, SEO metadata, FAQs, and CTAs from one competitor brief
 - `/product-comparison-table-generator` — product comparison tables, feature grids, alternative-page proof points, FAQs, and CTAs from one product or competitor brief
-- `/shopify-seo-copy-generator` — Shopify SEO use-case page
-- `/shopify-app-store-listing-generator` — Shopify App Store listing copy, app subtitles, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs from one app brief
+- `/shopify-seo-copy-generator` — Shopify-specific SEO/copy use-case page
+- `/shopify-abandoned-cart-email-generator` — Shopify abandoned cart emails, subject lines, preview text, cart recovery offers, product reminders, objection reducers, and checkout CTAs from one store brief
+- `/shopify-app-store-listing-generator` — Shopify App Store subtitles, listing copy, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs from one app brief
 - `/shopify-app-launch-copy-generator` — Shopify app launch emails, Product Hunt blurbs, social posts, App Store update notes, merchant FAQs, SEO snippets, and install CTAs from one app launch brief
 - `/shopify-email-marketing-generator` — Shopify email marketing copy, product-drop email campaigns, segmented promo angles, Klaviyo-ready copy blocks, subject lines, preview text, and CTAs from one store brief
 - `/mailchimp-email-generator` — Mailchimp newsletter copy, promo campaigns, audience segment variants, subject lines, preview text, landing snippets, and CTAs from one brief

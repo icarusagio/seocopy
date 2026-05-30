@@ -708,6 +708,11 @@ const useCasePages = [
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
   },
   {
+    title: "Shopify Abandoned Cart Email Generator",
+    href: "/shopify-abandoned-cart-email-generator",
+    body: "Cart recovery emails, subject lines, preview text, product reminders, objection reducers, and checkout CTAs for Shopify merchants.",
+  },
+  {
     title: "Shopify App Store Listing Generator",
     href: "/shopify-app-store-listing-generator",
     body: "App subtitles, listing copy, merchant-facing benefits, feature bullets, FAQs, screenshot captions, and install CTAs for Shopify app launches.",
