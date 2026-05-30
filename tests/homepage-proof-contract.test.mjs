@@ -523,3 +523,23 @@ test("homepage makes the subscription renewal decision explicit before churn", (
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives at-risk subscribers concrete churn-save prompts", () => {
+  const requiredCopy = [
+    "Subscription churn saves",
+    "Give at-risk subscribers one more useful reason to renew.",
+    "Help monthly buyers turn pause risk, underuse, and renewal objections",
+    "Pause-risk recovery brief",
+    "Unused-plan activation note",
+    "Renewal objection reply",
+    "homepage-subscription-churn-save-pause-risk",
+    "homepage-subscription-churn-save-unused-plan",
+    "homepage-subscription-churn-save-objection-reply",
+    "/generate?plan=subscription&source=homepage-subscription-churn-save-pause-risk",
+    "Build this churn save",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});

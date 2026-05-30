@@ -593,6 +593,27 @@ const subscriptionRenewalDecisionCards = [
   },
 ];
 
+const subscriptionChurnSaves = [
+  {
+    save: "Pause-risk recovery brief",
+    action:
+      "Turn a buyer’s pause reason into the next useful asset: the campaign gap, copy backlog, and smallest publishable output that makes renewal worth another month.",
+    href: "/generate?plan=subscription&source=homepage-subscription-churn-save-pause-risk",
+  },
+  {
+    save: "Unused-plan activation note",
+    action:
+      "Convert an underused subscription into a three-output catch-up plan so the buyer has page, email, and ad copy to ship before billing renews.",
+    href: "/generate?plan=subscription&source=homepage-subscription-churn-save-unused-plan",
+  },
+  {
+    save: "Renewal objection reply",
+    action:
+      "Draft the internal reply that connects shipped copy, next campaign timing, and $19/month value before a teammate cancels by default.",
+    href: "/generate?plan=subscription&source=homepage-subscription-churn-save-objection-reply",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2434,6 +2455,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-rose-700 dark:text-rose-300">
                   Build this renewal decision →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-orange-200 bg-orange-50/80 p-8 shadow-[0_24px_80px_rgba(249,115,22,0.12)] dark:border-orange-300/20 dark:bg-orange-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-700 dark:text-orange-300">
+              Subscription churn saves
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Give at-risk subscribers one more useful reason to renew.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help monthly buyers turn pause risk, underuse, and renewal objections into the next concrete copy asset before churn becomes the default choice.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionChurnSaves.map((save) => (
+              <Link
+                key={save.href}
+                href={save.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-orange-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {save.save}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {save.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-orange-700 dark:text-orange-300">
+                  Build this churn save →
                 </span>
               </Link>
             ))}
