@@ -1303,6 +1303,11 @@ const useCasePages = [
     body: "Post-purchase emails, order confirmation follow-ups, cross-sell recommendations, second-purchase CTAs, FAQs, and SEO snippets from one customer moment.",
   },
   {
+    title: "Post-Purchase SMS Generator",
+    href: "/post-purchase-sms-generator",
+    body: "Post-purchase SMS copy, delivery updates, product-care tips, review asks, replenishment reminders, cross-sell nudges, and mobile CTAs from one customer moment.",
+  },
+  {
     title: "Discount Email Generator",
     href: "/discount-email-generator",
     body: "Discount emails, promo code announcements, limited-time offer angles, coupon redemption CTAs, FAQs, and SEO snippets from one offer brief.",
