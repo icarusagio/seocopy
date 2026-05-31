@@ -635,6 +635,27 @@ const subscriptionRetentionSprints = [
   },
 ];
 
+const subscriptionWinbackPlans = [
+  {
+    plan: "Cancellation rescue plan",
+    action:
+      "Turn a cancellation reason into a publishable save email, proof snippet, and next-asset brief before the subscriber pauses.",
+    href: "/generate?plan=subscription&source=homepage-subscription-winback-plan-cancellation-rescue",
+  },
+  {
+    plan: "Dormant subscriber plan",
+    action:
+      "Convert a low-usage account into a three-output catch-up plan with the campaign owner, due date, and checkout value reminder.",
+    href: "/generate?plan=subscription&source=homepage-subscription-winback-plan-dormant-account",
+  },
+  {
+    plan: "Renewal proof plan",
+    action:
+      "Package shipped copy, live-page links, and the next monthly brief into a renewal note that makes keeping the plan obvious.",
+    href: "/generate?plan=subscription&source=homepage-subscription-winback-plan-renewal-proof",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2556,6 +2577,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-amber-700 dark:text-amber-300">
                   Start this retention sprint →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-emerald-200 bg-emerald-50/80 p-8 shadow-[0_24px_80px_rgba(16,185,129,0.12)] dark:border-emerald-300/20 dark:bg-emerald-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700 dark:text-emerald-300">
+              Subscription winback plans
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Give every monthly buyer a save plan before they churn.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help subscribers with cancellation intent, dormant usage, or renewal-proof gaps turn the next output into a concrete reason to keep SEOCopy active.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionWinbackPlans.map((plan) => (
+              <Link
+                key={plan.href}
+                href={plan.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-emerald-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {plan.plan}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {plan.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                  Build this winback plan →
                 </span>
               </Link>
             ))}

@@ -563,3 +563,23 @@ test("homepage turns subscription retention risk into monthly sprints", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage gives subscription buyers winback plans before churn", () => {
+  const requiredCopy = [
+    "Subscription winback plans",
+    "Give every monthly buyer a save plan before they churn.",
+    "Help subscribers with cancellation intent, dormant usage, or renewal-proof gaps",
+    "Cancellation rescue plan",
+    "Dormant subscriber plan",
+    "Renewal proof plan",
+    "homepage-subscription-winback-plan-cancellation-rescue",
+    "homepage-subscription-winback-plan-dormant-account",
+    "homepage-subscription-winback-plan-renewal-proof",
+    "/generate?plan=subscription&source=homepage-subscription-winback-plan-cancellation-rescue",
+    "Build this winback plan",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
