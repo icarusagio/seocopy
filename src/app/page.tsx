@@ -614,6 +614,27 @@ const subscriptionChurnSaves = [
   },
 ];
 
+const subscriptionRetentionSprints = [
+  {
+    sprint: "Renewal save sprint",
+    action:
+      "Turn a cancellation signal into the next publishable page, email, or ad refresh so the buyer sees a concrete reason to keep monthly access.",
+    href: "/generate?plan=subscription&source=homepage-subscription-retention-sprint-renewal-save",
+  },
+  {
+    sprint: "Underuse catch-up sprint",
+    action:
+      "Convert unused generations into a three-asset backlog with owner, deadline, and publish destination before the plan renews.",
+    href: "/generate?plan=subscription&source=homepage-subscription-retention-sprint-underuse-catchup",
+  },
+  {
+    sprint: "Next-campaign proof sprint",
+    action:
+      "Package shipped copy, variant notes, and the next revenue brief into a renewal-ready plan a founder or client can approve.",
+    href: "/generate?plan=subscription&source=homepage-subscription-retention-sprint-campaign-proof",
+  },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -2500,6 +2521,41 @@ export default function Home() {
                 </p>
                 <span className="mt-5 inline-flex text-sm font-semibold text-orange-700 dark:text-orange-300">
                   Build this churn save →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+        <div className="rounded-[2rem] border border-amber-200 bg-amber-50/80 p-8 shadow-[0_24px_80px_rgba(245,158,11,0.12)] dark:border-amber-300/20 dark:bg-amber-300/10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-700 dark:text-amber-300">
+              Subscription retention sprints
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-white">
+              Convert renewal risk into a concrete monthly sprint.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+              Help subscribers with cancellation, underuse, or campaign-proof risk turn the next generation into a visible reason to keep paying.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {subscriptionRetentionSprints.map((sprint) => (
+              <Link
+                key={sprint.href}
+                href={sprint.href}
+                className="flex h-full flex-col rounded-[1.5rem] border border-black/10 bg-white/85 p-6 transition hover:-translate-y-0.5 hover:border-amber-400 dark:border-white/10 dark:bg-slate-950/45"
+              >
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">
+                  {sprint.sprint}
+                </h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {sprint.action}
+                </p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-amber-700 dark:text-amber-300">
+                  Start this retention sprint →
                 </span>
               </Link>
             ))}

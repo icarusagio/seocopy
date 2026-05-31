@@ -543,3 +543,23 @@ test("homepage gives at-risk subscribers concrete churn-save prompts", () => {
     assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 });
+
+test("homepage turns subscription retention risk into monthly sprints", () => {
+  const requiredCopy = [
+    "Subscription retention sprints",
+    "Convert renewal risk into a concrete monthly sprint.",
+    "Help subscribers with cancellation, underuse, or campaign-proof risk",
+    "Renewal save sprint",
+    "Underuse catch-up sprint",
+    "Next-campaign proof sprint",
+    "homepage-subscription-retention-sprint-renewal-save",
+    "homepage-subscription-retention-sprint-underuse-catchup",
+    "homepage-subscription-retention-sprint-campaign-proof",
+    "/generate?plan=subscription&source=homepage-subscription-retention-sprint-renewal-save",
+    "Start this retention sprint",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(homepageSource, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
