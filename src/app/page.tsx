@@ -160,11 +160,13 @@ const conversionSprints = [
 const revenuePathways = [
   {
     audience: "Shopify merchant",
-    goal: "Recover carts and product views",
+    goal: "Recover carts, product views, and post-purchase reorders",
     pages: [
+      { label: "Shopify abandoned cart", href: "/shopify-abandoned-cart-email-generator" },
       { label: "Abandoned cart email", href: "/abandoned-cart-email-generator" },
       { label: "Browse abandonment email", href: "/browse-abandonment-email-generator" },
       { label: "Back-in-stock email", href: "/back-in-stock-email-generator" },
+      { label: "Post-purchase SMS", href: "/post-purchase-sms-generator" },
     ],
   },
   {
