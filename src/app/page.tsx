@@ -1542,6 +1542,11 @@ const useCasePages = [
     body: "Sales emails, demo follow-up emails, proposal follow-up copy, objection-handling CTAs, FAQs, and SEO snippets from one warm pipeline moment.",
   },
   {
+    title: "Demo Follow-Up Email Generator",
+    href: "/demo-follow-up-email-generator",
+    body: "Demo follow-up emails, sales demo recap notes, stakeholder forwarding copy, objection replies, and next-step CTAs from one product demo brief.",
+  },
+  {
     title: "LinkedIn Headline Generator",
     href: "/linkedin-headline-generator",
     body: "LinkedIn profile headlines, recruiter keywords, founder positioning, proof hooks, and CTA variants from one professional profile brief.",

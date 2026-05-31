@@ -104,6 +104,7 @@ Use it when you need to:
 - `/post-purchase-sms-generator` — post-purchase SMS copy, delivery updates, product-care tips, review asks, replenishment reminders, cross-sell nudges, compliance-safe opt-out language, and mobile CTAs from one customer moment
 - `/welcome-email-generator` — welcome emails, onboarding email sequences, first-purchase nurture copy, subscriber activation CTAs, FAQs, and SEO snippets from one signup moment
 - `/sales-email-generator` — sales emails, demo follow-up emails, proposal follow-up copy, objection-handling CTAs, FAQs, and SEO snippets from one warm pipeline moment
+- `/demo-follow-up-email-generator` — demo follow-up emails, sales demo recap notes, stakeholder forwarding copy, objection replies, proof snippets, and next-step CTAs from one product demo brief
 - `/instagram-bio-generator` — Instagram bios, creator profile taglines, link-in-bio CTAs, keyword angles, and pinned-post hooks from one profile brief
 - `/tiktok-caption-generator` — TikTok captions, short-video hooks, hashtag angles, SEO snippets, social previews, and CTA variants from one campaign brief
 - `/pinterest-pin-description-generator` — Pinterest pin descriptions, board SEO copy, keyword angles, idea pin hooks, and CTA variants from one visual campaign brief
