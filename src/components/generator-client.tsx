@@ -50,6 +50,24 @@ function setFreeUsageCookie(freeUsed: number) {
 
 type Notice = { type: "error" | "success" | "info"; text: string };
 
+const previewResult = {
+  seoTitle: "Same-Day Shopify Restock Alerts That Recover Lost Sales",
+  metaDescription:
+    "Bring shoppers back the moment inventory returns with branded email and SMS restock alerts built for fast-moving Shopify products.",
+  ogTitle: "Turn sold-out product views into restock revenue",
+  ogDescription:
+    "Capture demand while items are out of stock, then trigger purchase-ready alerts when inventory is back.",
+  headlines: [
+    "Recover revenue from sold-out Shopify products",
+    "Let shoppers join the waitlist before they bounce",
+  ],
+  subheadlines: [
+    "Launch branded restock alerts in minutes, collect intent while inventory is unavailable, and bring high-intent buyers back when products return.",
+    "Use one workflow for email, SMS, and product-page waitlists so stockouts become a measurable recovery channel.",
+  ],
+  ctaSuggestions: ["Start recovering restock demand", "Build my alert flow"],
+};
+
 interface GeneratorClientProps {
   initialUsage: UsageState;
   initialPrompt?: string;
@@ -651,9 +669,34 @@ export default function GeneratorClient({
                 />
               </div>
             ) : (
-              <div className="rounded-3xl border border-dashed border-slate-300 p-8 text-center text-slate-600 dark:border-white/15 dark:text-slate-300">
-                Generated SEO titles, descriptions, OG tags, headlines,
-                subheadlines, and CTAs will appear here.
+              <div className="space-y-5 rounded-3xl border border-dashed border-slate-300 p-6 dark:border-white/15">
+                <div className="text-center">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-700 dark:text-cyan-300">
+                    Preview result before you spend a free run
+                  </p>
+                  <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                    A generated output will replace this sample with copy for
+                    your URL or brief.
+                  </p>
+                </div>
+                <OutputCard title="SEO Title" values={previewResult.seoTitle} />
+                <OutputCard
+                  title="Meta Description"
+                  values={previewResult.metaDescription}
+                />
+                <OutputCard
+                  title="OG Tags"
+                  values={[previewResult.ogTitle, previewResult.ogDescription]}
+                />
+                <OutputCard title="Headlines" values={previewResult.headlines} />
+                <OutputCard
+                  title="Subheadlines"
+                  values={previewResult.subheadlines}
+                />
+                <OutputCard
+                  title="CTA Suggestions"
+                  values={previewResult.ctaSuggestions}
+                />
               </div>
             )}
           </section>

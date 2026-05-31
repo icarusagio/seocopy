@@ -68,3 +68,17 @@ test("generator accepts safe prompt starter query text", async () => {
     /Prompt starter loaded\. Swap in your offer details, then run a free generation\./,
   );
 });
+
+test("generator shows a no-credit-spend preview before first output", () => {
+  const requiredCopy = [
+    "previewResult",
+    "Preview result before you spend a free run",
+    "Same-Day Shopify Restock Alerts That Recover Lost Sales",
+    "Turn sold-out product views into restock revenue",
+    "Start recovering restock demand",
+  ];
+
+  for (const copy of requiredCopy) {
+    assert.match(generatorClient, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
