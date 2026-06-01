@@ -160,8 +160,9 @@ const conversionSprints = [
 const revenuePathways = [
   {
     audience: "Shopify merchant",
-    goal: "Recover carts, product views, and post-purchase reorders",
+    goal: "Recover carts, launch product pages, and drive post-purchase reorders",
     pages: [
+      { label: "Shopify landing page", href: "/shopify-landing-page-copy-generator" },
       { label: "Shopify abandoned cart", href: "/shopify-abandoned-cart-email-generator" },
       { label: "Abandoned cart email", href: "/abandoned-cart-email-generator" },
       { label: "Browse abandonment email", href: "/browse-abandonment-email-generator" },
@@ -180,8 +181,9 @@ const revenuePathways = [
   },
   {
     audience: "Agency or content operator",
-    goal: "Package repeatable SEO deliverables",
+    goal: "Package repeatable SEO and AI-search deliverables",
     pages: [
+      { label: "Answer engine optimization", href: "/answer-engine-optimization-generator" },
       { label: "SEO audit report", href: "/seo-audit-report-generator" },
       { label: "Content brief", href: "/content-brief-generator" },
       { label: "Case study", href: "/case-study-generator" },
