@@ -116,6 +116,8 @@ test("homepage groups popular generators into buyer revenue pathways", () => {
     "Turn ad clicks into a clearer page",
     "Agency or content operator",
     "Package repeatable SEO deliverables",
+    "Founder with sales follow-up",
+    "Turn warm conversations into booked demos, partners, and next steps",
     "/shopify-abandoned-cart-email-generator",
     "/abandoned-cart-email-generator",
     "/browse-abandonment-email-generator",
@@ -127,6 +129,10 @@ test("homepage groups popular generators into buyer revenue pathways", () => {
     "/seo-audit-report-generator",
     "/content-brief-generator",
     "/case-study-generator",
+    "/demo-follow-up-email-generator",
+    "/cold-email-generator",
+    "/webinar-invitation-email-generator",
+    "/influencer-outreach-email-generator",
   ];
 
   for (const copy of requiredCopy) {

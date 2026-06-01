@@ -187,6 +187,16 @@ const revenuePathways = [
       { label: "Case study", href: "/case-study-generator" },
     ],
   },
+  {
+    audience: "Founder with sales follow-up",
+    goal: "Turn warm conversations into booked demos, partners, and next steps",
+    pages: [
+      { label: "Demo follow-up email", href: "/demo-follow-up-email-generator" },
+      { label: "Cold email", href: "/cold-email-generator" },
+      { label: "Webinar invitation", href: "/webinar-invitation-email-generator" },
+      { label: "Influencer outreach", href: "/influencer-outreach-email-generator" },
+    ],
+  },
 ];
 
 const paidIntentSprints = [
@@ -1793,11 +1803,11 @@ export default function Home() {
               Match the next generator to the buyer outcome.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
-              Three curated paths turn the large generator library into fast choices for merchants,
-              founders, and operators who need the next asset that can drive checkout, pipeline, or retention.
+              Four curated paths turn the large generator library into fast choices for merchants,
+              founders, operators, and sales-led teams who need the next asset that can drive checkout, pipeline, or retention.
             </p>
           </div>
-          <div className="grid gap-5 lg:grid-cols-3">
+          <div className="grid gap-5 lg:grid-cols-4">
             {revenuePathways.map((pathway) => (
               <article
                 key={pathway.audience}
