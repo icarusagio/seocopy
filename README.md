@@ -33,6 +33,7 @@ Use it when you need to:
 - `/` — main landing page
 - `/generate` — generator flow
 - `/ai-seo-copy-generator` — broad AI SEO copy use-case page
+- `/answer-engine-optimization-generator` — answer engine optimization copy, AI-search answer blocks, FAQ snippets, comparison blurbs, citation-ready summaries, and conversion CTAs from one brief
 - `/saas-landing-page-copy-generator` — SaaS landing page copy use-case page
 - `/ecommerce-seo-copy-generator` — ecommerce SEO copy use-case page
 - `/shopify-landing-page-copy-generator` — Shopify landing page copy, collection campaign sections, SEO metadata, product modules, FAQs, and cart-driving CTAs from one store brief

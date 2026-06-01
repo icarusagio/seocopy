@@ -747,6 +747,11 @@ const useCasePages = [
     body: "Search titles, meta descriptions, OG tags, headlines, and CTA variants from a URL or rough offer.",
   },
   {
+    title: "Answer Engine Optimization Generator",
+    href: "/answer-engine-optimization-generator",
+    body: "AI-search answer blocks, FAQ snippets, comparison blurbs, citation-ready summaries, and CTAs from one brief.",
+  },
+  {
     title: "SaaS Landing Page Copy Generator",
     href: "/saas-landing-page-copy-generator",
     body: "Hero copy, SEO metadata, feature-benefit sections, objection handling, and CTA variants for SaaS teams.",
