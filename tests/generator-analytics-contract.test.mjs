@@ -18,6 +18,7 @@ test("generator captures core revenue funnel analytics events", () => {
     "seocopy_payment_confirmed",
     "seocopy_checkout_canceled",
     "seocopy_output_copied",
+    "seocopy_demo_draft_loaded",
   ]) {
     assert.match(generatorClient, new RegExp(`trackRevenueEvent\\("${eventName}"`));
   }
@@ -76,6 +77,9 @@ test("generator shows a no-credit-spend preview before first output", () => {
     "Same-Day Shopify Restock Alerts That Recover Lost Sales",
     "Turn sold-out product views into restock revenue",
     "Start recovering restock demand",
+    "Try the sample draft — no free run used",
+    "Sample draft — no free generation spent",
+    "Sample SEO copy loaded without using a free generation",
   ];
 
   for (const copy of requiredCopy) {

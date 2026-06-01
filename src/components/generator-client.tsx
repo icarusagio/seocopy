@@ -50,7 +50,7 @@ function setFreeUsageCookie(freeUsed: number) {
 
 type Notice = { type: "error" | "success" | "info"; text: string };
 
-const previewResult = {
+const previewResult: GenerationResult = {
   seoTitle: "Same-Day Shopify Restock Alerts That Recover Lost Sales",
   metaDescription:
     "Bring shoppers back the moment inventory returns with branded email and SMS restock alerts built for fast-moving Shopify products.",
@@ -412,6 +412,21 @@ export default function GeneratorClient({
     void handleCheckout(initialCheckoutPlan, initialCheckoutSource ?? "url-plan");
   }, [handleCheckout, initialCheckoutPlan, initialCheckoutSource]);
 
+  function handleDemoDraft() {
+    setResult(previewResult);
+    setSourceSummary("Sample draft — no free generation spent");
+    setNotice({
+      type: "success",
+      text: "Sample SEO copy loaded without using a free generation. Replace the brief when you are ready to generate your own.",
+    });
+    trackRevenueEvent("seocopy_demo_draft_loaded", {
+      access_mode: usage.accessMode,
+      free_remaining: usage.freeRemaining,
+      paid_credits: usage.paidCredits,
+      subscription_active: usage.subscriptionActive,
+    });
+  }
+
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-6 py-10 lg:px-10">
       <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
@@ -678,6 +693,13 @@ export default function GeneratorClient({
                     A generated output will replace this sample with copy for
                     your URL or brief.
                   </p>
+                  <button
+                    type="button"
+                    onClick={handleDemoDraft}
+                    className="mt-4 rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200"
+                  >
+                    Try the sample draft — no free run used
+                  </button>
                 </div>
                 <OutputCard title="SEO Title" values={previewResult.seoTitle} />
                 <OutputCard
