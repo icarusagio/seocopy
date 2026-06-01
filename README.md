@@ -35,6 +35,7 @@ Use it when you need to:
 - `/ai-seo-copy-generator` — broad AI SEO copy use-case page
 - `/saas-landing-page-copy-generator` — SaaS landing page copy use-case page
 - `/ecommerce-seo-copy-generator` — ecommerce SEO copy use-case page
+- `/shopify-landing-page-copy-generator` — Shopify landing page copy, collection campaign sections, SEO metadata, product modules, FAQs, and cart-driving CTAs from one store brief
 - `/meta-description-generator` — meta description use-case page
 - `/seo-title-generator` — title tag use-case page
 - `/ai-page-title-generator` — AI page title and snippet use-case page

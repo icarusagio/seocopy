@@ -762,6 +762,11 @@ const useCasePages = [
     body: "Product titles, meta descriptions, OG tags, and conversion copy for Shopify merchants.",
   },
   {
+    title: "Shopify Landing Page Copy Generator",
+    href: "/shopify-landing-page-copy-generator",
+    body: "Shopify landing page copy, collection campaign sections, SEO metadata, product modules, FAQs, and cart-driving CTAs from one store brief.",
+  },
+  {
     title: "Shopify Abandoned Cart Email Generator",
     href: "/shopify-abandoned-cart-email-generator",
     body: "Cart recovery emails, subject lines, preview text, product reminders, objection reducers, and checkout CTAs for Shopify merchants.",
