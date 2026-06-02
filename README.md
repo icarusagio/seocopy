@@ -205,6 +205,7 @@ Use it when you need to:
 - `/seo-content-generator` — SEO metadata, outlines, FAQ ideas, social previews, and CTA variants from one keyword, URL, or offer brief
 - `/seo-audit-report-generator` — prioritized SEO audit findings, metadata rewrites, content gaps, FAQ ideas, and conversion CTAs from one URL or crawl brief
 - `/seo-keyword-generator` — keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic
+- `/seo-proposal-generator` — SEO proposals with audit findings, keyword opportunities, content roadmaps, pricing rationale, proof, FAQs, and follow-up CTAs from one client brief
 - `/seo-friendly-url-generator` — SEO-friendly URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages
 - `/schema-markup-generator` — schema type recommendations, JSON-LD starter copy, FAQ snippets, metadata, and validation notes for richer search results
 - `/how-to-guide-generator` — how-to guides, step-by-step tutorial sections, instructional SEO outlines, FAQ schema prompts, metadata, and CTAs from one process brief

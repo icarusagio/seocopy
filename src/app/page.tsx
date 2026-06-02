@@ -864,6 +864,11 @@ const useCasePages = [
     body: "Keyword ideas, search-intent clusters, metadata prompts, FAQ opportunities, and conversion copy briefs from one product or topic.",
   },
   {
+    title: "SEO Proposal Generator",
+    href: "/seo-proposal-generator",
+    body: "SEO proposals with audit findings, keyword opportunities, content roadmaps, pricing rationale, proof, FAQs, and follow-up CTAs from one client brief.",
+  },
+  {
     title: "SEO Friendly URL Generator",
     href: "/seo-friendly-url-generator",
     body: "Readable URL slugs, matching metadata, social previews, and CTA variants for product, blog, and landing pages.",
