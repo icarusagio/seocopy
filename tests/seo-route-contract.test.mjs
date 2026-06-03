@@ -18,6 +18,7 @@ const routeInventory = [
   "/ai-email-writer-generator",
   "/ai-page-title-generator",
   "/ai-product-description-generator",
+  "/ai-product-listing-generator",
   "/ai-seo-copy-generator",
   "/amazon-a-plus-content-generator",
   "/amazon-bullet-point-generator",

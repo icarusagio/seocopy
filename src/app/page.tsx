@@ -954,6 +954,11 @@ const useCasePages = [
     body: "AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, and Shopify/Amazon listing angles from one product brief.",
   },
   {
+    title: "AI Product Listing Generator",
+    href: "/ai-product-listing-generator",
+    body: "Marketplace-ready product titles, descriptions, bullets, SEO snippets, FAQs, social previews, and buy-now CTAs for Shopify, Amazon, Etsy, and ecommerce catalogs.",
+  },
+  {
     title: "Product Demo Script Generator",
     href: "/product-demo-script-generator",
     body: "Product demo scripts, demo flow, feature proof moments, objection-handling talk tracks, follow-up CTAs, and FAQs from one product or sales brief.",

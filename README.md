@@ -152,6 +152,7 @@ Use it when you need to:
 - `/image-alt-text-generator` — accessible image alt text, SEO captions, filename ideas, product image snippets, and metadata use-case page
 - `/product-description-generator` — ecommerce product copy use-case page
 - `/ai-product-description-generator` — AI product descriptions, feature-to-benefit product copy, ecommerce SEO snippets, Shopify and Amazon listing angles, FAQs, and CTAs from one product brief
+- `/ai-product-listing-generator` — product listing titles, descriptions, marketplace SEO snippets, feature bullets, FAQs, social previews, and buy-now CTAs for Shopify, Amazon, Etsy, and ecommerce catalogs
 - `/product-demo-script-generator` — product demo scripts, demo flow, feature proof moments, objection-handling talk tracks, follow-up CTAs, and FAQs from one product or sales brief
 - `/product-explainer-video-generator` — product explainer videos, explainer video scripts, problem-solution storyboards, voiceover hooks, scene-by-scene outlines, and launch CTAs from one product brief
 - `/product-faq-generator` — product FAQs, buyer objection answers, PDP FAQ schema snippets, and Shopify product questions from one product brief
